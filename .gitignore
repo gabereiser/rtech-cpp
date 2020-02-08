@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Project Folders
+[Oo]ut/
+[Tt]arget/
+[Bb]uild/
