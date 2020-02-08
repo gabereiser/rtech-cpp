@@ -1,10 +1,12 @@
-name: Build on Push (Ubuntu)
+name: master
 
 on:
   push:
     branches:
       - master
-      - release/*
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:
