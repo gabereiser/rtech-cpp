@@ -1,0 +1,18 @@
+name: Build on Push (Ubuntu)
+
+on:
+  push:
+    branches:
+      - master
+      - release/*
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: ./build
