@@ -1,7 +1,8 @@
 #!/bin/sh
-
-rm -rf ./out
-mkdir out && cd out
-cmake ..
+git submodule update --init --recursive --quiet
+rm -rf out
+mkdir out
+cd out
+cmake -D CMAKE_INSTALL_PATH="./install" ..
 make
-echo "Done"
+make install

@@ -22,7 +22,9 @@ configure_file(
     "${PROJECT_BINARY_DIR}/include/config.h"
 )
 
-file(GLOB SOURCES src/**.cpp include/**.h)
+add_subdirectory(dependencies)
+
+file(GLOB SOURCES src/**.cpp)
 link_directories(${CMAKE_SOURCE_DIR}/lib)
 include_directories(
     ${CMAKE_BINARY_DIR}/src
@@ -59,7 +61,7 @@ set(INCLUDE ${GLM_INCLUDE_DIR}
             ${SDL2_MIXER_INCLUDE_DIRS}
 )
 
-add_executable(rtech ${SOURCES})
+add_library(rtech ${SOURCES})
 
 include_directories(${INCLUDE}
                     "${CMAKE_CURRENT_SOURCE_DIR}/include"
