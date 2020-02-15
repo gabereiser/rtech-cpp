@@ -1,5 +1,5 @@
 #!/bin/sh
-git submodule update --init --recursive --quiet
+git submodule update --init --recursive
 rm -rf out
 mkdir out
 cd out
