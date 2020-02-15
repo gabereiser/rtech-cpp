@@ -22,43 +22,19 @@ configure_file(
     "${PROJECT_BINARY_DIR}/include/config.h"
 )
 
-add_subdirectory(dependencies)
+add_subdirectory(dependencies/bgfx)
 
-file(GLOB SOURCES src/**.cpp)
-link_directories(${CMAKE_SOURCE_DIR}/lib)
-include_directories(
-    ${CMAKE_BINARY_DIR}/src
-    ${CMAKE_BINARY_DIR}/include
-)
-
-set(SDL2_BUILDING_LIBRARY False)
-
-find_package(OpenGL REQUIRED)
-find_package(SDL2 REQUIRED)
-find_package(SDL2_ttf REQUIRED)
-find_package(SDL2_image REQUIRED)
-find_package(SDL2_net REQUIRED)
-find_package(SDL2_mixer REQUIRED)
 find_package(ZLIB REQUIRED)
-find_package(GLM REQUIRED)
 
-set(LIBS ${ZLIB_LIBRARIES}
-         ${OPENGL_LIBRARIES}
-         ${SDL2_LIBRARY}
-         ${SDL2_IMAGE_LIBRARIES}
-         ${SDL2_TTF_LIBRARIES}
-         ${SDL2_NET_LIBRARIES}
-         ${SDL2_MIXER_LIBRARIES}
-)
+file(GLOB SOURCES src/**.cpp include/**.inl include/**.h)
 
-set(INCLUDE ${GLM_INCLUDE_DIR}
+
+
+set(LIBS ${ZLIB_LIBRARIES})
+
+set(INCLUDE ${BGFX_INCLUDE_DIR}
             ${ZLIB_INCLUDE_DIRS}
-            ${OPENGL_INCLUDE_DIR}
-            ${SDL2_INCLUDE_DIR}
-            ${SDL2_IMAGE_INCLUDE_DIRS}
-            ${SDL2_TTF_INCLUDE_DIRS}
-            ${SDL2_NET_INCLUDE_DIRS}
-            ${SDL2_MIXER_INCLUDE_DIRS}
+            ${CMAKE_CURRENT_BINARY_DIR}/include
 )
 
 add_library(rtech ${SOURCES})
@@ -66,9 +42,10 @@ add_library(rtech ${SOURCES})
 include_directories(${INCLUDE}
                     "${CMAKE_CURRENT_SOURCE_DIR}/include"
                     "${CMAKE_CURRENT_SOURCE_DIR}/src"
+                    "${CMAKE_CURRENT_SOURCE_DIR}/dependencies/bgfx/bgfx"
                     )
 
-target_link_libraries(rtech ${LIBS})
+target_link_libraries(rtech ${LIBS} bx bimg bgfx)
 
 
 
