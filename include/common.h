@@ -19,7 +19,7 @@
 
 #if defined(_MSC_VER)
     //  Microsoft 
-    #include <function>
+    #include <functional>
     #define API __declspec(dllexport)
     #define IMPORT __declspec(dllimport)
 #else
