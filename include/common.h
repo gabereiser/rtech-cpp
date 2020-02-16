@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include <iostream>
+
 #include <memory>
 
 #include <glm/ext.hpp>
@@ -18,6 +19,7 @@
 
 #if defined(_MSC_VER)
     //  Microsoft 
+    #include <function>
     #define API __declspec(dllexport)
     #define IMPORT __declspec(dllimport)
 #else
