@@ -17,7 +17,7 @@ jobs:
     steps:
     - run: |
         if [ "${{ matrix.os }}" = "ubuntu-latest" ]; then
-          apt-get install build-essential libgl1-mesa-dev zlib-dev
+          sudo apt-get install build-essential libgl1-mesa-dev zlib-dev
         fi         
       shell: bash
     - uses: actions/checkout@v2
