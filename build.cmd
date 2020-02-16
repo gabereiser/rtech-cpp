@@ -8,4 +8,5 @@ cd out
 cmake -D CMAKE_INSTALL_PREFIX="./install" -DBGFX_BUILD_TOOLS=OFF ^
 -DBGFX_BUILD_EXAMPLES=OFF -DBGFX_INSTALL=OFF -DCMAKE_BUILD_TYPE=$BUILD_TYPE ^
 ..
-devenv rtech.sln /build
+dir
+msbuild rtech.vxproj /p:configuration=debug
