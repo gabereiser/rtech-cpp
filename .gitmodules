@@ -7,3 +7,6 @@
 [submodule "dependencies/sdl2"]
 	path = dependencies/sdl2
 	url = https://github.com/sdl-mirror/sdl.git
+[submodule "dependencies/zlib"]
+	path = dependencies/zlib
+	url = https://github.com/madler/zlib.git
