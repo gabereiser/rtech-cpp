@@ -2,7 +2,7 @@
 
 using namespace rtech;
 
-API int main(int argc, char** argv) {
+int main(int argc, char** argv) {
     std::cout << "rTech : ";
     std::cout << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_PATCH << " : ";
     std::cout << GIT_COMMIT_HASH << " : " << GIT_BRANCH << " : " << TODAY << std::endl;
