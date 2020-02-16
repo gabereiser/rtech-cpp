@@ -1,8 +1,16 @@
 #!/bin/sh
+BUILD_TYPE=Debug # Release | Debug | RelWithDebInfo | MinSizeRel
+
 git submodule update --init --recursive
 rm -rf out
 mkdir out
 cd out
-cmake -D CMAKE_INSTALL_PREFIX="./install" -DBGFX_BUILD_TOOLS=OFF -DBGFX_BUILD_EXAMPLES=OFF -DBGFX_INSTALL=OFF -DCMAKE_BUILD_TYPE=Release ..
-make
+cmake -D CMAKE_INSTALL_PREFIX="./install" \
+      -DBGFX_BUILD_TOOLS=OFF \
+      -DBGFX_BUILD_EXAMPLES=OFF \
+      -DBGFX_INSTALL=OFF \
+      -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
+      -DCMAKE_TOOLCHAIN_FILE=~/.vcpkg/scripts/buildsystems/vcpkg.cmake \
+       ..
+make -j 
 make install
