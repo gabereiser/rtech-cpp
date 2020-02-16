@@ -15,9 +15,10 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-    - run: |
+    - name: Configure
+      run: |
         if [ "${{ matrix.os }}" = "ubuntu-latest" ]; then
-          sudo apt-get install build-essential libgl1-mesa-dev zlib1g-dev
+          sudo apt-get install libgl1-mesa-dev
         fi         
       shell: bash
     - uses: actions/checkout@v2
