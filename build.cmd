@@ -2,9 +2,9 @@
 set BUILD_TYPE=Debug 
 
 git submodule update --init --recursive
-rmdir /S /Q out
-mkdir out
-chdir out
+
+mkdir ./out
+cd ./out
 cmake -D CMAKE_INSTALL_PREFIX="./install" ^
       -DBGFX_BUILD_TOOLS=OFF ^
       -DBGFX_BUILD_EXAMPLES=OFF ^
