@@ -53,13 +53,9 @@ add_subdirectory(dependencies/sdl2)
 add_subdirectory(dependencies/bgfx)
 add_subdirectory(dependencies/zlib)
 
-find_package(vulkan REQUIRED)
 
 file(GLOB SOURCES src/**.cpp include/**.inl include/**.h)
 
-
-
-set(LIBS ${VULKAN_LIBRARIES})
 
 set(INCLUDE ${BGFX_INCLUDE_DIR}
             ${SDL2_INCLUDE_DIRS}
@@ -82,7 +78,7 @@ include_directories(${INCLUDE}
                     "${CMAKE_SOURCE_DIR}/src"
                     )
 
-target_link_libraries(rtech ${LIBS} zlib glm bx bimg bgfx SDL2-static)
+target_link_libraries(rtech zlib glm bx bimg bgfx SDL2-static)
 target_link_libraries(rtech-bin rtech)
 
 include(GNUInstallDirs)
