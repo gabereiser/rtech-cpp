@@ -8,7 +8,7 @@ namespace rtech {
         private:
         std::function<void()> _update_cb;
         std::function<void()> _render_cb;
-        std::shared_ptr<Scene> _scene;
+        Ptr<Scene> _scene;
 
 
         public:

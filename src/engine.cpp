@@ -5,7 +5,7 @@ static rtech::Engine _engine{};
 namespace rtech {
     
     API
-    Engine::Engine() : _scene{new Scene()} {
+    Engine::Engine() : _scene(std::make_shared<Scene>()) {
 
     }
 
@@ -31,7 +31,7 @@ namespace rtech {
 
     API
     void Engine::quit() {
-        
+        _scene->clean();
     };
 
     API

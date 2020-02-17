@@ -1,3 +1,4 @@
+#include "scenenode.h"
 #include "scene.h"
 
 namespace rtech {
@@ -11,9 +12,15 @@ namespace rtech {
     Scene::~Scene() {
 
     }
-    
+
     API
     void Scene::init() {
-        std::cout << "Scene init called" << std::endl;
-    };
+        _rootNode = std::make_shared<SceneNode>();
+        std::cout << "Scene initialized" << std::endl;
+    }
+
+    API
+    void Scene::clean() {
+        _rootNode->clearChildren();
+    }
 }

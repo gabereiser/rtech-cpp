@@ -14,11 +14,20 @@ endif()
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+### Present Options
+option(RTECH_BUILD_SAMPLES "Build rtech samples" ON)
 
-### Define Project Sources
+### Define Project
 project(rtech VERSION ${RTECH_VERSION})
-project(rtech-bin VERSION ${RTECH_VERSION})
 
+set(INSTALL_BIN_DIR "${CMAKE_INSTALL_PREFIX}/bin" CACHE PATH "Installation directory for executables")
+set(INSTALL_LIB_DIR "${CMAKE_INSTALL_PREFIX}/lib" CACHE PATH "Installation directory for libraries")
+set(INSTALL_INC_DIR "${CMAKE_INSTALL_PREFIX}/include" CACHE PATH "Installation directory for headers")
+set(INSTALL_MAN_DIR "${CMAKE_INSTALL_PREFIX}/share/man" CACHE PATH "Installation directory for manual pages")
+set(INSTALL_PKGCONFIG_DIR "${CMAKE_INSTALL_PREFIX}/share/pkgconfig" CACHE PATH "Installation directory for pkgconfig (.pc) files")
+
+
+### Add Git information to the build
 find_package(Git QUIET REQUIRED)
 if(GIT_FOUND AND EXISTS "${CMAKE_SOURCE_DIR}/.git")
     # Get the current working branch
@@ -28,7 +37,6 @@ if(GIT_FOUND AND EXISTS "${CMAKE_SOURCE_DIR}/.git")
         OUTPUT_VARIABLE GIT_BRANCH
         OUTPUT_STRIP_TRAILING_WHITESPACE
     )
-    
     # Get the latest abbreviated commit hash of the working branch
     execute_process(
         COMMAND git rev-parse --short HEAD
@@ -47,6 +55,18 @@ configure_file(
     "${PROJECT_SOURCE_DIR}/include/config.h"
     "${PROJECT_BINARY_DIR}/include/config.h"
 )
+
+### Set dependency options
+option(GLM_QUIET "" ON)
+if(CMAKE_BUILD_TYPE MATCHES Debug)
+option(BGFX_CONFIG_DEBUG "" ON)
+endif(CMAKE_BUILD_TYPE MATCHES Debug)
+option(BGFX_BUILD_TOOLS "" OFF)
+option(BGFX_BUILD_EXAMPLES "" OFF)
+option(BGFX_INSTALL "" OFF)
+set(SDL_STATIC_ENABLED_BY_DEFAULT ON)
+set(SDL_SHARED_ENABLED_BY_DEFAULT OFF)
+### Add dependencies
 
 add_subdirectory(dependencies/glm)
 add_subdirectory(dependencies/sdl2)
@@ -68,18 +88,21 @@ set(INCLUDE ${BGFX_INCLUDE_DIR}
 )
 
 add_library(rtech ${SOURCES})
+
 if(CMAKE_BUILD_TYPE MATCHES Debug)
     set_target_properties(rtech PROPERTIES DEBUG_POSTFIX d)
 endif(CMAKE_BUILD_TYPE MATCHES Debug)
-add_executable(rtech-bin ${SOURCES})
 
-include_directories(${INCLUDE}
-                    "${CMAKE_SOURCE_DIR}/include"
-                    "${CMAKE_SOURCE_DIR}/src"
-                    )
 
+target_include_directories(rtech PUBLIC
+                    $<BUILD_INTERFACE:${CMAKE_BINARY_DIR}/include>
+                    $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+                    $<INSTALL_INTERFACE:include/rtech>
+)
+
+set_property(TARGET rtech PROPERTY POSITION_INDEPENDENT_CODE 1)
+add_dependencies(rtech zlib glm bx bimg bgfx SDL2-static)
 target_link_libraries(rtech zlib glm bx bimg bgfx SDL2-static)
-target_link_libraries(rtech-bin rtech)
 
 include(GNUInstallDirs)
 
@@ -87,4 +110,10 @@ include(GNUInstallDirs)
 install( TARGETS rtech
     EXPORT rtech-config
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR} )
-install( DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include DESTINATION . )
+install( DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include DESTINATION ${CMAKE_INSTALL_PREFIX} )
+install( FILES ${CMAKE_CURRENT_BINARY_DIR}/include/config.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include )
+
+
+if(RTECH_BUILD_SAMPLES)
+    add_subdirectory(samples)
+endif(RTECH_BUILD_SAMPLES)

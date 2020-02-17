@@ -2,6 +2,8 @@
     "cmake.configureOnOpen": true,
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/include",
-        "${workspaceFolder}/dependencies/bgfx"
+        "${workspaceFolder}/dependencies/bgfx",
+        "${workspaceFolder}/dependencies/glm",
+        "${workspaceFolder}/dependencies/sdl2"
     ]
 }
