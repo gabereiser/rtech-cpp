@@ -4,8 +4,8 @@ project(00-hello-triangle)
 
 add_executable(00-hello-triangle main.cpp)
 
-#target_include_directories(hello-triangle PUBLIC ${CMAKE_BINARY_DIR}/install/include)
 add_dependencies(00-hello-triangle rtech)
+
 target_link_libraries(00-hello-triangle rtech)
 
 install( TARGETS 00-hello-triangle
