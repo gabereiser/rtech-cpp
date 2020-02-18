@@ -38,3 +38,4 @@
 [Oo]ut/
 [Tt]arget/
 [Bb]uild/
+**/CMakeLists/
