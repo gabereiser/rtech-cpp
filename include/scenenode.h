@@ -4,7 +4,7 @@
 
 namespace rtech
 {
-    class API SceneNode
+    class SceneNode
     {
         protected:
         std::vector<Ptr<SceneNode>> _children;
