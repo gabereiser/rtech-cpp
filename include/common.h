@@ -1,8 +1,9 @@
-/// @ref rtech
-/// @file common.h
-/// @defgroup rtech
-/// @mainpage rTech Graphics Toolkit
-/// The rTech Graphics Toolkit is a cross-platform thread-safe C++ library.
+/*! \ref rtech
+ *  \file common.h
+ *  \defgroup rtech
+ *  \mainpage rTech Graphics Toolkit
+ * The rTech Graphics Toolkit is a cross-platform thread-safe C++ library.
+ */
 
 #pragma once
 
