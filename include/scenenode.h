@@ -4,19 +4,19 @@
 
 namespace rtech
 {
-    class SceneNode
+    class API SceneNode
     {
         protected:
-        std::vector<Ptr<SceneNode>> _children;
-        Ptr<SceneNode> _parent;
+        std::vector<Ref<SceneNode>> _children;
+        Ref<SceneNode> _parent;
 
         public:
-        API SceneNode();
-        API ~SceneNode();
-        API SceneNode(const SceneNode&)=default;
-        API SceneNode(SceneNode&&)=default;
-        API void addChild(Ptr<SceneNode> node);
-        API void removeChild(Ptr<SceneNode> node);
-        API void clearChildren();
+        SceneNode();
+        ~SceneNode();
+        SceneNode(const SceneNode&)=default;
+        SceneNode(SceneNode&&)=default;
+        void addChild(Ref<SceneNode> node);
+        void removeChild(Ref<SceneNode> node);
+        void clearChildren();
     };
 }

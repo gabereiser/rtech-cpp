@@ -4,25 +4,26 @@
 #include "scene.h"
 
 namespace rtech {
-    class Engine {
+    class API Engine {
         private:
         std::function<void()> _update_cb;
         std::function<void()> _render_cb;
-        Ptr<Scene> _scene;
+        Ref<Scene> _scene;
 
 
         public:
-        API Engine();
-        API ~Engine();
-        API Engine(const Engine&) = delete;
-        API Engine(Engine&&) = delete;
-        API Engine& operator=(const Engine&) = delete;
-        API Engine& operator=(Engine&&) = delete;
-        API static Engine& instance();
-        API void init();
-        API void run();
-        API void quit();
-        API void setUpdateFunc(const std::function<void()> callback);
-        API void setRenderFunc(const std::function<void()> callback);
+        Engine();
+        ~Engine();
+        Engine(const Engine&) = delete;
+        Engine(Engine&&) = delete;
+        Engine& operator=(const Engine&) = delete;
+        Engine& operator=(Engine&&) = delete;
+        static Engine& instance();
+        bool createWindow(const std::string& title, const int& width, const int& height, const bool& fullscreen);
+        void init();
+        void run();
+        void quit();
+        void setUpdateFunc(const std::function<void()> callback);
+        void setRenderFunc(const std::function<void()> callback);
     };
 }

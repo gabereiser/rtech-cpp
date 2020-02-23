@@ -74,33 +74,42 @@ add_subdirectory(dependencies/bgfx)
 add_subdirectory(dependencies/zlib)
 
 
-file(GLOB SOURCES src/**.cpp include/**.inl include/**.h)
+file(GLOB_RECURSE SOURCES 
+        src/**.cpp
+        include/**.inl
+        include/**.h
+)
 
 
 set(INCLUDE ${BGFX_INCLUDE_DIR}
             ${SDL2_INCLUDE_DIRS}
             ${VULKAN_INCLUDE_DIRS}
             ${CMAKE_CURRENT_BINARY_DIR}/include
-            ${CMAKE_CURRENT_BINARY_DIR}/install/include
             ${CMAKE_SOURCE_DIR}/dependencies/glm
             ${CMAKE_SOURCE_DIR}/dependencies/zlib
             ${CMAKE_SOURCE_DIR}/dependencies/bgfx/bgfx/include
+            ${CMAKE_SOURCE_DIR}/dependencies/sdl2/include
 )
 
-add_library(rtech ${SOURCES})
+add_library(rtech STATIC ${SOURCES} )
 
 if(CMAKE_BUILD_TYPE MATCHES Debug)
     set_target_properties(rtech PROPERTIES DEBUG_POSTFIX d)
 endif(CMAKE_BUILD_TYPE MATCHES Debug)
 
 
-target_include_directories(rtech PUBLIC
+target_include_directories(rtech PUBLIC ${INCLUDE}
                     $<BUILD_INTERFACE:${CMAKE_BINARY_DIR}/include>
                     $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
                     $<INSTALL_INTERFACE:include/rtech>
 )
 
 set_property(TARGET rtech PROPERTY POSITION_INDEPENDENT_CODE 1)
+
+if(WIN32)
+add_definitions(-DDLL)
+endif(WIN32)
+
 add_dependencies(rtech zlib glm bx bimg bgfx SDL2-static)
 target_link_libraries(rtech zlib glm bx bimg bgfx SDL2-static)
 

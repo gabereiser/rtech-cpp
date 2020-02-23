@@ -4,6 +4,6 @@
         "${workspaceFolder}/include",
         "${workspaceFolder}/dependencies/bgfx",
         "${workspaceFolder}/dependencies/glm",
-        "${workspaceFolder}/dependencies/sdl2"
+        "${workspaceFolder}/dependencies/sdl2/include"
     ]
 }

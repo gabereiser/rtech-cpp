@@ -1,6 +1,17 @@
 #pragma once
 
 #include <common.h>
+#include <math/rectangle.h>
+#include <math/vector2.h>
+#include <math/vector3.h>
+#include <math/vector4.h>
+#include <math/quaternion.h>
+#include <math/matrix.h>
+#include <math/plane.h>
+#include <math/ray.h>
+#include <math/bounding_sphere.h>
+#include <math/bounding_box.h>
+#include <math/frustum.h>
 #include <engine.h>
 #include <scenenode.h>
 #include <scene.h>

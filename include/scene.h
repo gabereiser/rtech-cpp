@@ -5,14 +5,14 @@
 
 namespace rtech 
 {
-    class Scene {
+    class API Scene {
         private:
-        Ptr<SceneNode> _rootNode;
+        Ref<SceneNode> _rootNode;
 
         public:
-        API Scene();
-        API ~Scene();
-        API void init();
-        API void clean();
+        Scene();
+        ~Scene();
+        void init();
+        void clean();
     };
 }
