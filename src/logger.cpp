@@ -1,9 +1,8 @@
-
 #include <common.h>
 
 namespace rtech
 {
-    extern void print(const char* format, ...) { 
+    extern void rprint(const char* format, ...) { 
             _ASSERT(format);
             va_list argptr;
             va_start(argptr, format);
@@ -69,7 +68,7 @@ void Logger::log(Level level, const char* message, ...)
     else
     {
         // Log to the default output
-        print("%s", str);
+        rprint("%s", str);
     }
 }
 
