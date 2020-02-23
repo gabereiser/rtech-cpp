@@ -7,6 +7,11 @@
 
 #pragma once
 
+// NOMINMAX makes sure that windef.h doesn't add macros min and max
+#ifdef WIN32
+    #define NOMINMAX
+#endif
+
 #include <config.h>
 
 #include <stdio.h>
@@ -53,7 +58,7 @@ using std::modf;
 using std::atoi;
 
 
-#if defined(_MSC_VER)
+#ifdef WIN32
     //  Microsoft 
     #ifdef DLL
     #define API __declspec(dllexport)
@@ -104,12 +109,6 @@ using std::atoi;
 #endif
 
 
-// NOMINMAX makes sure that windef.h doesn't add macros min and max
-#ifdef WIN32
-    #define NOMINMAX
-#endif
-
-
 #define _ERROR(...) do \
     { \
         rtech::Logger::log(rtech::Logger::LEVEL_ERROR, "%s -- ", __current__func__); \
@@ -147,8 +146,9 @@ namespace rtech {
         class BoundingSphere;
         class BoundingBox;
     }
-
+    class Logger;
     class Engine;
+    class Input;
     class Scene;
     class SceneNode;
 
