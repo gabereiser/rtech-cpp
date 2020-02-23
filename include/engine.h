@@ -5,6 +5,7 @@
 
 namespace rtech {
     class API Engine: public Singleton<Engine> {
+        template <typename T>
         friend class Singleton;
         private:
         std::function<void()> _update_cb;

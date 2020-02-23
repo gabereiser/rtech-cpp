@@ -7,6 +7,7 @@ namespace rtech
 {
     class API Input : public Singleton<Input>
     {
+        template <typename T>
         friend class Singleton;
 
         private:
