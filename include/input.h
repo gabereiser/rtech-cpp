@@ -8,7 +8,7 @@ namespace rtech
     class API Input : public Singleton<Input>
     {
         friend class Singleton;
-        
+
         private:
 
         protected:

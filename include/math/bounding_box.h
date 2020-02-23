@@ -229,5 +229,5 @@ inline const BoundingBox operator*(const Matrix& matrix, const BoundingBox& box)
 
 }
 }
-#include "bounding_box.inl"
+#include <math/bounding_box.inl>
 

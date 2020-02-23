@@ -1,11 +1,9 @@
 #pragma once
 
-#include <common.h>
-
 namespace rtech
 {
     template <typename T>
-    class API Singleton
+    class Singleton
     {
         public:
         static T& instance() { 

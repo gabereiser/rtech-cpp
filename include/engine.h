@@ -1,6 +1,5 @@
 #pragma once
 
-#include <common.h>
 #include <singleton.h>
 #include <scene.h>
 

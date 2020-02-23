@@ -179,5 +179,5 @@ inline const BoundingSphere operator*(const Matrix& matrix, const BoundingSphere
 
 }
 }
-#include "bounding_sphere.inl"
+#include <math/bounding_sphere.inl>
 
