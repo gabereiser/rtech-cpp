@@ -1,24 +1,22 @@
 #pragma once
 
-#include "common.h"
-#include "scene.h"
+#include <common.h>
+#include <singleton.h>
+#include <scene.h>
 
 namespace rtech {
-    class API Engine {
+    class API Engine: public Singleton<Engine> {
+        friend class Singleton;
         private:
         std::function<void()> _update_cb;
         std::function<void()> _render_cb;
         Ref<Scene> _scene;
 
-
-        public:
+        protected:
         Engine();
         ~Engine();
-        Engine(const Engine&) = delete;
-        Engine(Engine&&) = delete;
-        Engine& operator=(const Engine&) = delete;
-        Engine& operator=(Engine&&) = delete;
-        static Engine& instance();
+
+        public:
         bool createWindow(const std::string& title, const int& width, const int& height, const bool& fullscreen);
         void init();
         void run();

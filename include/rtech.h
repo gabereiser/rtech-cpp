@@ -1,6 +1,7 @@
 #pragma once
 
 #include <common.h>
+#include <singleton.h>
 #include <math/rectangle.h>
 #include <math/vector2.h>
 #include <math/vector3.h>
@@ -13,5 +14,6 @@
 #include <math/bounding_box.h>
 #include <math/frustum.h>
 #include <engine.h>
+#include <input.h>
 #include <scenenode.h>
 #include <scene.h>

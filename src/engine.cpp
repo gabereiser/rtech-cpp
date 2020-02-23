@@ -70,9 +70,6 @@ static int32_t threadMain(bx::Thread* _thread, void* _userData)
 };
 
 
-
-static rtech::Engine _engine{};
-
 namespace rtech {
     static SDL_Window* window = nullptr;
     
@@ -94,11 +91,6 @@ namespace rtech {
     API
     Engine::~Engine() {
 
-    }
-
-    API
-    Engine& Engine::instance() {
-        return _engine;
     }
 
     API

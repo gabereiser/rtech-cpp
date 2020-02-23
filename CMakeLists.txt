@@ -57,7 +57,6 @@ configure_file(
 )
 
 ### Set dependency options
-option(GLM_QUIET "" ON)
 if(CMAKE_BUILD_TYPE MATCHES Debug)
 option(BGFX_CONFIG_DEBUG "" ON)
 endif(CMAKE_BUILD_TYPE MATCHES Debug)
@@ -68,7 +67,6 @@ set(SDL_STATIC_ENABLED_BY_DEFAULT ON)
 set(SDL_SHARED_ENABLED_BY_DEFAULT OFF)
 ### Add dependencies
 
-add_subdirectory(dependencies/glm)
 add_subdirectory(dependencies/sdl2)
 add_subdirectory(dependencies/bgfx)
 add_subdirectory(dependencies/zlib)
@@ -85,7 +83,6 @@ set(INCLUDE ${BGFX_INCLUDE_DIR}
             ${SDL2_INCLUDE_DIRS}
             ${VULKAN_INCLUDE_DIRS}
             ${CMAKE_CURRENT_BINARY_DIR}/include
-            ${CMAKE_SOURCE_DIR}/dependencies/glm
             ${CMAKE_SOURCE_DIR}/dependencies/zlib
             ${CMAKE_SOURCE_DIR}/dependencies/bgfx/bgfx/include
             ${CMAKE_SOURCE_DIR}/dependencies/sdl2/include
@@ -110,8 +107,8 @@ if(WIN32)
 add_definitions(-DDLL)
 endif(WIN32)
 
-add_dependencies(rtech zlib glm bx bimg bgfx SDL2-static)
-target_link_libraries(rtech zlib glm bx bimg bgfx SDL2-static)
+add_dependencies(rtech zlib bx bimg bgfx SDL2-static)
+target_link_libraries(rtech zlib bx bimg bgfx SDL2-static)
 
 include(GNUInstallDirs)
 
