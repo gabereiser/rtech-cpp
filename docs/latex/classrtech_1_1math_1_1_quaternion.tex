@@ -1,0 +1,681 @@
+\hypertarget{classrtech_1_1math_1_1_quaternion}{}\doxysection{rtech\+::math\+::Quaternion Class Reference}
+\label{classrtech_1_1math_1_1_quaternion}\index{rtech::math::Quaternion@{rtech::math::Quaternion}}
+
+
+{\ttfamily \#include $<$quaternion.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_acf030bb76cab3e2a9f6d619b3f4983e9}{Quaternion}} ()
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a4a96b91d154a2f5ecc03b81d563dee27}{Quaternion}} (float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a3da0cecad080ef5725d6e2e0c4b091d2}{x}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a858076ea603d377d6bad3743a6849803}{y}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_ac52306efa1ebf8552a6bbc586a24946f}{z}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a6a9407cdbc2385bb64f7d9f296931d4b}{w}})
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a8420938907ffd24c74212fc4488520db}{Quaternion}} (float $\ast$array)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a006f8bdd1577348d23335f200be5544d}{Quaternion}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_aa724db013699d41f0b7dbcd6e2168f8b}{Quaternion}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&axis, float angle)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a57615b1d9bb812decde7e28dcbdcecfc}{Quaternion}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&copy)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_abb558c8f8cbaefa1a5c145b36458c532}{$\sim$\+Quaternion}} ()
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a72b949c219abde93633dce16a805a4a8}{is\+Identity}} () const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_af2c78d582e47a78f7e0715e3bb36e4b4}{is\+Zero}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_ad9ac85f432e0fe89676fcf6949b1aa5e}{compute\+Euler}} (float $\ast$yaw, float $\ast$pitch, float $\ast$roll)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a4551f4cc99d53f838a00adeec1ccdeb2}{conjugate}} ()
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_afa9f8143864ebe7c1b08be9678bf928d}{conjugate}} (\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_abb2244b19c490799b4c0264e9d87d430}{inverse}} ()
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a9a32ad24d3660ae98a391e55b0164bc6}{inverse}} (\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_ae7b396b75786b5cb332dfa50a7f6e3eb}{multiply}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a1c8c88d05e06c8b454c39650b85aa9f8}{normalize}} ()
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a30b52668d7a67b7db7d9b5ccb842d144}{normalize}} (\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a8759320824e85984316028e92caceb5b}{rotate\+Point}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&point, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a0061d4ce8fa48a11172d22a54547c26f}{set}} (float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a3da0cecad080ef5725d6e2e0c4b091d2}{x}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a858076ea603d377d6bad3743a6849803}{y}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_ac52306efa1ebf8552a6bbc586a24946f}{z}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a6a9407cdbc2385bb64f7d9f296931d4b}{w}})
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_ae46c9527edf53116f80fad66fe1a0697}{set}} (float $\ast$array)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_afdf457819cd8d29f2aa34214e8e6f223}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a677351944337561f5ef985e88a80f1a6}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&axis, float angle)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a79eeac39b28158c20143e2def50df7fa}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a8635cc1cc8cbfac0b805a3512f1ecbac}{set\+Identity}} ()
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a767933bb400a9e80567f8576e3662840}{to\+Axis\+Angle}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$e) const
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a9f8e9ed0172f6339c84e4ddd8e21c19b}{operator$\ast$}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q) const
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a730bb63440aa9074e23e0aec2ef16f58}{operator$\ast$=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a71b036e52c9f880b9473dd79dbd24e2c}{identity}} ()
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a54e8dec412def956e098d90c62bd75c5}{zero}} ()
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a14558d1739372dfe469be5e16c873d09}{create\+From\+Euler}} (float yaw, float pitch, float roll, \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a7c628fdae0811e9d9fe379c55a5077f3}{create\+From\+Rotation\+Matrix}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m, \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_ac8278a2d840aa1dc85bbb8e54ebd2d41}{create\+From\+Axis\+Angle}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&axis, float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_ae6eab1475ce3304f6cbaff85e4964e5e}{multiply}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q1, const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q2, \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a583f47b2ca976b1f021ea8afbb374488}{lerp}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q1, const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q2, float t, \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a027074324b1b9612519e384f7438e001}{slerp}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q1, const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q2, float t, \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a8d68c63a8262aa4dec5033bb9126abc0}{squad}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q1, const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q2, const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&s1, const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&s2, float t, \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$dst)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a3da0cecad080ef5725d6e2e0c4b091d2}{x}}
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a858076ea603d377d6bad3743a6849803}{y}}
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_ac52306efa1ebf8552a6bbc586a24946f}{z}}
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion_a6a9407cdbc2385bb64f7d9f296931d4b}{w}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a447c48442567869f8cbbf46862764c57}\label{classrtech_1_1math_1_1_quaternion_a447c48442567869f8cbbf46862764c57}} 
+class {\bfseries Curve}
+\item 
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_af851b4d9aacd1a871da33592334b8d72}\label{classrtech_1_1math_1_1_quaternion_af851b4d9aacd1a871da33592334b8d72}} 
+class {\bfseries Transform}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a 4-\/element quaternion that represents the orientation of an object in space.
+
+Quaternions are typically used as a replacement for euler angles and rotation matrices as a way to achieve smooth interpolation and avoid gimbal lock.
+
+Note that this quaternion class does not automatically keep the quaternion normalized. Therefore, care must be taken to normalize the quaternion when necessary, by calling the normalize method. This class provides three methods for doing quaternion interpolation\+: lerp, slerp, and squad.
+
+lerp (linear interpolation)\+: the interpolation curve gives a straight line in quaternion space. It is simple and fast to compute. The only problem is that it does not provide constant angular velocity. Note that a constant velocity is not necessarily a requirement for a curve; slerp (spherical linear interpolation)\+: the interpolation curve forms a great arc on the quaternion unit sphere. Slerp provides constant angular velocity; squad (spherical spline interpolation)\+: interpolating between a series of rotations using slerp leads to the following problems\+:
+\begin{DoxyItemize}
+\item the curve is not smooth at the control points;
+\item the angular velocity is not constant;
+\item the angular velocity is not continuous at the control points.
+\end{DoxyItemize}
+
+Since squad is continuously differentiable, it remedies the first and third problems mentioned above. The slerp method provided here is intended for interpolation of principal rotations. It treats +q and -\/q as the same principal rotation and is at liberty to use the negative of either input. The resulting path is always the shorter arc.
+
+The lerp method provided here interpolates strictly in quaternion space. Note that the resulting path may pass through the origin if interpolating between a quaternion and its exact negative.
+
+As an example, consider the following quaternions\+:
+
+q1 = (0.\+6, 0.\+8, 0.\+0, 0.\+0), q2 = (0.\+0, 0.\+6, 0.\+8, 0.\+0), q3 = (0.\+6, 0.\+0, 0.\+8, 0.\+0), and q4 = (-\/0.\+8, 0.\+0, -\/0.\+6, 0.\+0). For the point p = (1.\+0, 1.\+0, 1.\+0), the following figures show the trajectories of p using lerp, slerp, and squad. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_acf030bb76cab3e2a9f6d619b3f4983e9}\label{classrtech_1_1math_1_1_quaternion_acf030bb76cab3e2a9f6d619b3f4983e9}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a quaternion initialized to (0, 0, 0, 1). \mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a4a96b91d154a2f5ecc03b81d563dee27}\label{classrtech_1_1math_1_1_quaternion_a4a96b91d154a2f5ecc03b81d563dee27}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})}
+
+Constructs a quaternion initialized to (0, 0, 0, 1).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component of the quaternion. \\
+\hline
+{\em y} & The y component of the quaternion. \\
+\hline
+{\em z} & The z component of the quaternion. \\
+\hline
+{\em w} & The w component of the quaternion. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a8420938907ffd24c74212fc4488520db}\label{classrtech_1_1math_1_1_quaternion_a8420938907ffd24c74212fc4488520db}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{float $\ast$}]{array }\end{DoxyParamCaption})}
+
+Constructs a new quaternion from the values in the specified array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The values for the new quaternion. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a006f8bdd1577348d23335f200be5544d}\label{classrtech_1_1math_1_1_quaternion_a006f8bdd1577348d23335f200be5544d}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})}
+
+Constructs a quaternion equal to the rotational part of the specified matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_aa724db013699d41f0b7dbcd6e2168f8b}\label{classrtech_1_1math_1_1_quaternion_aa724db013699d41f0b7dbcd6e2168f8b}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{axis,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Constructs a quaternion equal to the rotation from the specified axis and angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & A vector describing the axis of rotation. \\
+\hline
+{\em angle} & The angle of rotation (in radians). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a57615b1d9bb812decde7e28dcbdcecfc}\label{classrtech_1_1math_1_1_quaternion_a57615b1d9bb812decde7e28dcbdcecfc}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{Quaternion()}{Quaternion()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Quaternion\+::\+Quaternion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{copy }\end{DoxyParamCaption})}
+
+Constructs a new quaternion that is a copy of the specified one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & The quaternion to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_abb558c8f8cbaefa1a5c145b36458c532}\label{classrtech_1_1math_1_1_quaternion_abb558c8f8cbaefa1a5c145b36458c532}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!````~Quaternion@{$\sim$Quaternion}}
+\index{````~Quaternion@{$\sim$Quaternion}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{$\sim$Quaternion()}{~Quaternion()}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Quaternion\+::$\sim$\+Quaternion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_ad9ac85f432e0fe89676fcf6949b1aa5e}\label{classrtech_1_1math_1_1_quaternion_ad9ac85f432e0fe89676fcf6949b1aa5e}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!computeEuler@{computeEuler}}
+\index{computeEuler@{computeEuler}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{computeEuler()}{computeEuler()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::compute\+Euler (\begin{DoxyParamCaption}\item[{float $\ast$}]{yaw,  }\item[{float $\ast$}]{pitch,  }\item[{float $\ast$}]{roll }\end{DoxyParamCaption})}
+
+Calculates (in radians) the yaw, pitch and roll angles of this quaternion and stores the results in the specified pointers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em yaw} & The returned yaw angle \\
+\hline
+{\em pitch} & The returned pitch angle \\
+\hline
+{\em roll} & The returned roll angle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a4551f4cc99d53f838a00adeec1ccdeb2}\label{classrtech_1_1math_1_1_quaternion_a4551f4cc99d53f838a00adeec1ccdeb2}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!conjugate@{conjugate}}
+\index{conjugate@{conjugate}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{conjugate()}{conjugate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::conjugate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets this quaternion to the conjugate of itself. \mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_afa9f8143864ebe7c1b08be9678bf928d}\label{classrtech_1_1math_1_1_quaternion_afa9f8143864ebe7c1b08be9678bf928d}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!conjugate@{conjugate}}
+\index{conjugate@{conjugate}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{conjugate()}{conjugate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::conjugate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the conjugate of this quaternion in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & A quaternion to store the conjugate in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_ac8278a2d840aa1dc85bbb8e54ebd2d41}\label{classrtech_1_1math_1_1_quaternion_ac8278a2d840aa1dc85bbb8e54ebd2d41}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!createFromAxisAngle@{createFromAxisAngle}}
+\index{createFromAxisAngle@{createFromAxisAngle}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{createFromAxisAngle()}{createFromAxisAngle()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Quaternion\+::create\+From\+Axis\+Angle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{axis,  }\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates this quaternion equal to the rotation from the specified axis and angle and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & A vector describing the axis of rotation. \\
+\hline
+{\em angle} & The angle of rotation (in radians). \\
+\hline
+{\em dst} & A quaternion to store the conjugate in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a14558d1739372dfe469be5e16c873d09}\label{classrtech_1_1math_1_1_quaternion_a14558d1739372dfe469be5e16c873d09}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!createFromEuler@{createFromEuler}}
+\index{createFromEuler@{createFromEuler}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{createFromEuler()}{createFromEuler()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Quaternion\+::create\+From\+Euler (\begin{DoxyParamCaption}\item[{float}]{yaw,  }\item[{float}]{pitch,  }\item[{float}]{roll,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates this quaternion equal to the rotation from the specified euler angles and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em yaw} & The yaw angle (in radians) \\
+\hline
+{\em pitch} & The pitch angle (in radians) \\
+\hline
+{\em roll} & The roll angle (in radians) \\
+\hline
+{\em dst} & A quaternion to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a7c628fdae0811e9d9fe379c55a5077f3}\label{classrtech_1_1math_1_1_quaternion_a7c628fdae0811e9d9fe379c55a5077f3}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!createFromRotationMatrix@{createFromRotationMatrix}}
+\index{createFromRotationMatrix@{createFromRotationMatrix}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{createFromRotationMatrix()}{createFromRotationMatrix()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Quaternion\+::create\+From\+Rotation\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a quaternion equal to the rotational part of the specified matrix and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix. \\
+\hline
+{\em dst} & A quaternion to store the conjugate in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a71b036e52c9f880b9473dd79dbd24e2c}\label{classrtech_1_1math_1_1_quaternion_a71b036e52c9f880b9473dd79dbd24e2c}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!identity@{identity}}
+\index{identity@{identity}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{identity()}{identity()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}}\& rtech\+::math\+::\+Quaternion\+::identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the identity quaternion.
+
+\begin{DoxyReturn}{Returns}
+The identity quaternion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_abb2244b19c490799b4c0264e9d87d430}\label{classrtech_1_1math_1_1_quaternion_abb2244b19c490799b4c0264e9d87d430}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!inverse@{inverse}}
+\index{inverse@{inverse}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{inverse()}{inverse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Quaternion\+::inverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets this quaternion to the inverse of itself.
+
+Note that the inverse of a quaternion is equal to its conjugate when the quaternion is unit-\/length. For this reason, it is more efficient to use the conjugate method directly when you know your quaternion is already unit-\/length.
+
+\begin{DoxyReturn}{Returns}
+true if the inverse can be computed, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a9a32ad24d3660ae98a391e55b0164bc6}\label{classrtech_1_1math_1_1_quaternion_a9a32ad24d3660ae98a391e55b0164bc6}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!inverse@{inverse}}
+\index{inverse@{inverse}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{inverse()}{inverse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Quaternion\+::inverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the inverse of this quaternion in dst.
+
+Note that the inverse of a quaternion is equal to its conjugate when the quaternion is unit-\/length. For this reason, it is more efficient to use the conjugate method directly when you know your quaternion is already unit-\/length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & A quaternion to store the inverse in.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the inverse can be computed, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a72b949c219abde93633dce16a805a4a8}\label{classrtech_1_1math_1_1_quaternion_a72b949c219abde93633dce16a805a4a8}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!isIdentity@{isIdentity}}
+\index{isIdentity@{isIdentity}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{isIdentity()}{isIdentity()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Quaternion\+::is\+Identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Determines if this quaternion is equal to the identity quaternion.
+
+\begin{DoxyReturn}{Returns}
+true if it is the identity quaternion, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_af2c78d582e47a78f7e0715e3bb36e4b4}\label{classrtech_1_1math_1_1_quaternion_af2c78d582e47a78f7e0715e3bb36e4b4}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!isZero@{isZero}}
+\index{isZero@{isZero}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{isZero()}{isZero()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Quaternion\+::is\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Determines if this quaternion is all zeros.
+
+\begin{DoxyReturn}{Returns}
+true if this quaternion is all zeros, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a583f47b2ca976b1f021ea8afbb374488}\label{classrtech_1_1math_1_1_quaternion_a583f47b2ca976b1f021ea8afbb374488}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!lerp@{lerp}}
+\index{lerp@{lerp}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{lerp()}{lerp()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Quaternion\+::lerp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q2,  }\item[{float}]{t,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Interpolates between two quaternions using linear interpolation.
+
+The interpolation curve for linear interpolation between quaternions gives a straight line in quaternion space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q1} & The first quaternion. \\
+\hline
+{\em q2} & The second quaternion. \\
+\hline
+{\em t} & The interpolation coefficient. \\
+\hline
+{\em dst} & A quaternion to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_ae7b396b75786b5cb332dfa50a7f6e3eb}\label{classrtech_1_1math_1_1_quaternion_ae7b396b75786b5cb332dfa50a7f6e3eb}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!multiply@{multiply}}
+\index{multiply@{multiply}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::multiply (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q }\end{DoxyParamCaption})}
+
+Multiplies this quaternion by the specified one and stores the result in this quaternion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to multiply. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_ae6eab1475ce3304f6cbaff85e4964e5e}\label{classrtech_1_1math_1_1_quaternion_ae6eab1475ce3304f6cbaff85e4964e5e}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!multiply@{multiply}}
+\index{multiply@{multiply}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Quaternion\+::multiply (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q2,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Multiplies the specified quaternions and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q1} & The first quaternion. \\
+\hline
+{\em q2} & The second quaternion. \\
+\hline
+{\em dst} & A quaternion to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a1c8c88d05e06c8b454c39650b85aa9f8}\label{classrtech_1_1math_1_1_quaternion_a1c8c88d05e06c8b454c39650b85aa9f8}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!normalize@{normalize}}
+\index{normalize@{normalize}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Normalizes this quaternion to have unit length.
+
+If the quaternion already has unit length or if the length of the quaternion is zero, this method does nothing. \mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a30b52668d7a67b7db7d9b5ccb842d144}\label{classrtech_1_1math_1_1_quaternion_a30b52668d7a67b7db7d9b5ccb842d144}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!normalize@{normalize}}
+\index{normalize@{normalize}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::normalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Normalizes this quaternion and stores the result in dst.
+
+If the quaternion already has unit length or if the length of the quaternion is zero, this method simply copies this vector into dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & A quaternion to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a9f8e9ed0172f6339c84e4ddd8e21c19b}\label{classrtech_1_1math_1_1_quaternion_a9f8e9ed0172f6339c84e4ddd8e21c19b}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} rtech\+::math\+::\+Quaternion\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the quaternion product of this quaternion with the given quaternion.
+
+Note\+: this does not modify this quaternion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The quaternion product. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a730bb63440aa9074e23e0aec2ef16f58}\label{classrtech_1_1math_1_1_quaternion_a730bb63440aa9074e23e0aec2ef16f58}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}}\& rtech\+::math\+::\+Quaternion\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiplies this quaternion with the given quaternion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This quaternion, after the multiplication occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a8759320824e85984316028e92caceb5b}\label{classrtech_1_1math_1_1_quaternion_a8759320824e85984316028e92caceb5b}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!rotatePoint@{rotatePoint}}
+\index{rotatePoint@{rotatePoint}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{rotatePoint()}{rotatePoint()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::rotate\+Point (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{point,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Rotate the specified point by this quaternion and stores the result in dst
+
+Note\+: The point must normalized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The vector to rotate. \\
+\hline
+{\em dst} & The vector to store the result. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_afdf457819cd8d29f2aa34214e8e6f223}\label{classrtech_1_1math_1_1_quaternion_afdf457819cd8d29f2aa34214e8e6f223}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!set@{set}}
+\index{set@{set}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})}
+
+Sets the quaternion equal to the rotational part of the specified matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a79eeac39b28158c20143e2def50df7fa}\label{classrtech_1_1math_1_1_quaternion_a79eeac39b28158c20143e2def50df7fa}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!set@{set}}
+\index{set@{set}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q }\end{DoxyParamCaption})}
+
+Sets the elements of this quaternion to a copy of the specified quaternion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a677351944337561f5ef985e88a80f1a6}\label{classrtech_1_1math_1_1_quaternion_a677351944337561f5ef985e88a80f1a6}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!set@{set}}
+\index{set@{set}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{axis,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Sets the quaternion equal to the rotation from the specified axis and angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis of rotation. \\
+\hline
+{\em angle} & The angle of rotation (in radians). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_ae46c9527edf53116f80fad66fe1a0697}\label{classrtech_1_1math_1_1_quaternion_ae46c9527edf53116f80fad66fe1a0697}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!set@{set}}
+\index{set@{set}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::set (\begin{DoxyParamCaption}\item[{float $\ast$}]{array }\end{DoxyParamCaption})}
+
+Sets the elements of the quaternion from the values in the specified array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & An array containing the elements of the quaternion in the order x, y, z, w. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a0061d4ce8fa48a11172d22a54547c26f}\label{classrtech_1_1math_1_1_quaternion_a0061d4ce8fa48a11172d22a54547c26f}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!set@{set}}
+\index{set@{set}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::set (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})}
+
+Sets the elements of the quaternion to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new x-\/value. \\
+\hline
+{\em y} & The new y-\/value. \\
+\hline
+{\em z} & The new z-\/value. \\
+\hline
+{\em w} & The new w-\/value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a8635cc1cc8cbfac0b805a3512f1ecbac}\label{classrtech_1_1math_1_1_quaternion_a8635cc1cc8cbfac0b805a3512f1ecbac}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!setIdentity@{setIdentity}}
+\index{setIdentity@{setIdentity}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{setIdentity()}{setIdentity()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Quaternion\+::set\+Identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets this quaternion to be equal to the identity quaternion. \mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a027074324b1b9612519e384f7438e001}\label{classrtech_1_1math_1_1_quaternion_a027074324b1b9612519e384f7438e001}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!slerp@{slerp}}
+\index{slerp@{slerp}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{slerp()}{slerp()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Quaternion\+::slerp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q2,  }\item[{float}]{t,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Interpolates between two quaternions using spherical linear interpolation.
+
+Spherical linear interpolation provides smooth transitions between different orientations and is often useful for animating models or cameras in 3D.
+
+Note\+: For accurate interpolation, the input quaternions must be at (or close to) unit length. This method does not automatically normalize the input quaternions, so it is up to the caller to ensure they call normalize beforehand, if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q1} & The first quaternion. \\
+\hline
+{\em q2} & The second quaternion. \\
+\hline
+{\em t} & The interpolation coefficient. \\
+\hline
+{\em dst} & A quaternion to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a8d68c63a8262aa4dec5033bb9126abc0}\label{classrtech_1_1math_1_1_quaternion_a8d68c63a8262aa4dec5033bb9126abc0}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!squad@{squad}}
+\index{squad@{squad}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{squad()}{squad()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Quaternion\+::squad (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q2,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{s1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{s2,  }\item[{float}]{t,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Interpolates over a series of quaternions using spherical spline interpolation.
+
+Spherical spline interpolation provides smooth transitions between different orientations and is often useful for animating models or cameras in 3D.
+
+Note\+: For accurate interpolation, the input quaternions must be unit. This method does not automatically normalize the input quaternions, so it is up to the caller to ensure they call normalize beforehand, if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q1} & The first quaternion. \\
+\hline
+{\em q2} & The second quaternion. \\
+\hline
+{\em s1} & The first control point. \\
+\hline
+{\em s2} & The second control point. \\
+\hline
+{\em t} & The interpolation coefficient. \\
+\hline
+{\em dst} & A quaternion to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a767933bb400a9e80567f8576e3662840}\label{classrtech_1_1math_1_1_quaternion_a767933bb400a9e80567f8576e3662840}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!toAxisAngle@{toAxisAngle}}
+\index{toAxisAngle@{toAxisAngle}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{toAxisAngle()}{toAxisAngle()}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Quaternion\+::to\+Axis\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{e }\end{DoxyParamCaption}) const}
+
+Converts this Quaternion4f to axis-\/angle notation. The axis is normalized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The Vector3f which stores the axis.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle (in radians). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a54e8dec412def956e098d90c62bd75c5}\label{classrtech_1_1math_1_1_quaternion_a54e8dec412def956e098d90c62bd75c5}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!zero@{zero}}
+\index{zero@{zero}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{zero()}{zero()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}}\& rtech\+::math\+::\+Quaternion\+::zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the quaternion with all zeros.
+
+\begin{DoxyReturn}{Returns}
+The quaternion. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a6a9407cdbc2385bb64f7d9f296931d4b}\label{classrtech_1_1math_1_1_quaternion_a6a9407cdbc2385bb64f7d9f296931d4b}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!w@{w}}
+\index{w@{w}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Quaternion\+::w}
+
+The scalar component of the quaternion. \mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a3da0cecad080ef5725d6e2e0c4b091d2}\label{classrtech_1_1math_1_1_quaternion_a3da0cecad080ef5725d6e2e0c4b091d2}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!x@{x}}
+\index{x@{x}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Quaternion\+::x}
+
+The x-\/value of the quaternion\textquotesingle{}s vector component. \mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_a858076ea603d377d6bad3743a6849803}\label{classrtech_1_1math_1_1_quaternion_a858076ea603d377d6bad3743a6849803}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!y@{y}}
+\index{y@{y}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Quaternion\+::y}
+
+The y-\/value of the quaternion\textquotesingle{}s vector component. \mbox{\Hypertarget{classrtech_1_1math_1_1_quaternion_ac52306efa1ebf8552a6bbc586a24946f}\label{classrtech_1_1math_1_1_quaternion_ac52306efa1ebf8552a6bbc586a24946f}} 
+\index{rtech::math::Quaternion@{rtech::math::Quaternion}!z@{z}}
+\index{z@{z}!rtech::math::Quaternion@{rtech::math::Quaternion}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Quaternion\+::z}
+
+The z-\/value of the quaternion\textquotesingle{}s vector component. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/math/quaternion.\+h\end{DoxyCompactItemize}

@@ -7,39 +7,143 @@
 {\ttfamily \#include $<$stddef.\+h$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
-{\ttfamily \#include $<$glm/ext.\+hpp$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$logger.\+h$>$}\newline
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{common_8h_ad8ce4efaa307683d3d763b37b4711c53}\label{common_8h_ad8ce4efaa307683d3d763b37b4711c53}} 
 \#define {\bfseries A\+PI}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{})))
+\item 
+\mbox{\Hypertarget{common_8h_a4820af02738dad22f1bf863b8d20c36a}\label{common_8h_a4820af02738dad22f1bf863b8d20c36a}} 
+\#define {\bfseries \+\_\+\+A\+S\+S\+E\+RT}(expression)
+\item 
+\mbox{\Hypertarget{common_8h_aceb00b4628e2736090a63faa54a05ff1}\label{common_8h_aceb00b4628e2736090a63faa54a05ff1}} 
+\#define {\bfseries \+\_\+\+\_\+current\+\_\+\+\_\+func\+\_\+\+\_\+}~\+\_\+\+\_\+func\+\_\+\+\_\+
+\item 
+\mbox{\Hypertarget{common_8h_a0f722bf86505c5431e71505f46b5fd21}\label{common_8h_a0f722bf86505c5431e71505f46b5fd21}} 
+\#define {\bfseries D\+E\+B\+U\+G\+\_\+\+B\+R\+E\+AK}()
+\item 
+\mbox{\Hypertarget{common_8h_ae2eab65745e7f093a97fbd4421261c84}\label{common_8h_ae2eab65745e7f093a97fbd4421261c84}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+D\+E\+G\+\_\+\+T\+O\+\_\+\+R\+AD}(x)~((x) $\ast$ 0.\+0174532925f)
+\item 
+\mbox{\Hypertarget{common_8h_a7144cae826260514e7a61f405c77e848}\label{common_8h_a7144cae826260514e7a61f405c77e848}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+R\+A\+D\+\_\+\+T\+O\+\_\+\+D\+EG}(x)~((x)$\ast$ 57.\+29577951f)
+\item 
+\mbox{\Hypertarget{common_8h_afd7ff2cb9862a1ae13632c68b5a3d437}\label{common_8h_afd7ff2cb9862a1ae13632c68b5a3d437}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+M\+I\+N\+U\+S1\+\_\+1}()~((2.\+0f$\ast$((float)rand()/R\+A\+N\+D\+\_\+\+M\+AX))-\/1.\+0f)
+\item 
+\mbox{\Hypertarget{common_8h_ab337ef3f54639b8e4a640e1dea8baa53}\label{common_8h_ab337ef3f54639b8e4a640e1dea8baa53}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+0\+\_\+1}()~((float)rand()/R\+A\+N\+D\+\_\+\+M\+AX)
+\item 
+\mbox{\Hypertarget{common_8h_a6f2a4ca36ef6be8a5066d3cba2a783d6}\label{common_8h_a6f2a4ca36ef6be8a5066d3cba2a783d6}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+F\+L\+O\+A\+T\+\_\+\+S\+M\+A\+LL}~1.\+0e-\/37f
+\item 
+\mbox{\Hypertarget{common_8h_a4e04e7539288cb3368801815f19628dc}\label{common_8h_a4e04e7539288cb3368801815f19628dc}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+T\+O\+L\+E\+R\+A\+N\+CE}~2e-\/37f
+\item 
+\mbox{\Hypertarget{common_8h_a9ee56816d83d03ce2644259a848f0ecb}\label{common_8h_a9ee56816d83d03ce2644259a848f0ecb}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+E}~2.\+71828182845904523536f
+\item 
+\mbox{\Hypertarget{common_8h_a19f345f917847c0770162a49255d3934}\label{common_8h_a19f345f917847c0770162a49255d3934}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+L\+O\+G10E}~0.\+4342944819032518f
+\item 
+\mbox{\Hypertarget{common_8h_ab15c60d02eab5731a6f01ca253a89a97}\label{common_8h_ab15c60d02eab5731a6f01ca253a89a97}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+L\+O\+G2E}~1.\+442695040888963387f
+\item 
+\mbox{\Hypertarget{common_8h_ac58cbaeae310f551049f77b7c098599e}\label{common_8h_ac58cbaeae310f551049f77b7c098599e}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+PI}~3.\+14159265358979323846f
+\item 
+\mbox{\Hypertarget{common_8h_af1ad3d6a81f0afcf4c9805c600009ea6}\label{common_8h_af1ad3d6a81f0afcf4c9805c600009ea6}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+P\+I\+O\+V\+E\+R2}~1.\+57079632679489661923f
+\item 
+\mbox{\Hypertarget{common_8h_a384641d5e8f93a9bd6cd2c5ce433fdf1}\label{common_8h_a384641d5e8f93a9bd6cd2c5ce433fdf1}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+P\+I\+O\+V\+E\+R4}~0.\+785398163397448309616f
+\item 
+\mbox{\Hypertarget{common_8h_a23b8613879dde44d1a7f26ab2b28bf89}\label{common_8h_a23b8613879dde44d1a7f26ab2b28bf89}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+P\+I\+X2}~6.\+28318530717958647693f
+\item 
+\mbox{\Hypertarget{common_8h_af5c9d91107dc710f9abfa42cf2be2e6f}\label{common_8h_af5c9d91107dc710f9abfa42cf2be2e6f}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+E\+P\+S\+I\+L\+ON}~0.\+000001f
+\item 
+\mbox{\Hypertarget{common_8h_ab9406c2258f4435518fe818c3fef9aa5}\label{common_8h_ab9406c2258f4435518fe818c3fef9aa5}} 
+\#define {\bfseries M\+A\+T\+H\+\_\+\+C\+L\+A\+MP}(x,  lo,  hi)~((x $<$ lo) ? lo \+: ((x $>$ hi) ? hi \+: x))
+\item 
+\mbox{\Hypertarget{common_8h_a08dfac3cca9601a02fc88356cc078e1d}\label{common_8h_a08dfac3cca9601a02fc88356cc078e1d}} 
+\#define {\bfseries M\+\_\+1\+\_\+\+PI}~0.\+31830988618379067154
+\item 
+\#define {\bfseries \+\_\+\+E\+R\+R\+OR}(...)
+\item 
+\#define {\bfseries \+\_\+\+W\+A\+RN}(...)
 \end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{common_8h_ad6621e3886b6c1bc8923bbd6f36f07a5}\label{common_8h_ad6621e3886b6c1bc8923bbd6f36f07a5}} 
-typedef glm\+::vec2 {\bfseries rtech\+::\+Vec2}
+\mbox{\Hypertarget{common_8h_a9753788b1500514fc2d947702c937756}\label{common_8h_a9753788b1500514fc2d947702c937756}} 
+{\footnotesize template$<$class T $>$ }\\using {\bfseries rtech\+::\+Ref} = std\+::shared\+\_\+ptr$<$ T $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{common_8h_a3cd395c136e6bd4ad8e993b45a0cc0d0}\label{common_8h_a3cd395c136e6bd4ad8e993b45a0cc0d0}} 
-typedef glm\+::vec3 {\bfseries rtech\+::\+Vec3}
-\item 
-\mbox{\Hypertarget{common_8h_a1808d47933f6ba2dd10859d6899ef468}\label{common_8h_a1808d47933f6ba2dd10859d6899ef468}} 
-typedef glm\+::vec4 {\bfseries rtech\+::\+Vec4}
-\item 
-\mbox{\Hypertarget{common_8h_af1b6adf3eb753314d59a24d742b39436}\label{common_8h_af1b6adf3eb753314d59a24d742b39436}} 
-typedef glm\+::mat4 {\bfseries rtech\+::\+Matrix}
-\item 
-\mbox{\Hypertarget{common_8h_a0a69f4f8de5c7ae2351081b94be45b37}\label{common_8h_a0a69f4f8de5c7ae2351081b94be45b37}} 
-typedef glm\+::mat3 {\bfseries rtech\+::\+Matrix3}
-\item 
-\mbox{\Hypertarget{common_8h_ade1ff0ed09c2999496fb485521e2bd01}\label{common_8h_ade1ff0ed09c2999496fb485521e2bd01}} 
-typedef glm\+::quat {\bfseries rtech\+::\+Quaternion}
-\item 
-\mbox{\Hypertarget{common_8h_a4e0dfbad2c30e46f2b2cc5c618b567f2}\label{common_8h_a4e0dfbad2c30e46f2b2cc5c618b567f2}} 
-{\footnotesize template$<$class T $>$ }\\using {\bfseries rtech\+::\+Ptr} = std\+::shared\+\_\+ptr$<$ T $>$
+\mbox{\Hypertarget{common_8h_a6188da77921555563417ca7be8b092ad}\label{common_8h_a6188da77921555563417ca7be8b092ad}} 
+void {\bfseries rprint} (const char $\ast$format,...)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 rtech 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{common_8h_a482f41f24ea06f1c65a1325bc1c6cebf}\label{common_8h_a482f41f24ea06f1c65a1325bc1c6cebf}} 
+\index{common.h@{common.h}!\_ERROR@{\_ERROR}}
+\index{\_ERROR@{\_ERROR}!common.h@{common.h}}
+\doxysubsubsection{\texorpdfstring{\_ERROR}{\_ERROR}}
+{\footnotesize\ttfamily \#define \+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{        rtech::Logger::log}}(rtech::Logger::LEVEL\_ERROR, \textcolor{stringliteral}{"\%s -\/-\/ "}, \_\_current\_\_func\_\_); \mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{        rtech::Logger::log}}(rtech::Logger::LEVEL\_ERROR, \_\_VA\_ARGS\_\_); \mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{        rtech::Logger::log}}(rtech::Logger::LEVEL\_ERROR, \textcolor{stringliteral}{"\(\backslash\)n"}); \(\backslash\)}
+\DoxyCodeLine{        DEBUG\_BREAK(); \(\backslash\)}
+\DoxyCodeLine{        assert(0); \(\backslash\)}
+\DoxyCodeLine{        std::exit(-\/1); \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{common_8h_ae9f034024edc37114b5a3eae6ad694c9}\label{common_8h_ae9f034024edc37114b5a3eae6ad694c9}} 
+\index{common.h@{common.h}!\_WARN@{\_WARN}}
+\index{\_WARN@{\_WARN}!common.h@{common.h}}
+\doxysubsubsection{\texorpdfstring{\_WARN}{\_WARN}}
+{\footnotesize\ttfamily \#define \+\_\+\+W\+A\+RN(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{        rtech::Logger::log}}(rtech::Logger::LEVEL\_WARN, \textcolor{stringliteral}{"\%s -\/-\/ "}, \_\_current\_\_func\_\_); \mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{        rtech::Logger::log}}(rtech::Logger::LEVEL\_WARN, \_\_VA\_ARGS\_\_); \mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{        rtech::Logger::log}}(rtech::Logger::LEVEL\_WARN, \textcolor{stringliteral}{"\(\backslash\)n"}); \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}

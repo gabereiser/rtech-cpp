@@ -1,0 +1,1699 @@
+\hypertarget{classrtech_1_1math_1_1_matrix}{}\doxysection{rtech\+::math\+::Matrix Class Reference}
+\label{classrtech_1_1math_1_1_matrix}\index{rtech::math::Matrix@{rtech::math::Matrix}}
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a08fed91eeafd6d83d7c74d84cb6ac2ee}{Matrix}} ()
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a4d64f21ed719b684d28256fd2daaee2a}{Matrix}} (float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a6bef76d81881a3c452e866d8c22242e1}{Matrix}} (const float $\ast$\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a9597920616ff510ca2166fc09b49d1e5}{Matrix}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&copy)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aa9c159b285f224bcc9dafa4c632d600e}{$\sim$\+Matrix}} ()
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aeec3a1fa40def3c9b606eceeba5fbd8a}{add}} (float scalar)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_afb44f3eba72156adb90687f78b269296}{add}} (float scalar, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_acafb90ee66434e488fea1447ba576952}{add}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a8c9a542d32853d2b80ca0773500853c6}{decompose}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ac32568e1b8d28d4c6a282242d907bcde}{scale}}, \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$rotation, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$translation) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aaa546914d3186afef4030139aad1fad9}{determinant}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a1c0fb328243adccbd3c2df37364a8161}{get\+Scale}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ac32568e1b8d28d4c6a282242d907bcde}{scale}}) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a6f00a3bb6b98f31f5c49d2af6b93e757}{get\+Rotation}} (\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$rotation) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_afbd02937ac1e82e24b5316bd3abdc670}{get\+Translation}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$translation) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a8f6e13b6ce01f5820449b4f0ceec376a}{get\+Up\+Vector}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a31465459833796e1d8ea831b53d6459e}{get\+Down\+Vector}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aa2151a0d0be02ed1fde0bd5470e7be75}{get\+Left\+Vector}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aa648093358b298d19efded669d29e6c1}{get\+Right\+Vector}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a3b9eabd6ef13adbfbc18c506b093e3b9}{get\+Forward\+Vector}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aedd9f9764b23a9f9ea110b130a91be9e}{get\+Back\+Vector}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aacfa0f1639afb7b5a3fe64f305b5e0d5}{invert}} ()
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a0e6e51b52ae32e103281f6fceaedf2fe}{invert}} (\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_af98dd2db4cd172b7a046437ac3bf797b}{is\+Identity}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a83e60f8b36669d1c1e4761bb886ec04c}{multiply}} (float scalar)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aba2bb5e01f57e4658e23c52c398427d4}{multiply}} (float scalar, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a32d2a7a490c3abe61f76375737498d5c}{multiply}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a0c2134057f01762b0bc377c7dcfcce87}{negate}} ()
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a493b66baf8e3f559f29d6e397049a4b9}{negate}} (\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ad7c5c0e7177e53a1406796e31ff7502b}{rotate}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a15243a5def5bcc3036d77b9f8aab8926}{rotate}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&q, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_abe221a7fecb8614ac25a6231780725df}{rotate}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&axis, float angle)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ade033b22907c9f2d6861d96746e8bccf}{rotate}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&axis, float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ac013d67eeb01d56be9cd65bf6fec94f6}{rotateX}} (float angle)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a1ef612a1b06948ee360cf6d69ad32b5e}{rotateX}} (float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a139095b1b09daf76af45adda7c567137}{rotateY}} (float angle)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a70c6c3a67f1647eff3ee8ace2c8061e4}{rotateY}} (float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a501a257dd5133229c73dad2d5e29333e}{rotateZ}} (float angle)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ab74e096f5b9d41a5582b359872c0cd18}{rotateZ}} (float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ac32568e1b8d28d4c6a282242d907bcde}{scale}} (float value)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a037faa608e731286e01262b1e308fd66}{scale}} (float value, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aa8dce62ad63d9d3456ebded55792a932}{scale}} (float x\+Scale, float y\+Scale, float z\+Scale)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a3b8f72b582db1ca675908043e762fe9f}{scale}} (float x\+Scale, float y\+Scale, float z\+Scale, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a501448967d45a028d95b33832e99e40b}{scale}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&s)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7e34404805dd1266e5d1b5ea792b0eaa}{scale}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&s, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a51a2f7f9c9f970b3ffefaf511aab7c3b}{set}} (float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ae288edf78314c97359548e60aec224ae}{set}} (const float $\ast$\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a61f57205ed10c46984590a918c70138d}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a19d2f33b3e07b9936de6d2231f6c1686}{set\+Identity}} ()
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ab454f0f02a2b3a9ee795dce57d03a9b7}{set\+Zero}} ()
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a06d0e7fdd989d46f884dbd46f79245cd}{subtract}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ac86aefb15b3921beefb79d4df244f784}{transform\+Point}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$point) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a70c4a62c4cee363a99ec498d6d2e27f6}{transform\+Point}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&point, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a355f475e41fdf7533d4e09d688fb97ff}{transform\+Vector}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$vector) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a1ab128d792b95a2974272d66c31c5227}{transform\+Vector}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&vector, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a0c47ffdc19367fa08c3984e72c0bab92}{transform\+Vector}} (float x, float y, float z, float w, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a63530afb7dc9d9c5f35c08c7aac21a5d}{transform\+Vector}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector4}{Vector4}} $\ast$vector) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ab3c3839330af9c99ef45051f397ecc3e}{transform\+Vector}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector4}{Vector4}} \&vector, \mbox{\hyperlink{classrtech_1_1math_1_1_vector4}{Vector4}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a4ce5c2d0f12dafe1abe793d8d06d0466}{translate}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ad1cbe7bbd1a44465d9fea573ec35dc1d}{translate}} (float x, float y, float z, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ac2a7f92d26b3654fb7f74c61cb71d554}{translate}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&t)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a6947d42f68875eb1fb7a9e009078b603}{translate}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&t, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ac0bd34a8c911499e5956db92a19b9c8f}{transpose}} ()
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a509905cb6065422f46c75ab08e882b0c}{transpose}} (\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst) const
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a624d5b7a5fb26284e2be63f3f5f9cef2}{operator+}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}}) const
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a3364e32ee7b3330896abcb17a3e1aec7}{operator+=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a2cdbdeffd893453b5a79141e61aa93f9}{operator-\/}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}}) const
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a6bb0fde7826bef52a0177fb52e7eaf69}{operator-\/=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ab466266111a13405b08730c9f201ea3b}{operator-\/}} () const
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a6ff4dccf3503f9eb5f9d21a2d18c8dae}{operator$\ast$}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}}) const
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a323e41dafba6d45c488624046a6c126e}{operator$\ast$=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a9b42d0b620d7fd1921e0b807775da375}{identity}} ()
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a76e0449086cf5ce0eb4006aba1509fd6}{zero}} ()
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ad92e07504872f28855cfdb0c259c0c97}{create\+Look\+At}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&eye\+Position, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&target\+Position, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&up, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a700b47b1eaacb983df13fd1e218b2044}{create\+Look\+At}} (float eye\+PositionX, float eye\+PositionY, float eye\+PositionZ, float target\+CenterX, float target\+CenterY, float target\+CenterZ, float upX, float upY, float upZ, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a4e41607697a29b1adbfa9b325e79a1be}{create\+Perspective}} (float field\+Of\+View, float aspect\+Ratio, float z\+Near\+Plane, float z\+Far\+Plane, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a97e16233162e474a83c0ecfce799c84a}{create\+Orthographic}} (float width, float height, float z\+Near\+Plane, float z\+Far\+Plane, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_afbcb1d982226d0d27850dce348dda55d}{create\+Orthographic\+Off\+Center}} (float left, float right, float bottom, float top, float z\+Near\+Plane, float z\+Far\+Plane, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_af81b291b223d323ef90c5bf1f32a3c33}{create\+Billboard}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&object\+Position, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&camera\+Position, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&camera\+Up\+Vector, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a31abfce9cf408049bcd454f935ca4516}{create\+Billboard}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&object\+Position, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&camera\+Position, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&camera\+Up\+Vector, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&camera\+Forward\+Vector, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a8beb4ffc7aa86645f7bc1aa5a37a8eed}{create\+Reflection}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&plane, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a6c1b98d5f141deec2ddbddf438973412}{create\+Scale}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ac32568e1b8d28d4c6a282242d907bcde}{scale}}, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a29384f4bec5b79db15d909728616fb6f}{create\+Scale}} (float x\+Scale, float y\+Scale, float z\+Scale, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a8add488a92c56b35e287b3c96b8ffe18}{create\+Rotation}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&quat, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a5246aecacbad091691828e947293f9d4}{create\+Rotation}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&axis, float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a0c07b471e5b0df9ef35b02d9c217f9f1}{create\+RotationX}} (float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_ae4400cabfe57991c61ce3aa87b7d7bcd}{create\+RotationY}} (float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a36211e9bfc5e6358b0dfde871235e304}{create\+RotationZ}} (float angle, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a291e41d1af09954fb80eda18cb0db93e}{create\+From\+Euler}} (float yaw, float pitch, float roll, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a5c9d957d1f9551891a495e0aa4e7b065}{create\+Translation}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&translation, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a0db455c684aa72bcffaab4151ac64224}{create\+Translation}} (float x\+Translation, float y\+Translation, float z\+Translation, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_abea171bcf97f02077d9b454f2e8e549f}{add}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m1, const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m2, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a35d6f53b054a7f3281a6877c73780aa7}{multiply}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}}, float scalar, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a54f5ae590afd6ed57614e78418d0af15}{multiply}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m1, const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m2, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_aed137778201e95a0fe6b1e39eedd28c0}{subtract}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m1, const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&m2, \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$dst)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}{m}} \mbox{[}16\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a 4 x 4 floating point matrix representing a 3D transformation.
+
+Vectors are treated as columns, resulting in a matrix that is represented as follows, where x, y and z are the translation components of the matrix\+:
+
+1 0 0 x 0 1 0 y 0 0 1 z 0 0 0 1
+
+This matrix class is directly compatible with Open\+GL since its elements are laid out in memory exactly as they are expected by Open\+GL. The matrix uses column-\/major format such that array indices increase down column first. Since matrix multiplication is not commutative, multiplication must be done in the correct order when combining transformations. Suppose we have a translation matrix T and a rotation matrix R. To first rotate an object around the origin and then translate it, you would multiply the two matrices as TR.
+
+Likewise, to first translate the object and then rotate it, you would do RT. So generally, matrices must be multiplied in the reverse order in which you want the transformations to take place (this also applies to the scale, rotate, and translate methods below; these methods are convenience methods for post-\/multiplying by a matrix representing a scale, rotation, or translation).
+
+In the case of repeated local transformations (i.\+e. rotate around the Z-\/axis by 0.\+76 radians, then translate by 2.\+1 along the X-\/axis, then ...), it is better to use the Transform class (which is optimized for that kind of usage).
+
+\begin{DoxySeeAlso}{See also}
+Transform 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a08fed91eeafd6d83d7c74d84cb6ac2ee}\label{classrtech_1_1math_1_1_matrix_a08fed91eeafd6d83d7c74d84cb6ac2ee}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Matrix\+::\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a matrix initialized to the identity matrix\+:
+
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 \mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a4d64f21ed719b684d28256fd2daaee2a}\label{classrtech_1_1math_1_1_matrix_a4d64f21ed719b684d28256fd2daaee2a}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{float}]{m11,  }\item[{float}]{m12,  }\item[{float}]{m13,  }\item[{float}]{m14,  }\item[{float}]{m21,  }\item[{float}]{m22,  }\item[{float}]{m23,  }\item[{float}]{m24,  }\item[{float}]{m31,  }\item[{float}]{m32,  }\item[{float}]{m33,  }\item[{float}]{m34,  }\item[{float}]{m41,  }\item[{float}]{m42,  }\item[{float}]{m43,  }\item[{float}]{m44 }\end{DoxyParamCaption})}
+
+Constructs a matrix initialized to the specified value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m11} & The first element of the first row. \\
+\hline
+{\em m12} & The second element of the first row. \\
+\hline
+{\em m13} & The third element of the first row. \\
+\hline
+{\em m14} & The fourth element of the first row. \\
+\hline
+{\em m21} & The first element of the second row. \\
+\hline
+{\em m22} & The second element of the second row. \\
+\hline
+{\em m23} & The third element of the second row. \\
+\hline
+{\em m24} & The fourth element of the second row. \\
+\hline
+{\em m31} & The first element of the third row. \\
+\hline
+{\em m32} & The second element of the third row. \\
+\hline
+{\em m33} & The third element of the third row. \\
+\hline
+{\em m34} & The fourth element of the third row. \\
+\hline
+{\em m41} & The first element of the fourth row. \\
+\hline
+{\em m42} & The second element of the fourth row. \\
+\hline
+{\em m43} & The third element of the fourth row. \\
+\hline
+{\em m44} & The fourth element of the fourth row. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a6bef76d81881a3c452e866d8c22242e1}\label{classrtech_1_1math_1_1_matrix_a6bef76d81881a3c452e866d8c22242e1}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{const float $\ast$}]{m }\end{DoxyParamCaption})}
+
+Creates a matrix initialized to the specified column-\/major array.
+
+The passed-\/in array is in column-\/major order, so the memory layout of the array is as follows\+: \begin{DoxyVerb}0   4   8   12
+1   5   9   13
+2   6   10  14
+3   7   11  15
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & An array containing 16 elements in column-\/major order. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a9597920616ff510ca2166fc09b49d1e5}\label{classrtech_1_1math_1_1_matrix_a9597920616ff510ca2166fc09b49d1e5}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{copy }\end{DoxyParamCaption})}
+
+Constructs a new matrix by copying the values from the specified matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & The matrix to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aa9c159b285f224bcc9dafa4c632d600e}\label{classrtech_1_1math_1_1_matrix_aa9c159b285f224bcc9dafa4c632d600e}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!````~Matrix@{$\sim$Matrix}}
+\index{````~Matrix@{$\sim$Matrix}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{$\sim$Matrix()}{~Matrix()}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Matrix\+::$\sim$\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_acafb90ee66434e488fea1447ba576952}\label{classrtech_1_1math_1_1_matrix_acafb90ee66434e488fea1447ba576952}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!add@{add}}
+\index{add@{add}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})}
+
+Adds the specified matrix to this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_abea171bcf97f02077d9b454f2e8e549f}\label{classrtech_1_1math_1_1_matrix_abea171bcf97f02077d9b454f2e8e549f}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!add@{add}}
+\index{add@{add}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m2,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds the specified matrices and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m1} & The first matrix. \\
+\hline
+{\em m2} & The second matrix. \\
+\hline
+{\em dst} & The destination matrix to add to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aeec3a1fa40def3c9b606eceeba5fbd8a}\label{classrtech_1_1math_1_1_matrix_aeec3a1fa40def3c9b606eceeba5fbd8a}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!add@{add}}
+\index{add@{add}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::add (\begin{DoxyParamCaption}\item[{float}]{scalar }\end{DoxyParamCaption})}
+
+Adds a scalar value to each component of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalar} & The scalar to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_afb44f3eba72156adb90687f78b269296}\label{classrtech_1_1math_1_1_matrix_afb44f3eba72156adb90687f78b269296}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!add@{add}}
+\index{add@{add}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::add (\begin{DoxyParamCaption}\item[{float}]{scalar,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})}
+
+Adds a scalar value to each component of this matrix and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalar} & The scalar value to add. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a31abfce9cf408049bcd454f935ca4516}\label{classrtech_1_1math_1_1_matrix_a31abfce9cf408049bcd454f935ca4516}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createBillboard@{createBillboard}}
+\index{createBillboard@{createBillboard}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createBillboard()}{createBillboard()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Billboard (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{object\+Position,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{camera\+Position,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{camera\+Up\+Vector,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{camera\+Forward\+Vector,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a spherical billboard that rotates around a specified object position with provision for a safe default orientation.
+
+This method computes the facing direction of the billboard from the object position and camera position. When the object and camera positions are too close, the matrix will not be accurate. To avoid this problem, this method uses the specified camera forward vector if the positions are too close. (See the other overload of create\+Billboard for an alternative approach).
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Position} & The position of the object the billboard will rotate around. \\
+\hline
+{\em camera\+Position} & The position of the camera. \\
+\hline
+{\em camera\+Up\+Vector} & The up vector of the camera. \\
+\hline
+{\em camera\+Forward\+Vector} & The forward vector of the camera, used if the positions are too close. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_af81b291b223d323ef90c5bf1f32a3c33}\label{classrtech_1_1math_1_1_matrix_af81b291b223d323ef90c5bf1f32a3c33}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createBillboard@{createBillboard}}
+\index{createBillboard@{createBillboard}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createBillboard()}{createBillboard()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Billboard (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{object\+Position,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{camera\+Position,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{camera\+Up\+Vector,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a spherical billboard that rotates around a specified object position.
+
+This method computes the facing direction of the billboard from the object position and camera position. When the object and camera positions are too close, the matrix will not be accurate. To avoid this problem, this method defaults to the identity rotation if the positions are too close. (See the other overload of create\+Billboard for an alternative approach).
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+Position} & The position of the object the billboard will rotate around. \\
+\hline
+{\em camera\+Position} & The position of the camera. \\
+\hline
+{\em camera\+Up\+Vector} & The up vector of the camera. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a291e41d1af09954fb80eda18cb0db93e}\label{classrtech_1_1math_1_1_matrix_a291e41d1af09954fb80eda18cb0db93e}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createFromEuler@{createFromEuler}}
+\index{createFromEuler@{createFromEuler}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createFromEuler()}{createFromEuler()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+From\+Euler (\begin{DoxyParamCaption}\item[{float}]{yaw,  }\item[{float}]{pitch,  }\item[{float}]{roll,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a matrix describing the yaw, pitch and roll rotations
+
+
+\begin{DoxyParams}{Parameters}
+{\em yaw} & The yaw angle (in radians) \\
+\hline
+{\em pitch} & The pitch angle (in radians) \\
+\hline
+{\em roll} & The roll angle (in radians) \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ad92e07504872f28855cfdb0c259c0c97}\label{classrtech_1_1math_1_1_matrix_ad92e07504872f28855cfdb0c259c0c97}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createLookAt@{createLookAt}}
+\index{createLookAt@{createLookAt}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createLookAt()}{createLookAt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Look\+At (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{eye\+Position,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{target\+Position,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{up,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a view matrix based on the specified input parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eye\+Position} & The eye position. \\
+\hline
+{\em target\+Position} & The target\textquotesingle{}s center position. \\
+\hline
+{\em up} & The up vector. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a700b47b1eaacb983df13fd1e218b2044}\label{classrtech_1_1math_1_1_matrix_a700b47b1eaacb983df13fd1e218b2044}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createLookAt@{createLookAt}}
+\index{createLookAt@{createLookAt}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createLookAt()}{createLookAt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Look\+At (\begin{DoxyParamCaption}\item[{float}]{eye\+PositionX,  }\item[{float}]{eye\+PositionY,  }\item[{float}]{eye\+PositionZ,  }\item[{float}]{target\+CenterX,  }\item[{float}]{target\+CenterY,  }\item[{float}]{target\+CenterZ,  }\item[{float}]{upX,  }\item[{float}]{upY,  }\item[{float}]{upZ,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a view matrix based on the specified input parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em eye\+PositionX} & The eye x-\/coordinate position. \\
+\hline
+{\em eye\+PositionY} & The eye y-\/coordinate position. \\
+\hline
+{\em eye\+PositionZ} & The eye z-\/coordinate position. \\
+\hline
+{\em target\+CenterX} & The target\textquotesingle{}s center x-\/coordinate position. \\
+\hline
+{\em target\+CenterY} & The target\textquotesingle{}s center y-\/coordinate position. \\
+\hline
+{\em target\+CenterZ} & The target\textquotesingle{}s center z-\/coordinate position. \\
+\hline
+{\em upX} & The up vector x-\/coordinate value. \\
+\hline
+{\em upY} & The up vector y-\/coordinate value. \\
+\hline
+{\em upZ} & The up vector z-\/coordinate value. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a97e16233162e474a83c0ecfce799c84a}\label{classrtech_1_1math_1_1_matrix_a97e16233162e474a83c0ecfce799c84a}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createOrthographic@{createOrthographic}}
+\index{createOrthographic@{createOrthographic}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createOrthographic()}{createOrthographic()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Orthographic (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{z\+Near\+Plane,  }\item[{float}]{z\+Far\+Plane,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an orthographic projection matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the view. \\
+\hline
+{\em height} & The height of the view. \\
+\hline
+{\em z\+Near\+Plane} & The minimum z-\/value of the view volume. \\
+\hline
+{\em z\+Far\+Plane} & The maximum z-\/value of the view volume. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_afbcb1d982226d0d27850dce348dda55d}\label{classrtech_1_1math_1_1_matrix_afbcb1d982226d0d27850dce348dda55d}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createOrthographicOffCenter@{createOrthographicOffCenter}}
+\index{createOrthographicOffCenter@{createOrthographicOffCenter}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createOrthographicOffCenter()}{createOrthographicOffCenter()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Orthographic\+Off\+Center (\begin{DoxyParamCaption}\item[{float}]{left,  }\item[{float}]{right,  }\item[{float}]{bottom,  }\item[{float}]{top,  }\item[{float}]{z\+Near\+Plane,  }\item[{float}]{z\+Far\+Plane,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an orthographic projection matrix.
+
+Projection space refers to the space after applying projection transformation from view space. After the projection transformation, visible content has x and y coordinates ranging from -\/1 to 1, and z coordinates ranging from 0 to 1.
+
+Unlike perspective projection, in orthographic projection there is no perspective foreshortening.
+
+The viewable area of this orthographic projection extends from left to right on the x-\/axis, bottom to top on the y-\/axis, and z\+Near\+Plane to z\+Far\+Plane on the z-\/axis. These values are relative to the position and x, y, and z-\/axes of the view. To obtain the viewable area (in world space) of a scene, create a Bounding\+Frustum and pass the combined view and projection matrix to the constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The minimum x-\/value of the view volume. \\
+\hline
+{\em right} & The maximum x-\/value of the view volume. \\
+\hline
+{\em bottom} & The minimum y-\/value of the view volume. \\
+\hline
+{\em top} & The maximum y-\/value of the view volume. \\
+\hline
+{\em z\+Near\+Plane} & The minimum z-\/value of the view volume. \\
+\hline
+{\em z\+Far\+Plane} & The maximum z-\/value of the view volume. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a4e41607697a29b1adbfa9b325e79a1be}\label{classrtech_1_1math_1_1_matrix_a4e41607697a29b1adbfa9b325e79a1be}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createPerspective@{createPerspective}}
+\index{createPerspective@{createPerspective}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createPerspective()}{createPerspective()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Perspective (\begin{DoxyParamCaption}\item[{float}]{field\+Of\+View,  }\item[{float}]{aspect\+Ratio,  }\item[{float}]{z\+Near\+Plane,  }\item[{float}]{z\+Far\+Plane,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Builds a perspective projection matrix based on a field of view and returns by value.
+
+Projection space refers to the space after applying projection transformation from view space. After the projection transformation, visible content has x-\/ and y-\/coordinates ranging from -\/1 to 1, and a z-\/coordinate ranging from 0 to 1. To obtain the viewable area (in world space) of a scene, create a Bounding\+Frustum and pass the combined view and projection matrix to the constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Of\+View} & The field of view in the y direction (in degrees). \\
+\hline
+{\em aspect\+Ratio} & The aspect ratio, defined as view space width divided by height. \\
+\hline
+{\em z\+Near\+Plane} & The distance to the near view plane. \\
+\hline
+{\em z\+Far\+Plane} & The distance to the far view plane. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a8beb4ffc7aa86645f7bc1aa5a37a8eed}\label{classrtech_1_1math_1_1_matrix_a8beb4ffc7aa86645f7bc1aa5a37a8eed}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createReflection@{createReflection}}
+\index{createReflection@{createReflection}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createReflection()}{createReflection()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Reflection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{plane,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fills in an existing \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} so that it reflects the coordinate system about a specified \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane} & The \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} about which to create a reflection. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a8add488a92c56b35e287b3c96b8ffe18}\label{classrtech_1_1math_1_1_matrix_a8add488a92c56b35e287b3c96b8ffe18}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createRotation@{createRotation}}
+\index{createRotation@{createRotation}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createRotation()}{createRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Rotation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{quat,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a rotation matrix from the specified quaternion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quat} & A quaternion describing a 3D orientation. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a5246aecacbad091691828e947293f9d4}\label{classrtech_1_1math_1_1_matrix_a5246aecacbad091691828e947293f9d4}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createRotation@{createRotation}}
+\index{createRotation@{createRotation}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createRotation()}{createRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Rotation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{axis,  }\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a rotation matrix from the specified axis and angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & A vector describing the axis to rotate about. \\
+\hline
+{\em angle} & The angle (in radians). \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a0c07b471e5b0df9ef35b02d9c217f9f1}\label{classrtech_1_1math_1_1_matrix_a0c07b471e5b0df9ef35b02d9c217f9f1}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createRotationX@{createRotationX}}
+\index{createRotationX@{createRotationX}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createRotationX()}{createRotationX()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+RotationX (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a matrix describing a rotation around the x-\/axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle of rotation (in radians). \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ae4400cabfe57991c61ce3aa87b7d7bcd}\label{classrtech_1_1math_1_1_matrix_ae4400cabfe57991c61ce3aa87b7d7bcd}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createRotationY@{createRotationY}}
+\index{createRotationY@{createRotationY}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createRotationY()}{createRotationY()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+RotationY (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a matrix describing a rotation around the y-\/axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle of rotation (in radians). \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a36211e9bfc5e6358b0dfde871235e304}\label{classrtech_1_1math_1_1_matrix_a36211e9bfc5e6358b0dfde871235e304}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createRotationZ@{createRotationZ}}
+\index{createRotationZ@{createRotationZ}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createRotationZ()}{createRotationZ()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+RotationZ (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a matrix describing a rotation around the z-\/axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle of rotation (in radians). \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a6c1b98d5f141deec2ddbddf438973412}\label{classrtech_1_1math_1_1_matrix_a6c1b98d5f141deec2ddbddf438973412}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createScale@{createScale}}
+\index{createScale@{createScale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createScale()}{createScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{scale,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a scale matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The amount to scale. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a29384f4bec5b79db15d909728616fb6f}\label{classrtech_1_1math_1_1_matrix_a29384f4bec5b79db15d909728616fb6f}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createScale@{createScale}}
+\index{createScale@{createScale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createScale()}{createScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Scale (\begin{DoxyParamCaption}\item[{float}]{x\+Scale,  }\item[{float}]{y\+Scale,  }\item[{float}]{z\+Scale,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a scale matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Scale} & The amount to scale along the x-\/axis. \\
+\hline
+{\em y\+Scale} & The amount to scale along the y-\/axis. \\
+\hline
+{\em z\+Scale} & The amount to scale along the z-\/axis. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a5c9d957d1f9551891a495e0aa4e7b065}\label{classrtech_1_1math_1_1_matrix_a5c9d957d1f9551891a495e0aa4e7b065}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createTranslation@{createTranslation}}
+\index{createTranslation@{createTranslation}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createTranslation()}{createTranslation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Translation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{translation,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a translation matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & The translation. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a0db455c684aa72bcffaab4151ac64224}\label{classrtech_1_1math_1_1_matrix_a0db455c684aa72bcffaab4151ac64224}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!createTranslation@{createTranslation}}
+\index{createTranslation@{createTranslation}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{createTranslation()}{createTranslation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::create\+Translation (\begin{DoxyParamCaption}\item[{float}]{x\+Translation,  }\item[{float}]{y\+Translation,  }\item[{float}]{z\+Translation,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a translation matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Translation} & The translation on the x-\/axis. \\
+\hline
+{\em y\+Translation} & The translation on the y-\/axis. \\
+\hline
+{\em z\+Translation} & The translation on the z-\/axis. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a8c9a542d32853d2b80ca0773500853c6}\label{classrtech_1_1math_1_1_matrix_a8c9a542d32853d2b80ca0773500853c6}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!decompose@{decompose}}
+\index{decompose@{decompose}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{decompose()}{decompose()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Matrix\+::decompose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{scale,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{rotation,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{translation }\end{DoxyParamCaption}) const}
+
+Decomposes the scale, rotation and translation components of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & The scale. \\
+\hline
+{\em rotation} & The rotation. \\
+\hline
+{\em translation} & The translation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aaa546914d3186afef4030139aad1fad9}\label{classrtech_1_1math_1_1_matrix_aaa546914d3186afef4030139aad1fad9}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!determinant@{determinant}}
+\index{determinant@{determinant}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{determinant()}{determinant()}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Matrix\+::determinant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Computes the determinant of this matrix.
+
+\begin{DoxyReturn}{Returns}
+The determinant. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aedd9f9764b23a9f9ea110b130a91be9e}\label{classrtech_1_1math_1_1_matrix_aedd9f9764b23a9f9ea110b130a91be9e}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getBackVector@{getBackVector}}
+\index{getBackVector@{getBackVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getBackVector()}{getBackVector()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::get\+Back\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the backward vector of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The destination vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a31465459833796e1d8ea831b53d6459e}\label{classrtech_1_1math_1_1_matrix_a31465459833796e1d8ea831b53d6459e}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getDownVector@{getDownVector}}
+\index{getDownVector@{getDownVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getDownVector()}{getDownVector()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::get\+Down\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the down vector of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The destination vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a3b9eabd6ef13adbfbc18c506b093e3b9}\label{classrtech_1_1math_1_1_matrix_a3b9eabd6ef13adbfbc18c506b093e3b9}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getForwardVector@{getForwardVector}}
+\index{getForwardVector@{getForwardVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getForwardVector()}{getForwardVector()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::get\+Forward\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the forward vector of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The destination vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aa2151a0d0be02ed1fde0bd5470e7be75}\label{classrtech_1_1math_1_1_matrix_aa2151a0d0be02ed1fde0bd5470e7be75}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getLeftVector@{getLeftVector}}
+\index{getLeftVector@{getLeftVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getLeftVector()}{getLeftVector()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::get\+Left\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the left vector of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The destination vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aa648093358b298d19efded669d29e6c1}\label{classrtech_1_1math_1_1_matrix_aa648093358b298d19efded669d29e6c1}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getRightVector@{getRightVector}}
+\index{getRightVector@{getRightVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getRightVector()}{getRightVector()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::get\+Right\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the right vector of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The destination vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a6f00a3bb6b98f31f5c49d2af6b93e757}\label{classrtech_1_1math_1_1_matrix_a6f00a3bb6b98f31f5c49d2af6b93e757}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Matrix\+::get\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} $\ast$}]{rotation }\end{DoxyParamCaption}) const}
+
+Gets the rotational component of this matrix in the specified quaternion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & A quaternion to receive the rotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the rotation is successfully extracted, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a1c0fb328243adccbd3c2df37364a8161}\label{classrtech_1_1math_1_1_matrix_a1c0fb328243adccbd3c2df37364a8161}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getScale@{getScale}}
+\index{getScale@{getScale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::get\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{scale }\end{DoxyParamCaption}) const}
+
+Gets the scalar component of this matrix in the specified vector.
+
+If the scalar component of this matrix has negative parts, it is not possible to always extract the exact scalar component; instead, a scale vector that is mathematically equivalent to the original scale vector is extracted and returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & A vector to receive the scale. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_afbd02937ac1e82e24b5316bd3abdc670}\label{classrtech_1_1math_1_1_matrix_afbd02937ac1e82e24b5316bd3abdc670}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getTranslation@{getTranslation}}
+\index{getTranslation@{getTranslation}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getTranslation()}{getTranslation()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::get\+Translation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{translation }\end{DoxyParamCaption}) const}
+
+Gets the translational component of this matrix in the specified vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & A vector to receive the translation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a8f6e13b6ce01f5820449b4f0ceec376a}\label{classrtech_1_1math_1_1_matrix_a8f6e13b6ce01f5820449b4f0ceec376a}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!getUpVector@{getUpVector}}
+\index{getUpVector@{getUpVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{getUpVector()}{getUpVector()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::get\+Up\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the up vector of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The destination vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a9b42d0b620d7fd1921e0b807775da375}\label{classrtech_1_1math_1_1_matrix_a9b42d0b620d7fd1921e0b807775da375}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!identity@{identity}}
+\index{identity@{identity}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{identity()}{identity()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}}\& rtech\+::math\+::\+Matrix\+::identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the identity matrix\+:
+
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+
+\begin{DoxyReturn}{Returns}
+The identity matrix. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aacfa0f1639afb7b5a3fe64f305b5e0d5}\label{classrtech_1_1math_1_1_matrix_aacfa0f1639afb7b5a3fe64f305b5e0d5}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!invert@{invert}}
+\index{invert@{invert}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{invert()}{invert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Matrix\+::invert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Inverts this matrix.
+
+\begin{DoxyReturn}{Returns}
+true if the the matrix can be inverted, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a0e6e51b52ae32e103281f6fceaedf2fe}\label{classrtech_1_1math_1_1_matrix_a0e6e51b52ae32e103281f6fceaedf2fe}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!invert@{invert}}
+\index{invert@{invert}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{invert()}{invert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Matrix\+::invert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Stores the inverse of this matrix in the specified matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & A matrix to store the invert of this matrix in.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the the matrix can be inverted, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_af98dd2db4cd172b7a046437ac3bf797b}\label{classrtech_1_1math_1_1_matrix_af98dd2db4cd172b7a046437ac3bf797b}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!isIdentity@{isIdentity}}
+\index{isIdentity@{isIdentity}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{isIdentity()}{isIdentity()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Matrix\+::is\+Identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Determines if this matrix is equal to the identity matrix.
+
+\begin{DoxyReturn}{Returns}
+true if the matrix is an identity matrix, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a32d2a7a490c3abe61f76375737498d5c}\label{classrtech_1_1math_1_1_matrix_a32d2a7a490c3abe61f76375737498d5c}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!multiply@{multiply}}
+\index{multiply@{multiply}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::multiply (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})}
+
+Multiplies this matrix by the specified one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to multiply. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a35d6f53b054a7f3281a6877c73780aa7}\label{classrtech_1_1math_1_1_matrix_a35d6f53b054a7f3281a6877c73780aa7}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!multiply@{multiply}}
+\index{multiply@{multiply}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::multiply (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m,  }\item[{float}]{scalar,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Multiplies the components of the specified matrix by a scalar and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix. \\
+\hline
+{\em scalar} & The scalar value. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a54f5ae590afd6ed57614e78418d0af15}\label{classrtech_1_1math_1_1_matrix_a54f5ae590afd6ed57614e78418d0af15}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!multiply@{multiply}}
+\index{multiply@{multiply}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::multiply (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m2,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Multiplies m1 by m2 and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m1} & The first matrix to multiply. \\
+\hline
+{\em m2} & The second matrix to multiply. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a83e60f8b36669d1c1e4761bb886ec04c}\label{classrtech_1_1math_1_1_matrix_a83e60f8b36669d1c1e4761bb886ec04c}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!multiply@{multiply}}
+\index{multiply@{multiply}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::multiply (\begin{DoxyParamCaption}\item[{float}]{scalar }\end{DoxyParamCaption})}
+
+Multiplies the components of this matrix by the specified scalar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalar} & The scalar value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aba2bb5e01f57e4658e23c52c398427d4}\label{classrtech_1_1math_1_1_matrix_aba2bb5e01f57e4658e23c52c398427d4}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!multiply@{multiply}}
+\index{multiply@{multiply}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::multiply (\begin{DoxyParamCaption}\item[{float}]{scalar,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Multiplies the components of this matrix by a scalar and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalar} & The scalar value. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a0c2134057f01762b0bc377c7dcfcce87}\label{classrtech_1_1math_1_1_matrix_a0c2134057f01762b0bc377c7dcfcce87}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!negate@{negate}}
+\index{negate@{negate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{negate()}{negate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::negate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Negates this matrix. \mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a493b66baf8e3f559f29d6e397049a4b9}\label{classrtech_1_1math_1_1_matrix_a493b66baf8e3f559f29d6e397049a4b9}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!negate@{negate}}
+\index{negate@{negate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{negate()}{negate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::negate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Negates this matrix and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a6ff4dccf3503f9eb5f9d21a2d18c8dae}\label{classrtech_1_1math_1_1_matrix_a6ff4dccf3503f9eb5f9d21a2d18c8dae}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} rtech\+::math\+::\+Matrix\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the matrix product of this matrix with the given matrix.
+
+Note\+: this does not modify this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to multiply by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The matrix product. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a323e41dafba6d45c488624046a6c126e}\label{classrtech_1_1math_1_1_matrix_a323e41dafba6d45c488624046a6c126e}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}}\& rtech\+::math\+::\+Matrix\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Right-\/multiplies this matrix by the given matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to multiply by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This matrix, after the multiplication occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a624d5b7a5fb26284e2be63f3f5f9cef2}\label{classrtech_1_1math_1_1_matrix_a624d5b7a5fb26284e2be63f3f5f9cef2}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} rtech\+::math\+::\+Matrix\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the sum of this matrix with the given matrix.
+
+Note\+: this does not modify this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The matrix sum. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a3364e32ee7b3330896abcb17a3e1aec7}\label{classrtech_1_1math_1_1_matrix_a3364e32ee7b3330896abcb17a3e1aec7}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}}\& rtech\+::math\+::\+Matrix\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the given matrix to this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This matrix, after the addition occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ab466266111a13405b08730c9f201ea3b}\label{classrtech_1_1math_1_1_matrix_ab466266111a13405b08730c9f201ea3b}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} rtech\+::math\+::\+Matrix\+::operator-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the negation of this matrix.
+
+Note\+: this does not modify this matrix.
+
+\begin{DoxyReturn}{Returns}
+The negation of this matrix. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a2cdbdeffd893453b5a79141e61aa93f9}\label{classrtech_1_1math_1_1_matrix_a2cdbdeffd893453b5a79141e61aa93f9}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} rtech\+::math\+::\+Matrix\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the difference of this matrix with the given matrix.
+
+Note\+: this does not modify this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The matrix difference. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a6bb0fde7826bef52a0177fb52e7eaf69}\label{classrtech_1_1math_1_1_matrix_a6bb0fde7826bef52a0177fb52e7eaf69}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}}\& rtech\+::math\+::\+Matrix\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subtracts the given matrix from this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This matrix, after the subtraction occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ad7c5c0e7177e53a1406796e31ff7502b}\label{classrtech_1_1math_1_1_matrix_ad7c5c0e7177e53a1406796e31ff7502b}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotate@{rotate}}
+\index{rotate@{rotate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified quaternion rotation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to rotate by. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a15243a5def5bcc3036d77b9f8aab8926}\label{classrtech_1_1math_1_1_matrix_a15243a5def5bcc3036d77b9f8aab8926}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotate@{rotate}}
+\index{rotate@{rotate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_quaternion}{Quaternion}} \&}]{q,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified quaternion rotation and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & The quaternion to rotate by. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_abe221a7fecb8614ac25a6231780725df}\label{classrtech_1_1math_1_1_matrix_abe221a7fecb8614ac25a6231780725df}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotate@{rotate}}
+\index{rotate@{rotate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{axis,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified rotation about the specified axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis to rotate about. \\
+\hline
+{\em angle} & The angle (in radians). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ade033b22907c9f2d6861d96746e8bccf}\label{classrtech_1_1math_1_1_matrix_ade033b22907c9f2d6861d96746e8bccf}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotate@{rotate}}
+\index{rotate@{rotate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{axis,  }\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified rotation about the specified axis and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis to rotate about. \\
+\hline
+{\em angle} & The angle (in radians). \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ac013d67eeb01d56be9cd65bf6fec94f6}\label{classrtech_1_1math_1_1_matrix_ac013d67eeb01d56be9cd65bf6fec94f6}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotateX@{rotateX}}
+\index{rotateX@{rotateX}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotateX()}{rotateX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotateX (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified rotation around the x-\/axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle (in radians). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a1ef612a1b06948ee360cf6d69ad32b5e}\label{classrtech_1_1math_1_1_matrix_a1ef612a1b06948ee360cf6d69ad32b5e}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotateX@{rotateX}}
+\index{rotateX@{rotateX}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotateX()}{rotateX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotateX (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified rotation around the x-\/axis and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle (in radians). \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a139095b1b09daf76af45adda7c567137}\label{classrtech_1_1math_1_1_matrix_a139095b1b09daf76af45adda7c567137}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotateY@{rotateY}}
+\index{rotateY@{rotateY}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotateY()}{rotateY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotateY (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified rotation around the y-\/axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle (in radians). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a70c6c3a67f1647eff3ee8ace2c8061e4}\label{classrtech_1_1math_1_1_matrix_a70c6c3a67f1647eff3ee8ace2c8061e4}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotateY@{rotateY}}
+\index{rotateY@{rotateY}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotateY()}{rotateY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotateY (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified rotation around the y-\/axis and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle (in radians). \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a501a257dd5133229c73dad2d5e29333e}\label{classrtech_1_1math_1_1_matrix_a501a257dd5133229c73dad2d5e29333e}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotateZ@{rotateZ}}
+\index{rotateZ@{rotateZ}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotateZ()}{rotateZ()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotateZ (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified rotation around the z-\/axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle (in radians). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ab74e096f5b9d41a5582b359872c0cd18}\label{classrtech_1_1math_1_1_matrix_ab74e096f5b9d41a5582b359872c0cd18}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!rotateZ@{rotateZ}}
+\index{rotateZ@{rotateZ}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{rotateZ()}{rotateZ()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::rotateZ (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified rotation around the z-\/axis and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle (in radians). \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a501448967d45a028d95b33832e99e40b}\label{classrtech_1_1math_1_1_matrix_a501448967d45a028d95b33832e99e40b}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!scale@{scale}}
+\index{scale@{scale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{s }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified scale transformation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The scale values along the x, y and z axes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a7e34404805dd1266e5d1b5ea792b0eaa}\label{classrtech_1_1math_1_1_matrix_a7e34404805dd1266e5d1b5ea792b0eaa}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!scale@{scale}}
+\index{scale@{scale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{s,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified scale transformation and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The scale values along the x, y and z axes. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ac32568e1b8d28d4c6a282242d907bcde}\label{classrtech_1_1math_1_1_matrix_ac32568e1b8d28d4c6a282242d907bcde}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!scale@{scale}}
+\index{scale@{scale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::scale (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified scale transformation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The amount to scale along all axes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a037faa608e731286e01262b1e308fd66}\label{classrtech_1_1math_1_1_matrix_a037faa608e731286e01262b1e308fd66}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!scale@{scale}}
+\index{scale@{scale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::scale (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified scale transformation and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The amount to scale along all axes. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aa8dce62ad63d9d3456ebded55792a932}\label{classrtech_1_1math_1_1_matrix_aa8dce62ad63d9d3456ebded55792a932}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!scale@{scale}}
+\index{scale@{scale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::scale (\begin{DoxyParamCaption}\item[{float}]{x\+Scale,  }\item[{float}]{y\+Scale,  }\item[{float}]{z\+Scale }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified scale transformation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Scale} & The amount to scale along the x-\/axis. \\
+\hline
+{\em y\+Scale} & The amount to scale along the y-\/axis. \\
+\hline
+{\em z\+Scale} & The amount to scale along the z-\/axis. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a3b8f72b582db1ca675908043e762fe9f}\label{classrtech_1_1math_1_1_matrix_a3b8f72b582db1ca675908043e762fe9f}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!scale@{scale}}
+\index{scale@{scale}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::scale (\begin{DoxyParamCaption}\item[{float}]{x\+Scale,  }\item[{float}]{y\+Scale,  }\item[{float}]{z\+Scale,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified scale transformation and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Scale} & The amount to scale along the x-\/axis. \\
+\hline
+{\em y\+Scale} & The amount to scale along the y-\/axis. \\
+\hline
+{\em z\+Scale} & The amount to scale along the z-\/axis. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ae288edf78314c97359548e60aec224ae}\label{classrtech_1_1math_1_1_matrix_ae288edf78314c97359548e60aec224ae}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!set@{set}}
+\index{set@{set}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::set (\begin{DoxyParamCaption}\item[{const float $\ast$}]{m }\end{DoxyParamCaption})}
+
+Sets the values of this matrix to those in the specified column-\/major array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & An array containing 16 elements in column-\/major format. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a61f57205ed10c46984590a918c70138d}\label{classrtech_1_1math_1_1_matrix_a61f57205ed10c46984590a918c70138d}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!set@{set}}
+\index{set@{set}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})}
+
+Sets the values of this matrix to those of the specified matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The source matrix. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a51a2f7f9c9f970b3ffefaf511aab7c3b}\label{classrtech_1_1math_1_1_matrix_a51a2f7f9c9f970b3ffefaf511aab7c3b}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!set@{set}}
+\index{set@{set}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::set (\begin{DoxyParamCaption}\item[{float}]{m11,  }\item[{float}]{m12,  }\item[{float}]{m13,  }\item[{float}]{m14,  }\item[{float}]{m21,  }\item[{float}]{m22,  }\item[{float}]{m23,  }\item[{float}]{m24,  }\item[{float}]{m31,  }\item[{float}]{m32,  }\item[{float}]{m33,  }\item[{float}]{m34,  }\item[{float}]{m41,  }\item[{float}]{m42,  }\item[{float}]{m43,  }\item[{float}]{m44 }\end{DoxyParamCaption})}
+
+Sets the values of this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m11} & The first element of the first row. \\
+\hline
+{\em m12} & The second element of the first row. \\
+\hline
+{\em m13} & The third element of the first row. \\
+\hline
+{\em m14} & The fourth element of the first row. \\
+\hline
+{\em m21} & The first element of the second row. \\
+\hline
+{\em m22} & The second element of the second row. \\
+\hline
+{\em m23} & The third element of the second row. \\
+\hline
+{\em m24} & The fourth element of the second row. \\
+\hline
+{\em m31} & The first element of the third row. \\
+\hline
+{\em m32} & The second element of the third row. \\
+\hline
+{\em m33} & The third element of the third row. \\
+\hline
+{\em m34} & The fourth element of the third row. \\
+\hline
+{\em m41} & The first element of the fourth row. \\
+\hline
+{\em m42} & The second element of the fourth row. \\
+\hline
+{\em m43} & The third element of the fourth row. \\
+\hline
+{\em m44} & The fourth element of the fourth row. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a19d2f33b3e07b9936de6d2231f6c1686}\label{classrtech_1_1math_1_1_matrix_a19d2f33b3e07b9936de6d2231f6c1686}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!setIdentity@{setIdentity}}
+\index{setIdentity@{setIdentity}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{setIdentity()}{setIdentity()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::set\+Identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets this matrix to the identity matrix. \mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ab454f0f02a2b3a9ee795dce57d03a9b7}\label{classrtech_1_1math_1_1_matrix_ab454f0f02a2b3a9ee795dce57d03a9b7}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!setZero@{setZero}}
+\index{setZero@{setZero}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{setZero()}{setZero()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::set\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets all elements of the current matrix to zero. \mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a06d0e7fdd989d46f884dbd46f79245cd}\label{classrtech_1_1math_1_1_matrix_a06d0e7fdd989d46f884dbd46f79245cd}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!subtract@{subtract}}
+\index{subtract@{subtract}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::subtract (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})}
+
+Subtracts the specified matrix from the current matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to subtract. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_aed137778201e95a0fe6b1e39eedd28c0}\label{classrtech_1_1math_1_1_matrix_aed137778201e95a0fe6b1e39eedd28c0}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!subtract@{subtract}}
+\index{subtract@{subtract}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Matrix\+::subtract (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{m2,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Subtracts the specified matrix from the current matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m1} & The first matrix. \\
+\hline
+{\em m2} & The second matrix. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a70c4a62c4cee363a99ec498d6d2e27f6}\label{classrtech_1_1math_1_1_matrix_a70c4a62c4cee363a99ec498d6d2e27f6}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transformPoint@{transformPoint}}
+\index{transformPoint@{transformPoint}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transformPoint()}{transformPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transform\+Point (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{point,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Transforms the specified point by this matrix, and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to transform. \\
+\hline
+{\em dst} & A vector to store the transformed point in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ac86aefb15b3921beefb79d4df244f784}\label{classrtech_1_1math_1_1_matrix_ac86aefb15b3921beefb79d4df244f784}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transformPoint@{transformPoint}}
+\index{transformPoint@{transformPoint}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transformPoint()}{transformPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transform\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{point }\end{DoxyParamCaption}) const}
+
+Transforms the specified point by this matrix.
+
+The result of the transformation is stored directly into point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to transform and also a vector to hold the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a1ab128d792b95a2974272d66c31c5227}\label{classrtech_1_1math_1_1_matrix_a1ab128d792b95a2974272d66c31c5227}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transformVector@{transformVector}}
+\index{transformVector@{transformVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transformVector()}{transformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transform\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{vector,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Transforms the specified vector by this matrix by treating the fourth (w) coordinate as zero, and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The vector to transform. \\
+\hline
+{\em dst} & A vector to store the transformed vector in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ab3c3839330af9c99ef45051f397ecc3e}\label{classrtech_1_1math_1_1_matrix_ab3c3839330af9c99ef45051f397ecc3e}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transformVector@{transformVector}}
+\index{transformVector@{transformVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transformVector()}{transformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transform\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector4}{Vector4}} \&}]{vector,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector4}{Vector4}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Transforms the specified vector by this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The vector to transform. \\
+\hline
+{\em dst} & A vector to store the transformed point in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a0c47ffdc19367fa08c3984e72c0bab92}\label{classrtech_1_1math_1_1_matrix_a0c47ffdc19367fa08c3984e72c0bab92}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transformVector@{transformVector}}
+\index{transformVector@{transformVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transformVector()}{transformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transform\+Vector (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Transforms the specified vector by this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The vector x-\/coordinate to transform by. \\
+\hline
+{\em y} & The vector y-\/coordinate to transform by. \\
+\hline
+{\em z} & The vector z-\/coordinate to transform by. \\
+\hline
+{\em w} & The vector w-\/coordinate to transform by. \\
+\hline
+{\em dst} & A vector to store the transformed point in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a355f475e41fdf7533d4e09d688fb97ff}\label{classrtech_1_1math_1_1_matrix_a355f475e41fdf7533d4e09d688fb97ff}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transformVector@{transformVector}}
+\index{transformVector@{transformVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transformVector()}{transformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transform\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{vector }\end{DoxyParamCaption}) const}
+
+Transforms the specified vector by this matrix by treating the fourth (w) coordinate as zero.
+
+The result of the transformation is stored directly into vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The vector to transform and also a vector to hold the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a63530afb7dc9d9c5f35c08c7aac21a5d}\label{classrtech_1_1math_1_1_matrix_a63530afb7dc9d9c5f35c08c7aac21a5d}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transformVector@{transformVector}}
+\index{transformVector@{transformVector}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transformVector()}{transformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transform\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector4}{Vector4}} $\ast$}]{vector }\end{DoxyParamCaption}) const}
+
+Transforms the specified vector by this matrix.
+
+The result of the transformation is stored directly into vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & The vector to transform. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ac2a7f92d26b3654fb7f74c61cb71d554}\label{classrtech_1_1math_1_1_matrix_ac2a7f92d26b3654fb7f74c61cb71d554}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!translate@{translate}}
+\index{translate@{translate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::translate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{t }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified translation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The translation values along the x, y and z axes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a6947d42f68875eb1fb7a9e009078b603}\label{classrtech_1_1math_1_1_matrix_a6947d42f68875eb1fb7a9e009078b603}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!translate@{translate}}
+\index{translate@{translate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::translate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{t,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified translation and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The translation values along the x, y and z axes. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a4ce5c2d0f12dafe1abe793d8d06d0466}\label{classrtech_1_1math_1_1_matrix_a4ce5c2d0f12dafe1abe793d8d06d0466}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!translate@{translate}}
+\index{translate@{translate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::translate (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified translation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The amount to translate along the x-\/axis. \\
+\hline
+{\em y} & The amount to translate along the y-\/axis. \\
+\hline
+{\em z} & The amount to translate along the z-\/axis. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ad1cbe7bbd1a44465d9fea573ec35dc1d}\label{classrtech_1_1math_1_1_matrix_ad1cbe7bbd1a44465d9fea573ec35dc1d}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!translate@{translate}}
+\index{translate@{translate}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::translate (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Post-\/multiplies this matrix by the matrix corresponding to the specified translation and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The amount to translate along the x-\/axis. \\
+\hline
+{\em y} & The amount to translate along the y-\/axis. \\
+\hline
+{\em z} & The amount to translate along the z-\/axis. \\
+\hline
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_ac0bd34a8c911499e5956db92a19b9c8f}\label{classrtech_1_1math_1_1_matrix_ac0bd34a8c911499e5956db92a19b9c8f}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transpose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Transposes this matrix. \mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a509905cb6065422f46c75ab08e882b0c}\label{classrtech_1_1math_1_1_matrix_a509905cb6065422f46c75ab08e882b0c}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Matrix\+::transpose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Transposes this matrix and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & A matrix to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a76e0449086cf5ce0eb4006aba1509fd6}\label{classrtech_1_1math_1_1_matrix_a76e0449086cf5ce0eb4006aba1509fd6}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!zero@{zero}}
+\index{zero@{zero}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{zero()}{zero()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}}\& rtech\+::math\+::\+Matrix\+::zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the matrix with all zeros.
+
+\begin{DoxyReturn}{Returns}
+The matrix with all zeros. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}\label{classrtech_1_1math_1_1_matrix_a7276a0a974f34eb6cd400f1815d20fd4}} 
+\index{rtech::math::Matrix@{rtech::math::Matrix}!m@{m}}
+\index{m@{m}!rtech::math::Matrix@{rtech::math::Matrix}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Matrix\+::m\mbox{[}16\mbox{]}}
+
+Stores the columns of this 4x4 matrix. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/math/matrix.\+h\end{DoxyCompactItemize}

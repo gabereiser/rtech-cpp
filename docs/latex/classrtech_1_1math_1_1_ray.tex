@@ -1,0 +1,343 @@
+\hypertarget{classrtech_1_1math_1_1_ray}{}\doxysection{rtech\+::math\+::Ray Class Reference}
+\label{classrtech_1_1math_1_1_ray}\index{rtech::math::Ray@{rtech::math::Ray}}
+
+
+{\ttfamily \#include $<$ray.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_ray_a54eb8b185bd01ad00d02a91d07419d6b}{Ray}} ()
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_ray_aa17f503645fddd5fe47e9e3b2f22cbf9}{Ray}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&origin, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&direction)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_ray_a0f021fd4d75e09d3438eea9806733788}{Ray}} (float originX, float originY, float originZ, float dirX, float dirY, float dirZ)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_ray_af7bcd085f37b23a6c26163b629dcebfd}{Ray}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \&copy)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_ray_a0f522591866bf3134952c6153b5d44c9}{$\sim$\+Ray}} ()
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a845bb178e089dbcb01ffc45d26f78f59}{get\+Origin}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a16dfe04c37e670438530b025f89ba4c6}{set\+Origin}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&origin)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_ray_addbebc484a021e28a9e1989e81d675b9}{set\+Origin}} (float x, float y, float z)
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a6e921e6ad6f1db4e0afa4deb6b6dfcc5}{get\+Direction}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a980762cc435cd4821283a9ce66c36cc7}{set\+Direction}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&direction)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a50e70a8393205e8fbfea6de3a6883622}{set\+Direction}} (float x, float y, float z)
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a378cb40bc9340eec67ff9afd4e8df920}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&sphere) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_ray_afbf189655e4652c4babe5b54305bc65d}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&box) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a0bab8471dea1d0eb58c3096057c3ae0f}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_frustum}{Frustum}} \&frustum) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a73b6d6210ac02ac7c4ca95c354c8a1f0}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&plane) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a1bd3278d7630ddc343020d0ae4f516ff}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&origin, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&direction)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_ray_ab3f151d7bfef3ce317d6166e415dd635}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \&ray)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a5cae94371ec340ea0ff62159a90c0fd4}{transform}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&matrix)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a7dc9797e099e99569a4c3f8172552236}{operator$\ast$=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&matrix)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classrtech_1_1math_1_1_ray_a2f9a18f12b24e6beead19ac944c4bf36}{I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+N\+O\+NE}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a 3-\/dimensional ray.
+
+Rays direction vector are always normalized. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a54eb8b185bd01ad00d02a91d07419d6b}\label{classrtech_1_1math_1_1_ray_a54eb8b185bd01ad00d02a91d07419d6b}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{Ray()}{Ray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Ray\+::\+Ray (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a new ray initialized to origin(0,0,0) and direction(0,0,1). \mbox{\Hypertarget{classrtech_1_1math_1_1_ray_aa17f503645fddd5fe47e9e3b2f22cbf9}\label{classrtech_1_1math_1_1_ray_aa17f503645fddd5fe47e9e3b2f22cbf9}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{Ray()}{Ray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Ray\+::\+Ray (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{origin,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{direction }\end{DoxyParamCaption})}
+
+Constructs a new ray initialized to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & The ray\textquotesingle{}s origin. \\
+\hline
+{\em direction} & The ray\textquotesingle{}s direction. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a0f021fd4d75e09d3438eea9806733788}\label{classrtech_1_1math_1_1_ray_a0f021fd4d75e09d3438eea9806733788}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{Ray()}{Ray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Ray\+::\+Ray (\begin{DoxyParamCaption}\item[{float}]{originX,  }\item[{float}]{originY,  }\item[{float}]{originZ,  }\item[{float}]{dirX,  }\item[{float}]{dirY,  }\item[{float}]{dirZ }\end{DoxyParamCaption})}
+
+Constructs a new ray initialized to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em originX} & The x coordinate of the origin. \\
+\hline
+{\em originY} & The y coordinate of the origin. \\
+\hline
+{\em originZ} & The z coordinate of the origin. \\
+\hline
+{\em dirX} & The x coordinate of the direction. \\
+\hline
+{\em dirY} & The y coordinate of the direction. \\
+\hline
+{\em dirZ} & The z coordinate of the direction. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_af7bcd085f37b23a6c26163b629dcebfd}\label{classrtech_1_1math_1_1_ray_af7bcd085f37b23a6c26163b629dcebfd}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{Ray()}{Ray()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Ray\+::\+Ray (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \&}]{copy }\end{DoxyParamCaption})}
+
+Constructs a new ray from the given ray.
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & The ray to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a0f522591866bf3134952c6153b5d44c9}\label{classrtech_1_1math_1_1_ray_a0f522591866bf3134952c6153b5d44c9}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!````~Ray@{$\sim$Ray}}
+\index{````~Ray@{$\sim$Ray}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ray()}{~Ray()}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Ray\+::$\sim$\+Ray (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a6e921e6ad6f1db4e0afa4deb6b6dfcc5}\label{classrtech_1_1math_1_1_ray_a6e921e6ad6f1db4e0afa4deb6b6dfcc5}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Ray\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the ray\textquotesingle{}s direction.
+
+\begin{DoxyReturn}{Returns}
+The ray\textquotesingle{}s direction. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a845bb178e089dbcb01ffc45d26f78f59}\label{classrtech_1_1math_1_1_ray_a845bb178e089dbcb01ffc45d26f78f59}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!getOrigin@{getOrigin}}
+\index{getOrigin@{getOrigin}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Ray\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the ray\textquotesingle{}s origin.
+
+\begin{DoxyReturn}{Returns}
+The ray\textquotesingle{}s origin. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_afbf189655e4652c4babe5b54305bc65d}\label{classrtech_1_1math_1_1_ray_afbf189655e4652c4babe5b54305bc65d}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Ray\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&}]{box }\end{DoxyParamCaption}) const}
+
+Tests whether this ray intersects the specified bounding box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & The bounding box to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance from the origin of this ray to the bounding object or I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+N\+O\+NE if this ray does not intersect the bounding object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a378cb40bc9340eec67ff9afd4e8df920}\label{classrtech_1_1math_1_1_ray_a378cb40bc9340eec67ff9afd4e8df920}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Ray\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{sphere }\end{DoxyParamCaption}) const}
+
+Tests whether this ray intersects the specified bounding sphere.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sphere} & The bounding sphere to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance from the origin of this ray to the bounding object or I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+N\+O\+NE if this ray does not intersect the bounding object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a0bab8471dea1d0eb58c3096057c3ae0f}\label{classrtech_1_1math_1_1_ray_a0bab8471dea1d0eb58c3096057c3ae0f}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Ray\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_frustum}{Frustum}} \&}]{frustum }\end{DoxyParamCaption}) const}
+
+Tests whether this ray intersects the specified frustum.
+
+
+\begin{DoxyParams}{Parameters}
+{\em frustum} & The frustum to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance from the origin of this ray to the frustum or I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+N\+O\+NE if this ray does not intersect the frustum. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a73b6d6210ac02ac7c4ca95c354c8a1f0}\label{classrtech_1_1math_1_1_ray_a73b6d6210ac02ac7c4ca95c354c8a1f0}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Ray\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{plane }\end{DoxyParamCaption}) const}
+
+Tests whether this ray intersects the specified plane and returns the distance from the origin of the ray to the plane.
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane} & The plane to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance from the origin of this ray to the plane or I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+N\+O\+NE if this ray does not intersect the plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a7dc9797e099e99569a4c3f8172552236}\label{classrtech_1_1math_1_1_ray_a7dc9797e099e99569a4c3f8172552236}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}}\& rtech\+::math\+::\+Ray\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transforms this ray by the given matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The matrix to transform by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This ray, after the transformation occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_ab3f151d7bfef3ce317d6166e415dd635}\label{classrtech_1_1math_1_1_ray_ab3f151d7bfef3ce317d6166e415dd635}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!set@{set}}
+\index{set@{set}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Ray\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \&}]{ray }\end{DoxyParamCaption})}
+
+Sets this ray to the given ray.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a1bd3278d7630ddc343020d0ae4f516ff}\label{classrtech_1_1math_1_1_ray_a1bd3278d7630ddc343020d0ae4f516ff}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!set@{set}}
+\index{set@{set}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Ray\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{origin,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{direction }\end{DoxyParamCaption})}
+
+Sets this ray to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & The ray\textquotesingle{}s origin. \\
+\hline
+{\em direction} & The ray\textquotesingle{}s direction. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a980762cc435cd4821283a9ce66c36cc7}\label{classrtech_1_1math_1_1_ray_a980762cc435cd4821283a9ce66c36cc7}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Ray\+::set\+Direction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{direction }\end{DoxyParamCaption})}
+
+Sets the ray\textquotesingle{}s direction to the given vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The new direction vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a50e70a8393205e8fbfea6de3a6883622}\label{classrtech_1_1math_1_1_ray_a50e70a8393205e8fbfea6de3a6883622}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Ray\+::set\+Direction (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+Sets the ray\textquotesingle{}s direction.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the direction. \\
+\hline
+{\em y} & The y coordinate of the direction. \\
+\hline
+{\em z} & The z coordinate of the direction. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a16dfe04c37e670438530b025f89ba4c6}\label{classrtech_1_1math_1_1_ray_a16dfe04c37e670438530b025f89ba4c6}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!setOrigin@{setOrigin}}
+\index{setOrigin@{setOrigin}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Ray\+::set\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{origin }\end{DoxyParamCaption})}
+
+Sets the ray\textquotesingle{}s origin to the given point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & The new origin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_addbebc484a021e28a9e1989e81d675b9}\label{classrtech_1_1math_1_1_ray_addbebc484a021e28a9e1989e81d675b9}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!setOrigin@{setOrigin}}
+\index{setOrigin@{setOrigin}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Ray\+::set\+Origin (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+Sets the ray\textquotesingle{}s origin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the origin. \\
+\hline
+{\em y} & The y coordinate of the origin. \\
+\hline
+{\em z} & The z coordinate of the origin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a5cae94371ec340ea0ff62159a90c0fd4}\label{classrtech_1_1math_1_1_ray_a5cae94371ec340ea0ff62159a90c0fd4}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!transform@{transform}}
+\index{transform@{transform}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Ray\+::transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{matrix }\end{DoxyParamCaption})}
+
+Transforms this ray by the given transformation matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The transformation matrix to transform by. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_ray_a2f9a18f12b24e6beead19ac944c4bf36}\label{classrtech_1_1math_1_1_ray_a2f9a18f12b24e6beead19ac944c4bf36}} 
+\index{rtech::math::Ray@{rtech::math::Ray}!INTERSECTS\_NONE@{INTERSECTS\_NONE}}
+\index{INTERSECTS\_NONE@{INTERSECTS\_NONE}!rtech::math::Ray@{rtech::math::Ray}}
+\doxysubsubsection{\texorpdfstring{INTERSECTS\_NONE}{INTERSECTS\_NONE}}
+{\footnotesize\ttfamily const int rtech\+::math\+::\+Ray\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+N\+O\+NE = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+Represents when a 3D entity does not intersect a ray. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/math/ray.\+h\end{DoxyCompactItemize}

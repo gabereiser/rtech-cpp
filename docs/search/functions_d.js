@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['quaternion_277',['Quaternion',['../classrtech_1_1math_1_1_quaternion.html#acf030bb76cab3e2a9f6d619b3f4983e9',1,'rtech::math::Quaternion::Quaternion()'],['../classrtech_1_1math_1_1_quaternion.html#a4a96b91d154a2f5ecc03b81d563dee27',1,'rtech::math::Quaternion::Quaternion(float x, float y, float z, float w)'],['../classrtech_1_1math_1_1_quaternion.html#a8420938907ffd24c74212fc4488520db',1,'rtech::math::Quaternion::Quaternion(float *array)'],['../classrtech_1_1math_1_1_quaternion.html#a006f8bdd1577348d23335f200be5544d',1,'rtech::math::Quaternion::Quaternion(const Matrix &amp;m)'],['../classrtech_1_1math_1_1_quaternion.html#aa724db013699d41f0b7dbcd6e2168f8b',1,'rtech::math::Quaternion::Quaternion(const Vector3 &amp;axis, float angle)'],['../classrtech_1_1math_1_1_quaternion.html#a57615b1d9bb812decde7e28dcbdcecfc',1,'rtech::math::Quaternion::Quaternion(const Quaternion &amp;copy)']]]
+];

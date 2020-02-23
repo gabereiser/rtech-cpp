@@ -1,0 +1,416 @@
+\hypertarget{classrtech_1_1math_1_1_bounding_box}{}\doxysection{rtech\+::math\+::Bounding\+Box Class Reference}
+\label{classrtech_1_1math_1_1_bounding_box}\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+
+
+{\ttfamily \#include $<$bounding\+\_\+box.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_ac88e2823899878e93972a4c63cc508d3}{Bounding\+Box}} ()
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a60fd913487de693c2781c272866ae8fd}{Bounding\+Box}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a99006f331238e7fa1a13d85e062cb06e}{min}}, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_ac66d989c9ce9fe77191054d0000f126a}{max}})
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a0eb1fdbeeba92d796299945c6aac4721}{Bounding\+Box}} (float minX, float minY, float minZ, float maxX, float maxY, float maxZ)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a7ffe4dcf2cd0f626b3581fcc939bb574}{Bounding\+Box}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&copy)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_ab692645d4d23e505a0948f64f301f485}{$\sim$\+Bounding\+Box}} ()
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a087cfd491d539d2a9469446b375b1d94}{get\+Center}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_aa907c9f0a6a9e92fc2dc2ce6f575d9da}{get\+Center}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a7438524e4ad343db9486126b3ea52704}{get\+Corners}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a1154cc85d54c8bec49a44facfc7e1ee2}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&box) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_ac7f992a538b25045b28d35c91a70fc44}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&sphere) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_aab616c8e00d896ca0c3f333afe0f4e61}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_frustum}{Frustum}} \&frustum) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_ae5ac109c1ae859d50e39ccf316355adf}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&plane) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a9ed119fa82331865aaf5b9bea3b09002}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \&ray) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a5001c0e939e1bff317233d5c27caf05f}{is\+Empty}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a28cc61cc3d1a4d0a5ffd570cf38daeca}{merge}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&sphere)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a4c25d300ccefd884a025c0b91e341582}{merge}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&box)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_af447f282abfeb7ef7979ffa1a2017113}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a99006f331238e7fa1a13d85e062cb06e}{min}}, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_ac66d989c9ce9fe77191054d0000f126a}{max}})
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_ae473de1aa510e006d231b99176e7aacb}{set}} (float minX, float minY, float minZ, float maxX, float maxY, float maxZ)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a2449c7c735a092fc4611f6be94250ec0}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&box)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a85bf5d2b1ee9411f9c668aa3e4624989}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&sphere)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_aa955906ee752d9d022e334f87f2cc7e7}{transform}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&matrix)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a85cd2e1315816305bfb5ce90790d735f}{operator$\ast$=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&matrix)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a59eb46cd827691fb5b2ea143d26abaf9}{empty}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_a99006f331238e7fa1a13d85e062cb06e}{min}}
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box_ac66d989c9ce9fe77191054d0000f126a}{max}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a 3-\/dimensional axis-\/aligned bounding box. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_ac88e2823899878e93972a4c63cc508d3}\label{classrtech_1_1math_1_1_bounding_box_ac88e2823899878e93972a4c63cc508d3}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!BoundingBox@{BoundingBox}}
+\index{BoundingBox@{BoundingBox}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{BoundingBox()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs an empty bounding box at the origin. \mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a60fd913487de693c2781c272866ae8fd}\label{classrtech_1_1math_1_1_bounding_box_a60fd913487de693c2781c272866ae8fd}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!BoundingBox@{BoundingBox}}
+\index{BoundingBox@{BoundingBox}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{BoundingBox()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{min,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{max }\end{DoxyParamCaption})}
+
+Constructs a new bounding box from the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum point of the bounding box. \\
+\hline
+{\em max} & The maximum point of the bounding box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a0eb1fdbeeba92d796299945c6aac4721}\label{classrtech_1_1math_1_1_bounding_box_a0eb1fdbeeba92d796299945c6aac4721}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!BoundingBox@{BoundingBox}}
+\index{BoundingBox@{BoundingBox}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{BoundingBox()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{float}]{minX,  }\item[{float}]{minY,  }\item[{float}]{minZ,  }\item[{float}]{maxX,  }\item[{float}]{maxY,  }\item[{float}]{maxZ }\end{DoxyParamCaption})}
+
+Constructs a new bounding box from the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em minX} & The x coordinate of the minimum point of the bounding box. \\
+\hline
+{\em minY} & The y coordinate of the minimum point of the bounding box. \\
+\hline
+{\em minZ} & The z coordinate of the minimum point of the bounding box. \\
+\hline
+{\em maxX} & The x coordinate of the maximum point of the bounding box. \\
+\hline
+{\em maxY} & The y coordinate of the maximum point of the bounding box. \\
+\hline
+{\em maxZ} & The z coordinate of the maximum point of the bounding box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a7ffe4dcf2cd0f626b3581fcc939bb574}\label{classrtech_1_1math_1_1_bounding_box_a7ffe4dcf2cd0f626b3581fcc939bb574}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!BoundingBox@{BoundingBox}}
+\index{BoundingBox@{BoundingBox}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{BoundingBox()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&}]{copy }\end{DoxyParamCaption})}
+
+Constructs a new bounding box from the given bounding box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & The bounding box to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_ab692645d4d23e505a0948f64f301f485}\label{classrtech_1_1math_1_1_bounding_box_ab692645d4d23e505a0948f64f301f485}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!````~BoundingBox@{$\sim$BoundingBox}}
+\index{````~BoundingBox@{$\sim$BoundingBox}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{$\sim$BoundingBox()}{~BoundingBox()}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Bounding\+Box\+::$\sim$\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a59eb46cd827691fb5b2ea143d26abaf9}\label{classrtech_1_1math_1_1_bounding_box_a59eb46cd827691fb5b2ea143d26abaf9}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!empty@{empty}}
+\index{empty@{empty}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}}\& rtech\+::math\+::\+Bounding\+Box\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an empty bounding box. \mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a087cfd491d539d2a9469446b375b1d94}\label{classrtech_1_1math_1_1_bounding_box_a087cfd491d539d2a9469446b375b1d94}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{getCenter()}{getCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Bounding\+Box\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the center point of the bounding box.
+
+This method computes the center point of the box from its min and max.
+
+\begin{DoxyReturn}{Returns}
+The center point of the bounding box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_aa907c9f0a6a9e92fc2dc2ce6f575d9da}\label{classrtech_1_1math_1_1_bounding_box_aa907c9f0a6a9e92fc2dc2ce6f575d9da}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{getCenter()}{getCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::get\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the center point of the bounding box.
+
+This method computes the center point of the box from its min and max points and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The vector to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a7438524e4ad343db9486126b3ea52704}\label{classrtech_1_1math_1_1_bounding_box_a7438524e4ad343db9486126b3ea52704}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!getCorners@{getCorners}}
+\index{getCorners@{getCorners}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{getCorners()}{getCorners()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::get\+Corners (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Gets the corners of the bounding box in the specified array.
+
+The corners are returned as follows\+: 0 to 3 specify the near face starting at the upper left point when looking towards the origin from the positive z-\/axis in a counter-\/clockwise fashion; 4 to 7 specify the far face starting at the upper left point when looking towards the origin from the negative z-\/axis in a counter-\/clockwise fashion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The array to store the corners in. Must be size 8. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a1154cc85d54c8bec49a44facfc7e1ee2}\label{classrtech_1_1math_1_1_bounding_box_a1154cc85d54c8bec49a44facfc7e1ee2}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Bounding\+Box\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&}]{box }\end{DoxyParamCaption}) const}
+
+Tests whether this bounding box intersects the specified bounding object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & The bounding box to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified bounding box intersects this bounding box; false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_ac7f992a538b25045b28d35c91a70fc44}\label{classrtech_1_1math_1_1_bounding_box_ac7f992a538b25045b28d35c91a70fc44}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Bounding\+Box\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{sphere }\end{DoxyParamCaption}) const}
+
+Tests whether this bounding box intersects the specified bounding sphere.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sphere} & The bounding sphere to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the specified bounding sphere intersects this bounding box; false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_aab616c8e00d896ca0c3f333afe0f4e61}\label{classrtech_1_1math_1_1_bounding_box_aab616c8e00d896ca0c3f333afe0f4e61}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Bounding\+Box\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_frustum}{Frustum}} \&}]{frustum }\end{DoxyParamCaption}) const}
+
+Tests whether this bounding box intersects the specified frustum.
+
+
+\begin{DoxyParams}{Parameters}
+{\em frustum} & The frustum to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this bounding sphere intersects the specified frustum; false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_ae5ac109c1ae859d50e39ccf316355adf}\label{classrtech_1_1math_1_1_bounding_box_ae5ac109c1ae859d50e39ccf316355adf}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Bounding\+Box\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{plane }\end{DoxyParamCaption}) const}
+
+Tests whether this bounding box intersects the specified plane.
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane} & The plane to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK}} I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK if this bounding box is in the negative half-\/space of the plane, \mbox{\hyperlink{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT}} I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT if it is in the positive half-\/space of the plane; and \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG}} I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG if it intersects the plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a9ed119fa82331865aaf5b9bea3b09002}\label{classrtech_1_1math_1_1_bounding_box_a9ed119fa82331865aaf5b9bea3b09002}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Bounding\+Box\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const}
+
+Tests whether this bounding box intersects the specified ray.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance from the origin of the ray to this bounding box or I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+N\+O\+NE I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+N\+O\+NE if the ray does not intersect this bounding box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a5001c0e939e1bff317233d5c27caf05f}\label{classrtech_1_1math_1_1_bounding_box_a5001c0e939e1bff317233d5c27caf05f}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Bounding\+Box\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Determines if this bounding box is empty.
+
+\begin{DoxyReturn}{Returns}
+true if this bounding box is empty; false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a4c25d300ccefd884a025c0b91e341582}\label{classrtech_1_1math_1_1_bounding_box_a4c25d300ccefd884a025c0b91e341582}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!merge@{merge}}
+\index{merge@{merge}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::merge (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&}]{box }\end{DoxyParamCaption})}
+
+Sets this bounding box to the smallest bounding box that contains both this bounding object and the specified bounding box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & The bounding box to merge with. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a28cc61cc3d1a4d0a5ffd570cf38daeca}\label{classrtech_1_1math_1_1_bounding_box_a28cc61cc3d1a4d0a5ffd570cf38daeca}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!merge@{merge}}
+\index{merge@{merge}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::merge (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{sphere }\end{DoxyParamCaption})}
+
+Sets this bounding box to the smallest bounding box that contains both this bounding box and the specified bounding sphere.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sphere} & The bounding sphere to merge with. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a85cd2e1315816305bfb5ce90790d735f}\label{classrtech_1_1math_1_1_bounding_box_a85cd2e1315816305bfb5ce90790d735f}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}}\& rtech\+::math\+::\+Bounding\+Box\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transforms this bounding box by the given matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The matrix to transform by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This bounding box, after the transformation occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a2449c7c735a092fc4611f6be94250ec0}\label{classrtech_1_1math_1_1_bounding_box_a2449c7c735a092fc4611f6be94250ec0}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!set@{set}}
+\index{set@{set}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&}]{box }\end{DoxyParamCaption})}
+
+Sets this bounding box to the specified bounding box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & The bounding box to set to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a85bf5d2b1ee9411f9c668aa3e4624989}\label{classrtech_1_1math_1_1_bounding_box_a85bf5d2b1ee9411f9c668aa3e4624989}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!set@{set}}
+\index{set@{set}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{sphere }\end{DoxyParamCaption})}
+
+Sets this box to tightly contain the specified bounding sphere.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sphere} & The sphere to contain. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_af447f282abfeb7ef7979ffa1a2017113}\label{classrtech_1_1math_1_1_bounding_box_af447f282abfeb7ef7979ffa1a2017113}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!set@{set}}
+\index{set@{set}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{min,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{max }\end{DoxyParamCaption})}
+
+Sets this bounding box to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum point of the bounding box. \\
+\hline
+{\em max} & The maximum point of the bounding box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_ae473de1aa510e006d231b99176e7aacb}\label{classrtech_1_1math_1_1_bounding_box_ae473de1aa510e006d231b99176e7aacb}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!set@{set}}
+\index{set@{set}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::set (\begin{DoxyParamCaption}\item[{float}]{minX,  }\item[{float}]{minY,  }\item[{float}]{minZ,  }\item[{float}]{maxX,  }\item[{float}]{maxY,  }\item[{float}]{maxZ }\end{DoxyParamCaption})}
+
+Sets this bounding box to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em minX} & The x coordinate of the minimum point of the bounding box. \\
+\hline
+{\em minY} & The y coordinate of the minimum point of the bounding box. \\
+\hline
+{\em minZ} & The z coordinate of the minimum point of the bounding box. \\
+\hline
+{\em maxX} & The x coordinate of the maximum point of the bounding box. \\
+\hline
+{\em maxY} & The y coordinate of the maximum point of the bounding box. \\
+\hline
+{\em maxZ} & The z coordinate of the maximum point of the bounding box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_aa955906ee752d9d022e334f87f2cc7e7}\label{classrtech_1_1math_1_1_bounding_box_aa955906ee752d9d022e334f87f2cc7e7}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!transform@{transform}}
+\index{transform@{transform}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Bounding\+Box\+::transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{matrix }\end{DoxyParamCaption})}
+
+Transforms the bounding box by the given transformation matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The transformation matrix to transform by. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_ac66d989c9ce9fe77191054d0000f126a}\label{classrtech_1_1math_1_1_bounding_box_ac66d989c9ce9fe77191054d0000f126a}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!max@{max}}
+\index{max@{max}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Bounding\+Box\+::max}
+
+The maximum point. \mbox{\Hypertarget{classrtech_1_1math_1_1_bounding_box_a99006f331238e7fa1a13d85e062cb06e}\label{classrtech_1_1math_1_1_bounding_box_a99006f331238e7fa1a13d85e062cb06e}} 
+\index{rtech::math::BoundingBox@{rtech::math::BoundingBox}!min@{min}}
+\index{min@{min}!rtech::math::BoundingBox@{rtech::math::BoundingBox}}
+\doxysubsubsection{\texorpdfstring{min}{min}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Bounding\+Box\+::min}
+
+The minimum point. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/math/bounding\+\_\+box.\+h\end{DoxyCompactItemize}

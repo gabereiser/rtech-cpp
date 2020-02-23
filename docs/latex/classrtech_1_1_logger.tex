@@ -1,0 +1,114 @@
+\hypertarget{classrtech_1_1_logger}{}\doxysection{rtech\+::Logger Class Reference}
+\label{classrtech_1_1_logger}\index{rtech::Logger@{rtech::Logger}}
+
+
+{\ttfamily \#include $<$logger.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}} \{ {\bfseries L\+E\+V\+E\+L\+\_\+\+I\+N\+FO} = 0, 
+{\bfseries L\+E\+V\+E\+L\+\_\+\+W\+A\+RN} = 1, 
+{\bfseries L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}{log}} (\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}} level, const char $\ast$message,...)
+\item 
+static bool \mbox{\hyperlink{classrtech_1_1_logger_a5ba86a1095f8a85f5681d2fb5f7837da}{is\+Enabled}} (\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}} level)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1_logger_aeb6b6e493783d45745321fe2be90aec2}{set\+Enabled}} (\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}} level, bool enabled)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1_logger_aeb18360ce77b86f0f91d0dad24bc37b7}{set}} (\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}} level, void($\ast$log\+Function)(\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}}, const char $\ast$))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a class providing a basic logging system for a game.
+
+By default, this class logs messages using the gameplay\+::print function, which is implemented in a platform dependent manner and typically prints to stderr as well as to other possibly platform specific locations. Logging behavior can be modified for a specific log level by passing a custom C logging function to the \mbox{\hyperlink{classrtech_1_1_logger_aeb18360ce77b86f0f91d0dad24bc37b7}{Logger\+::set}} method. Logging can also be toggled using the set\+Enabled method. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}\label{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}} 
+\index{rtech::Logger@{rtech::Logger}!Level@{Level}}
+\index{Level@{Level}!rtech::Logger@{rtech::Logger}}
+\doxysubsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{rtech\+::\+Logger\+::\+Level}}}
+
+Enumeration of valid log levels. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtech_1_1_logger_a5ba86a1095f8a85f5681d2fb5f7837da}\label{classrtech_1_1_logger_a5ba86a1095f8a85f5681d2fb5f7837da}} 
+\index{rtech::Logger@{rtech::Logger}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!rtech::Logger@{rtech::Logger}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily static bool rtech\+::\+Logger\+::is\+Enabled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines if logging is currently enabled for the given level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Log level.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if logging is enabled for this level, or false if it is disabled. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}\label{classrtech_1_1_logger_a54c3af49ef109e54598c8610877274ba}} 
+\index{rtech::Logger@{rtech::Logger}!log@{log}}
+\index{log@{log}!rtech::Logger@{rtech::Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily static void rtech\+::\+Logger\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}}}]{level,  }\item[{const char $\ast$}]{message,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Logs a message at the specified log level.
+
+This method accepts a variable argument list with the same formatting specification as printf. Therefore, the message parameter can include any format specifiers that are supported by printf.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Log level. \\
+\hline
+{\em message} & Log message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1_logger_aeb18360ce77b86f0f91d0dad24bc37b7}\label{classrtech_1_1_logger_aeb18360ce77b86f0f91d0dad24bc37b7}} 
+\index{rtech::Logger@{rtech::Logger}!set@{set}}
+\index{set@{set}!rtech::Logger@{rtech::Logger}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily static void rtech\+::\+Logger\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}}}]{level,  }\item[{void($\ast$)(\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}}, const char $\ast$)}]{log\+Function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets a C callback function to handle logging requests for the specified log level.
+
+When a call to log is made with the given level, the specified C function will be called to handle the request.
+
+Passing N\+U\+LL for log\+Function restores the default log behavior for this level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Log level to set logging callback for. \\
+\hline
+{\em log\+Function} & Pointer to a C function to call for each log request at the given log level. @script\{ignore\} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1_logger_aeb6b6e493783d45745321fe2be90aec2}\label{classrtech_1_1_logger_aeb6b6e493783d45745321fe2be90aec2}} 
+\index{rtech::Logger@{rtech::Logger}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!rtech::Logger@{rtech::Logger}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily static void rtech\+::\+Logger\+::set\+Enabled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1_logger_afcf13b03f2e752f5c240d6dfdceff57b}{Level}}}]{level,  }\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Enables or disables logging at the given level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Log level to enable or disable. \\
+\hline
+{\em enabled} & True to enable the logger for the given level, false to disable it. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/logger.\+h\end{DoxyCompactItemize}

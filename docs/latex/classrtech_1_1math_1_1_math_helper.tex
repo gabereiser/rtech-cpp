@@ -1,0 +1,75 @@
+\hypertarget{classrtech_1_1math_1_1_math_helper}{}\doxysection{rtech\+::math\+::Math\+Helper Class Reference}
+\label{classrtech_1_1math_1_1_math_helper}\index{rtech::math::MathHelper@{rtech::math::MathHelper}}
+
+
+{\ttfamily \#include $<$math\+\_\+helper.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_math_helper_acffd2a8258c7c4528ae1ac6e36c81937}{smooth}} (float $\ast$x, float target, float elapsed\+Time, float response\+Time)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_math_helper_a9632e4cb5656ee0c5a70ab0440d76c99}{smooth}} (float $\ast$x, float target, float elapsed\+Time, float rise\+Time, float fall\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtech_1_1math_1_1_math_helper_a34913a9261681f734171a6da06bd56fe}\label{classrtech_1_1math_1_1_math_helper_a34913a9261681f734171a6da06bd56fe}} 
+class {\bfseries Matrix}
+\item 
+\mbox{\Hypertarget{classrtech_1_1math_1_1_math_helper_a93b3302ae01f818150ff762ee0dad634}\label{classrtech_1_1math_1_1_math_helper_a93b3302ae01f818150ff762ee0dad634}} 
+class {\bfseries Vector3}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a math utility class.
+
+This is primarily used for optimized internal math operations. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_math_helper_acffd2a8258c7c4528ae1ac6e36c81937}\label{classrtech_1_1math_1_1_math_helper_acffd2a8258c7c4528ae1ac6e36c81937}} 
+\index{rtech::math::MathHelper@{rtech::math::MathHelper}!smooth@{smooth}}
+\index{smooth@{smooth}!rtech::math::MathHelper@{rtech::math::MathHelper}}
+\doxysubsubsection{\texorpdfstring{smooth()}{smooth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Math\+Helper\+::smooth (\begin{DoxyParamCaption}\item[{float $\ast$}]{x,  }\item[{float}]{target,  }\item[{float}]{elapsed\+Time,  }\item[{float}]{response\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Updates the given scalar towards the given target using a smoothing function. The given response time determines the amount of smoothing (lag). A longer response time yields a smoother result and more lag. To force the scalar to follow the target closely, provide a response time that is very small relative to the given elapsed time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the scalar to update. \\
+\hline
+{\em target} & target value. \\
+\hline
+{\em elapsed\+Time} & elapsed time between calls. \\
+\hline
+{\em response\+Time} & response time (in the same units as elapsed\+Time). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_math_helper_a9632e4cb5656ee0c5a70ab0440d76c99}\label{classrtech_1_1math_1_1_math_helper_a9632e4cb5656ee0c5a70ab0440d76c99}} 
+\index{rtech::math::MathHelper@{rtech::math::MathHelper}!smooth@{smooth}}
+\index{smooth@{smooth}!rtech::math::MathHelper@{rtech::math::MathHelper}}
+\doxysubsubsection{\texorpdfstring{smooth()}{smooth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Math\+Helper\+::smooth (\begin{DoxyParamCaption}\item[{float $\ast$}]{x,  }\item[{float}]{target,  }\item[{float}]{elapsed\+Time,  }\item[{float}]{rise\+Time,  }\item[{float}]{fall\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Updates the given scalar towards the given target using a smoothing function. The given rise and fall times determine the amount of smoothing (lag). Longer rise and fall times yield a smoother result and more lag. To force the scalar to follow the target closely, provide rise and fall times that are very small relative to the given elapsed time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the scalar to update. \\
+\hline
+{\em target} & target value. \\
+\hline
+{\em elapsed\+Time} & elapsed time between calls. \\
+\hline
+{\em rise\+Time} & response time for rising slope (in the same units as elapsed\+Time). \\
+\hline
+{\em fall\+Time} & response time for falling slope (in the same units as elapsed\+Time). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/math/math\+\_\+helper.\+h\end{DoxyCompactItemize}

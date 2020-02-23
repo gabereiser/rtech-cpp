@@ -1,0 +1,411 @@
+\hypertarget{classrtech_1_1math_1_1_plane}{}\doxysection{rtech\+::math\+::Plane Class Reference}
+\label{classrtech_1_1math_1_1_plane}\index{rtech::math::Plane@{rtech::math::Plane}}
+
+
+{\ttfamily \#include $<$plane.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a6785b6283bc9dcf0ffa959e3eb79bb4f}{Plane}} ()
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_ae9321934a9803cfc4b16cd1908ee67c6}{Plane}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&normal, float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ae8556a959402687d9610373a43b8af35}{distance}})
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a9fd37b9aa00fde8071d8025b0cc36a57}{Plane}} (float normalX, float normalY, float normalZ, float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ae8556a959402687d9610373a43b8af35}{distance}})
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a0563704bbeb911f16d08747a5a2ab742}{Plane}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&copy)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a4e21a5c23caf2d5f3e737a62ddae36d6}{$\sim$\+Plane}} ()
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a1a4bbecf66f0588d6083fb2f64cb0185}{get\+Normal}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ad4b062ae01019eb5b7be789a0b3586bc}{set\+Normal}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&normal)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ad8e376b8a219d365baa72b776eb2ad18}{set\+Normal}} (float x, float y, float z)
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ac6337bf2b50272e2c066356fa8e280c3}{get\+Distance}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a08ecac6d26ee09d4e1799fdbb0852596}{set\+Distance}} (float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ae8556a959402687d9610373a43b8af35}{distance}})
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ae8556a959402687d9610373a43b8af35}{distance}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&point) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_aaf8d0e0dac8eb798bda4452f2ac21274}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&sphere) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_aaa66dc2849c741d2259f4393c17c3fce}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&box) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a0afecbb3b362c9bc026191c57cbb2468}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_frustum}{Frustum}} \&frustum) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ae3c41be6af2ff761413210ec1e9bd6bc}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&plane) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_af493424f2c396a7a51d641fbd7e5d700}{intersects}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \&ray) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_plane_afc418afca61ec7b7f2727ad8680575cb}{is\+Parallel}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&plane) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a679d052f172a79065d16f2f5f21c2507}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&normal, float \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ae8556a959402687d9610373a43b8af35}{distance}})
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a4e316361322d2db26b9f36d5b78d17e9}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&plane)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a9e5a73aec78ed47e2d5b97e7cbb6f323}{transform}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&matrix)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a2f50e3c9c0f618d168ced87705567767}{operator$\ast$=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&matrix)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_plane_ab6ee076ed8bc19f7ccdbd275c4057bac}{intersection}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&p1, const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&p2, const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&p3, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$point)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}{I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG}} = 0
+\item 
+static const int \mbox{\hyperlink{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}{I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT}} = 1
+\item 
+static const int \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}{I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a plane which is a flat surface with 2 sides.
+
+The plane is represented as a plane using a 3D vector normal and a distance value (stored as a negative value). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a6785b6283bc9dcf0ffa959e3eb79bb4f}\label{classrtech_1_1math_1_1_plane_a6785b6283bc9dcf0ffa959e3eb79bb4f}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Plane\+::\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a new plane with normal (0, 1, 0) and distance 0. \mbox{\Hypertarget{classrtech_1_1math_1_1_plane_ae9321934a9803cfc4b16cd1908ee67c6}\label{classrtech_1_1math_1_1_plane_ae9321934a9803cfc4b16cd1908ee67c6}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{normal,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+Constructs a new plane from the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em normal} & The normal vector of this plane. \\
+\hline
+{\em distance} & The distance from this plane along its (unit) normal to the origin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a9fd37b9aa00fde8071d8025b0cc36a57}\label{classrtech_1_1math_1_1_plane_a9fd37b9aa00fde8071d8025b0cc36a57}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{float}]{normalX,  }\item[{float}]{normalY,  }\item[{float}]{normalZ,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+Constructs a new plane from the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em normalX} & The x coordinate of the normal. \\
+\hline
+{\em normalY} & The y coordinate of the normal. \\
+\hline
+{\em normalZ} & The z coordinate of the normal. \\
+\hline
+{\em distance} & The distance from this plane along its (unit) normal to the origin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a0563704bbeb911f16d08747a5a2ab742}\label{classrtech_1_1math_1_1_plane_a0563704bbeb911f16d08747a5a2ab742}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{copy }\end{DoxyParamCaption})}
+
+Constructs a new plane from the given plane.
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & The plane to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a4e21a5c23caf2d5f3e737a62ddae36d6}\label{classrtech_1_1math_1_1_plane_a4e21a5c23caf2d5f3e737a62ddae36d6}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!````~Plane@{$\sim$Plane}}
+\index{````~Plane@{$\sim$Plane}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{$\sim$Plane()}{~Plane()}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Plane\+::$\sim$\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_ae8556a959402687d9610373a43b8af35}\label{classrtech_1_1math_1_1_plane_ae8556a959402687d9610373a43b8af35}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!distance@{distance}}
+\index{distance@{distance}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Plane\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{point }\end{DoxyParamCaption}) const}
+
+Calculates the distance from this plane to the specified point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to calculate distance to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_ac6337bf2b50272e2c066356fa8e280c3}\label{classrtech_1_1math_1_1_plane_ac6337bf2b50272e2c066356fa8e280c3}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Plane\+::get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the plane\textquotesingle{}s distance to the origin along its normal.
+
+\begin{DoxyReturn}{Returns}
+The plane\textquotesingle{}s distance to the origin along its normal. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a1a4bbecf66f0588d6083fb2f64cb0185}\label{classrtech_1_1math_1_1_plane_a1a4bbecf66f0588d6083fb2f64cb0185}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{getNormal()}{getNormal()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Plane\+::get\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the plane\textquotesingle{}s normal in the given vector.
+
+\begin{DoxyReturn}{Returns}
+normal The plane\textquotesingle{}s normal. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_ab6ee076ed8bc19f7ccdbd275c4057bac}\label{classrtech_1_1math_1_1_plane_ab6ee076ed8bc19f7ccdbd275c4057bac}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!intersection@{intersection}}
+\index{intersection@{intersection}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{intersection()}{intersection()}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Plane\+::intersection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{p1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{p2,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{p3,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates the point of intersection of the given three planes and stores it in the given point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & The first plane. \\
+\hline
+{\em p2} & The second plane. \\
+\hline
+{\em p3} & The third plane. \\
+\hline
+{\em point} & The point to store the point of intersection in (this is left unmodified if the planes do not all intersect or if they are all parallel along one vector and intersect along a line). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_aaa66dc2849c741d2259f4393c17c3fce}\label{classrtech_1_1math_1_1_plane_aaa66dc2849c741d2259f4393c17c3fce}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Plane\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_box}{Bounding\+Box}} \&}]{box }\end{DoxyParamCaption}) const}
+
+Tests whether this plane intersects the specified bounding box.
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & The bounding box to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK}} if the specified bounding object is in the negative half-\/space of this plane, \mbox{\hyperlink{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT}} if it is in the positive half-\/space of this plane, and \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG}} if it intersects this plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_aaf8d0e0dac8eb798bda4452f2ac21274}\label{classrtech_1_1math_1_1_plane_aaf8d0e0dac8eb798bda4452f2ac21274}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Plane\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{sphere }\end{DoxyParamCaption}) const}
+
+Tests whether this plane intersects the specified bounding sphere.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sphere} & The bounding sphere to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK}} if the specified bounding object is in the negative half-\/space of this plane, \mbox{\hyperlink{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT}} if it is in the positive half-\/space of this plane, and \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG}} if it intersects this plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a0afecbb3b362c9bc026191c57cbb2468}\label{classrtech_1_1math_1_1_plane_a0afecbb3b362c9bc026191c57cbb2468}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Plane\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_frustum}{Frustum}} \&}]{frustum }\end{DoxyParamCaption}) const}
+
+Tests whether this plane intersects the specified frustum.
+
+
+\begin{DoxyParams}{Parameters}
+{\em frustum} & The frustum to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK}} if the specified frustum is in the negative half-\/space of this plane, \mbox{\hyperlink{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT}} if it is in the positive half-\/space of this plane, and \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG}} if it intersects this plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_ae3c41be6af2ff761413210ec1e9bd6bc}\label{classrtech_1_1math_1_1_plane_ae3c41be6af2ff761413210ec1e9bd6bc}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Plane\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{plane }\end{DoxyParamCaption}) const}
+
+Tests whether this plane intersects the specified plane.
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane} & The plane to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK}} if the specified plane is in the negative half-\/space of this plane, \mbox{\hyperlink{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT}} if it is in the positive half-\/space of this plane, and \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG}} if it intersects this plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_af493424f2c396a7a51d641fbd7e5d700}\label{classrtech_1_1math_1_1_plane_af493424f2c396a7a51d641fbd7e5d700}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!intersects@{intersects}}
+\index{intersects@{intersects}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Plane\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_ray}{Ray}} \&}]{ray }\end{DoxyParamCaption}) const}
+
+Tests whether this plane intersects the specified ray.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & The ray to test intersection with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK}} if the specified ray is in the negative half-\/space of this plane, \mbox{\hyperlink{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT}} if it is in the positive half-\/space of this plane, and \mbox{\hyperlink{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}{Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG}} if it intersects this plane. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_afc418afca61ec7b7f2727ad8680575cb}\label{classrtech_1_1math_1_1_plane_afc418afca61ec7b7f2727ad8680575cb}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!isParallel@{isParallel}}
+\index{isParallel@{isParallel}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{isParallel()}{isParallel()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Plane\+::is\+Parallel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{plane }\end{DoxyParamCaption}) const}
+
+Determines whether the given plane is parallel to this plane.
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane} & The plane to test.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given plane is parallel to this plane; false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a2f50e3c9c0f618d168ced87705567767}\label{classrtech_1_1math_1_1_plane_a2f50e3c9c0f618d168ced87705567767}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}}\& rtech\+::math\+::\+Plane\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transforms this plane by the given matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The matrix to transform by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This plane, after the transformation occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a4e316361322d2db26b9f36d5b78d17e9}\label{classrtech_1_1math_1_1_plane_a4e316361322d2db26b9f36d5b78d17e9}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!set@{set}}
+\index{set@{set}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Plane\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_plane}{Plane}} \&}]{plane }\end{DoxyParamCaption})}
+
+Sets this plane to the given plane.
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane} & The plane to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a679d052f172a79065d16f2f5f21c2507}\label{classrtech_1_1math_1_1_plane_a679d052f172a79065d16f2f5f21c2507}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!set@{set}}
+\index{set@{set}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Plane\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{normal,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+Sets this plane to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em normal} & The normal vector of this plane. \\
+\hline
+{\em distance} & The distance to this plane along its normal to the origin. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a08ecac6d26ee09d4e1799fdbb0852596}\label{classrtech_1_1math_1_1_plane_a08ecac6d26ee09d4e1799fdbb0852596}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!setDistance@{setDistance}}
+\index{setDistance@{setDistance}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{setDistance()}{setDistance()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Plane\+::set\+Distance (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+Sets the plane\textquotesingle{}s distance to the origin along its normal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & The new distance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_ad4b062ae01019eb5b7be789a0b3586bc}\label{classrtech_1_1math_1_1_plane_ad4b062ae01019eb5b7be789a0b3586bc}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!setNormal@{setNormal}}
+\index{setNormal@{setNormal}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{setNormal()}{setNormal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Plane\+::set\+Normal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{normal }\end{DoxyParamCaption})}
+
+Sets the plane\textquotesingle{}s normal to the given vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em normal} & The new normal vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_ad8e376b8a219d365baa72b776eb2ad18}\label{classrtech_1_1math_1_1_plane_ad8e376b8a219d365baa72b776eb2ad18}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!setNormal@{setNormal}}
+\index{setNormal@{setNormal}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{setNormal()}{setNormal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Plane\+::set\+Normal (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+Sets the plane\textquotesingle{}s normal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the normal. \\
+\hline
+{\em y} & The y coordinate of the normal. \\
+\hline
+{\em z} & The z coordinate of the normal. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a9e5a73aec78ed47e2d5b97e7cbb6f323}\label{classrtech_1_1math_1_1_plane_a9e5a73aec78ed47e2d5b97e7cbb6f323}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!transform@{transform}}
+\index{transform@{transform}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Plane\+::transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_matrix}{Matrix}} \&}]{matrix }\end{DoxyParamCaption})}
+
+Transforms this plane by the given transformation matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The transformation matrix to transform by. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}\label{classrtech_1_1math_1_1_plane_a450c7e2d72e7d6ef9f461b5fbe1a3f5e}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!INTERSECTS\_BACK@{INTERSECTS\_BACK}}
+\index{INTERSECTS\_BACK@{INTERSECTS\_BACK}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{INTERSECTS\_BACK}{INTERSECTS\_BACK}}
+{\footnotesize\ttfamily const int rtech\+::math\+::\+Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+B\+A\+CK = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+Represents when a 3D entity is behind (in the negative half-\/space of) a plane. \mbox{\Hypertarget{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}\label{classrtech_1_1math_1_1_plane_af9efcc57bf56ab6f8928e698051d0df1}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!INTERSECTS\_FRONT@{INTERSECTS\_FRONT}}
+\index{INTERSECTS\_FRONT@{INTERSECTS\_FRONT}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{INTERSECTS\_FRONT}{INTERSECTS\_FRONT}}
+{\footnotesize\ttfamily const int rtech\+::math\+::\+Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+F\+R\+O\+NT = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+Represents when a 3D entity is in front of (in the positive half-\/space of) a plane. \mbox{\Hypertarget{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}\label{classrtech_1_1math_1_1_plane_a7c8a60bcaca3d60a0b20b64f27fe8c18}} 
+\index{rtech::math::Plane@{rtech::math::Plane}!INTERSECTS\_INTERSECTING@{INTERSECTS\_INTERSECTING}}
+\index{INTERSECTS\_INTERSECTING@{INTERSECTS\_INTERSECTING}!rtech::math::Plane@{rtech::math::Plane}}
+\doxysubsubsection{\texorpdfstring{INTERSECTS\_INTERSECTING}{INTERSECTS\_INTERSECTING}}
+{\footnotesize\ttfamily const int rtech\+::math\+::\+Plane\+::\+I\+N\+T\+E\+R\+S\+E\+C\+T\+S\+\_\+\+I\+N\+T\+E\+R\+S\+E\+C\+T\+I\+NG = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+Represents when a 3D entity intersects a plane. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/math/plane.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,859 @@
+\hypertarget{classrtech_1_1math_1_1_vector3}{}\doxysection{rtech\+::math\+::Vector3 Class Reference}
+\label{classrtech_1_1math_1_1_vector3}\index{rtech::math::Vector3@{rtech::math::Vector3}}
+
+
+{\ttfamily \#include $<$vector3.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_aae89f4aab2b7372744aeb55b2e1d1ca3}{Vector3}} ()
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a933da1e771287fef4f65fd176df4fd7e}{Vector3}} (float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a41deedbe10aed6694c42da6ec020d94b}{x}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a295d2b59a1125238f22112c5232b1d3d}{y}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a80c9f37bae19e1ceae72377d42599a9e}{z}})
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a6bf90e2a4d90728f7632d14fc65fadf9}{Vector3}} (const float $\ast$array)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a3dc540b8ad1adc95de97db14503be8a7}{Vector3}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&p1, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&p2)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a2cc17ea60728b8c2d7b5143ea1794683}{Vector3}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&copy)
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_ad10e4179707ce1613590ece82460f36d}{$\sim$\+Vector3}} ()
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_ac3f0c9b74579e5971037b0e98b871e23}{is\+Zero}} () const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_aac169745f7a423b37a4afe3d1ca15437}{is\+One}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a14c928836daff8682b2d28cec697e3a5}{add}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_ab4ab006e24d8c9d96e88372819c8c7c5}{clamp}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&min, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&max)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a0accf4641c71165a24a95671f89e6790}{cross}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v)
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a763f18a40c119641be49302fc4031f5b}{distance}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a069404a6bab4bc362cdfd97705d38324}{distance\+Squared}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a75022303506ca4f8883f61bfb2edd5b7}{dot}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v) const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a262b8e81cd5689d03d04233ae68c0647}{length}} () const
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a0e7e538894dfc7c68b4de459b922e622}{length\+Squared}} () const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a518cd11863c1b6feea9bddfe0e2f0f19}{negate}} ()
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_aaf542fc100a588900a38ac9a79108d82}{normalize}} ()
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a65c6971cce53662bc516e0df908cc84d}{normalize}} (\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst) const
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a4a175e86121c7e37da984a3a8ed4d2e6}{scale}} (float scalar)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_aef04742eb232deaf5ec5a44151a6ac8c}{set}} (float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a41deedbe10aed6694c42da6ec020d94b}{x}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a295d2b59a1125238f22112c5232b1d3d}{y}}, float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a80c9f37bae19e1ceae72377d42599a9e}{z}})
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a3abe7ec160f5eff4f7c179e7ab12f2da}{set}} (const float $\ast$array)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_aa13c6e2c1eb8d2af1271c9d55f7a184d}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a013ff1ec6c13f770f958d77a07930696}{set}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&p1, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&p2)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a211c000ec333bcac72cbbad1327da418}{subtract}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v)
+\item 
+void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a75bfdf85b621cd44340698e1f9c829ad}{smooth}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&target, float elapsed\+Time, float response\+Time)
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_ad78d5f8c4e0dc3815f1a39bfeaa78b02}{operator+}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v) const
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a27f09c6599e89d7831b21559a9b4bd68}{operator+=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v)
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_adab5dacc2cacd479e9caa6fdda351df9}{operator-\/}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v) const
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_abb637765f1752f4c68c1118a68f591a2}{operator-\/=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v)
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a9ebd1564ea00d804e2f64af718240d22}{operator-\/}} () const
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_ac9e26a7a171a46171d75a0e69945c86d}{operator$\ast$}} (float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a41deedbe10aed6694c42da6ec020d94b}{x}}) const
+\item 
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a06bf11a68de433dfacedfa0f80e89f5a}{operator$\ast$=}} (float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a41deedbe10aed6694c42da6ec020d94b}{x}})
+\item 
+const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a3330e4662aab27febcf6eee770555d37}{operator/}} (float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a41deedbe10aed6694c42da6ec020d94b}{x}}) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a82d3f0711626ebaa422ceab6ce3591a9}{operator$<$}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a491ca1813184f3d2cce9fda961fed4b1}{operator==}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v) const
+\item 
+bool \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a0b3ca119600a317eb8fd920522e186d1}{operator!=}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_ab2607c5438a71eb7cbef85184ba70d7a}{from\+Color}} (unsigned int color)
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a496a96e34d7390a5aabf51fd8afabe14}{zero}} ()
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_ae8c1063b8952d5244f9d1f6182df5983}{one}} ()
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a8877c77ec09717c073f7c0a0e305c7c5}{unitX}} ()
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a6f1b1473967503e8085de0a371aef436}{unitY}} ()
+\item 
+static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \& \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a276b86c4fd487676ad39336401c3fb90}{unitZ}} ()
+\item 
+static float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_afd5acbe4704a69f48e3e906ed3615ff9}{angle}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v1, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v2)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_af0dfba09e5e5bb70988c2dde31edc82f}{add}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v1, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v2, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_af8b789725152d09c76db60f25753837c}{clamp}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&min, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&max, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a8a5ee2b4b5dd80e0be0ba2dad8dfd233}{cross}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v1, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v2, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst)
+\item 
+static float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a372229bcd5548535584122ab85abe7f8}{dot}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v1, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v2)
+\item 
+static void \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a214a814ce3fd1af6a7df8a0904bda296}{subtract}} (const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v1, const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&v2, \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$dst)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a41deedbe10aed6694c42da6ec020d94b}{x}}
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a295d2b59a1125238f22112c5232b1d3d}{y}}
+\item 
+float \mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a80c9f37bae19e1ceae72377d42599a9e}{z}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a 3-\/element floating point vector.
+
+When using a vector to represent a surface normal, the vector should typically be normalized. Other uses of directional vectors may wish to leave the magnitude of the vector intact. When used as a point, the elements of the vector represent a position in 3D space. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_aae89f4aab2b7372744aeb55b2e1d1ca3}\label{classrtech_1_1math_1_1_vector3_aae89f4aab2b7372744aeb55b2e1d1ca3}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Vector3\+::\+Vector3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a new vector initialized to all zeros. \mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a933da1e771287fef4f65fd176df4fd7e}\label{classrtech_1_1math_1_1_vector3_a933da1e771287fef4f65fd176df4fd7e}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Vector3\+::\+Vector3 (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+Constructs a new vector initialized to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+{\em z} & The z coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a6bf90e2a4d90728f7632d14fc65fadf9}\label{classrtech_1_1math_1_1_vector3_a6bf90e2a4d90728f7632d14fc65fadf9}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Vector3\+::\+Vector3 (\begin{DoxyParamCaption}\item[{const float $\ast$}]{array }\end{DoxyParamCaption})}
+
+Constructs a new vector from the values in the specified array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & An array containing the elements of the vector in the order x, y, z. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a3dc540b8ad1adc95de97db14503be8a7}\label{classrtech_1_1math_1_1_vector3_a3dc540b8ad1adc95de97db14503be8a7}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Vector3\+::\+Vector3 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{p1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{p2 }\end{DoxyParamCaption})}
+
+Constructs a vector that describes the direction between the specified points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & The first point. \\
+\hline
+{\em p2} & The second point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a2cc17ea60728b8c2d7b5143ea1794683}\label{classrtech_1_1math_1_1_vector3_a2cc17ea60728b8c2d7b5143ea1794683}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{Vector3()}{Vector3()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Vector3\+::\+Vector3 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{copy }\end{DoxyParamCaption})}
+
+Constructs a new vector that is a copy of the specified vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & The vector to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_ad10e4179707ce1613590ece82460f36d}\label{classrtech_1_1math_1_1_vector3_ad10e4179707ce1613590ece82460f36d}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!````~Vector3@{$\sim$Vector3}}
+\index{````~Vector3@{$\sim$Vector3}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{$\sim$Vector3()}{~Vector3()}}
+{\footnotesize\ttfamily rtech\+::math\+::\+Vector3\+::$\sim$\+Vector3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a14c928836daff8682b2d28cec697e3a5}\label{classrtech_1_1math_1_1_vector3_a14c928836daff8682b2d28cec697e3a5}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!add@{add}}
+\index{add@{add}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})}
+
+Adds the elements of the specified vector to this one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_af0dfba09e5e5bb70988c2dde31edc82f}\label{classrtech_1_1math_1_1_vector3_af0dfba09e5e5bb70988c2dde31edc82f}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!add@{add}}
+\index{add@{add}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Vector3\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v2,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds the specified vectors and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & The first vector. \\
+\hline
+{\em v2} & The second vector. \\
+\hline
+{\em dst} & A vector to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_afd5acbe4704a69f48e3e906ed3615ff9}\label{classrtech_1_1math_1_1_vector3_afd5acbe4704a69f48e3e906ed3615ff9}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!angle@{angle}}
+\index{angle@{angle}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{angle()}{angle()}}
+{\footnotesize\ttfamily static float rtech\+::math\+::\+Vector3\+::angle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the angle (in radians) between the specified vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & The first vector. \\
+\hline
+{\em v2} & The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle between the two vectors (in radians). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_ab4ab006e24d8c9d96e88372819c8c7c5}\label{classrtech_1_1math_1_1_vector3_ab4ab006e24d8c9d96e88372819c8c7c5}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!clamp@{clamp}}
+\index{clamp@{clamp}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{clamp()}{clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::clamp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{min,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{max }\end{DoxyParamCaption})}
+
+Clamps this vector within the specified range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum value. \\
+\hline
+{\em max} & The maximum value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_af8b789725152d09c76db60f25753837c}\label{classrtech_1_1math_1_1_vector3_af8b789725152d09c76db60f25753837c}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!clamp@{clamp}}
+\index{clamp@{clamp}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{clamp()}{clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Vector3\+::clamp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{min,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{max,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Clamps the specified vector within the specified range and returns it in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to clamp. \\
+\hline
+{\em min} & The minimum value. \\
+\hline
+{\em max} & The maximum value. \\
+\hline
+{\em dst} & A vector to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a0accf4641c71165a24a95671f89e6790}\label{classrtech_1_1math_1_1_vector3_a0accf4641c71165a24a95671f89e6790}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!cross@{cross}}
+\index{cross@{cross}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{cross()}{cross()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::cross (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})}
+
+Sets this vector to the cross product between itself and the specified vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to compute the cross product with. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a8a5ee2b4b5dd80e0be0ba2dad8dfd233}\label{classrtech_1_1math_1_1_vector3_a8a5ee2b4b5dd80e0be0ba2dad8dfd233}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!cross@{cross}}
+\index{cross@{cross}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{cross()}{cross()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Vector3\+::cross (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v2,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Computes the cross product of the specified vectors and stores the result in dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & The first vector. \\
+\hline
+{\em v2} & The second vector. \\
+\hline
+{\em dst} & A vector to store the result in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a763f18a40c119641be49302fc4031f5b}\label{classrtech_1_1math_1_1_vector3_a763f18a40c119641be49302fc4031f5b}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!distance@{distance}}
+\index{distance@{distance}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Vector3\+::distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const}
+
+Returns the distance between this vector and v.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The other vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance between this vector and v.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a069404a6bab4bc362cdfd97705d38324}{distance\+Squared}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a069404a6bab4bc362cdfd97705d38324}\label{classrtech_1_1math_1_1_vector3_a069404a6bab4bc362cdfd97705d38324}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!distanceSquared@{distanceSquared}}
+\index{distanceSquared@{distanceSquared}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{distanceSquared()}{distanceSquared()}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Vector3\+::distance\+Squared (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const}
+
+Returns the squared distance between this vector and v.
+
+When it is not necessary to get the exact distance between two vectors (for example, when simply comparing the distance between different vectors), it is advised to use this method instead of distance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The other vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The squared distance between this vector and v.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a763f18a40c119641be49302fc4031f5b}{distance}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a75022303506ca4f8883f61bfb2edd5b7}\label{classrtech_1_1math_1_1_vector3_a75022303506ca4f8883f61bfb2edd5b7}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!dot@{dot}}
+\index{dot@{dot}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{dot()}{dot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Vector3\+::dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const}
+
+Returns the dot product of this vector and the specified vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to compute the dot product with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dot product. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a372229bcd5548535584122ab85abe7f8}\label{classrtech_1_1math_1_1_vector3_a372229bcd5548535584122ab85abe7f8}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!dot@{dot}}
+\index{dot@{dot}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{dot()}{dot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float rtech\+::math\+::\+Vector3\+::dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the dot product between the specified vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & The first vector. \\
+\hline
+{\em v2} & The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dot product between the vectors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_ab2607c5438a71eb7cbef85184ba70d7a}\label{classrtech_1_1math_1_1_vector3_ab2607c5438a71eb7cbef85184ba70d7a}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!fromColor@{fromColor}}
+\index{fromColor@{fromColor}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{fromColor()}{fromColor()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Vector3\+::from\+Color (\begin{DoxyParamCaption}\item[{unsigned int}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new vector from an integer interpreted as an R\+GB value. E.\+g. 0xff0000 represents red or the vector (1, 0, 0).
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The integer to interpret as an R\+GB value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector corresponding to the interpreted R\+GB color. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_aac169745f7a423b37a4afe3d1ca15437}\label{classrtech_1_1math_1_1_vector3_aac169745f7a423b37a4afe3d1ca15437}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!isOne@{isOne}}
+\index{isOne@{isOne}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{isOne()}{isOne()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Vector3\+::is\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Indicates whether this vector contains all ones.
+
+\begin{DoxyReturn}{Returns}
+true if this vector contains all ones, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_ac3f0c9b74579e5971037b0e98b871e23}\label{classrtech_1_1math_1_1_vector3_ac3f0c9b74579e5971037b0e98b871e23}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!isZero@{isZero}}
+\index{isZero@{isZero}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{isZero()}{isZero()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Vector3\+::is\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Indicates whether this vector contains all zeros.
+
+\begin{DoxyReturn}{Returns}
+true if this vector contains all zeros, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a262b8e81cd5689d03d04233ae68c0647}\label{classrtech_1_1math_1_1_vector3_a262b8e81cd5689d03d04233ae68c0647}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!length@{length}}
+\index{length@{length}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Vector3\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Computes the length of this vector.
+
+\begin{DoxyReturn}{Returns}
+The length of the vector.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a0e7e538894dfc7c68b4de459b922e622}{length\+Squared}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a0e7e538894dfc7c68b4de459b922e622}\label{classrtech_1_1math_1_1_vector3_a0e7e538894dfc7c68b4de459b922e622}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!lengthSquared@{lengthSquared}}
+\index{lengthSquared@{lengthSquared}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{lengthSquared()}{lengthSquared()}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Vector3\+::length\+Squared (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the squared length of this vector.
+
+When it is not necessary to get the exact length of a vector (for example, when simply comparing the lengths of different vectors), it is advised to use this method instead of length.
+
+\begin{DoxyReturn}{Returns}
+The squared length of the vector.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrtech_1_1math_1_1_vector3_a262b8e81cd5689d03d04233ae68c0647}{length}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a518cd11863c1b6feea9bddfe0e2f0f19}\label{classrtech_1_1math_1_1_vector3_a518cd11863c1b6feea9bddfe0e2f0f19}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!negate@{negate}}
+\index{negate@{negate}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{negate()}{negate()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::negate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Negates this vector. \mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_aaf542fc100a588900a38ac9a79108d82}\label{classrtech_1_1math_1_1_vector3_aaf542fc100a588900a38ac9a79108d82}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!normalize@{normalize}}
+\index{normalize@{normalize}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Normalizes this vector.
+
+This method normalizes this \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} so that it is of unit length (in other words, the length of the vector after calling this method will be 1.\+0f). If the vector already has unit length or if the length of the vector is zero, this method does nothing.
+
+\begin{DoxyReturn}{Returns}
+This vector, after the normalization occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a65c6971cce53662bc516e0df908cc84d}\label{classrtech_1_1math_1_1_vector3_a65c6971cce53662bc516e0df908cc84d}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!normalize@{normalize}}
+\index{normalize@{normalize}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::normalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption}) const}
+
+Normalizes this vector and stores the result in dst.
+
+If the vector already has unit length or if the length of the vector is zero, this method simply copies the current vector into dst.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst} & The destination vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_ae8c1063b8952d5244f9d1f6182df5983}\label{classrtech_1_1math_1_1_vector3_ae8c1063b8952d5244f9d1f6182df5983}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!one@{one}}
+\index{one@{one}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{one()}{one()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::one (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the one vector.
+
+\begin{DoxyReturn}{Returns}
+The 3-\/element vector of 1s. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a0b3ca119600a317eb8fd920522e186d1}\label{classrtech_1_1math_1_1_vector3_a0b3ca119600a317eb8fd920522e186d1}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Vector3\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determines if this vector is not equal to the given vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to compare against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this vector is not equal to the given vector, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_ac9e26a7a171a46171d75a0e69945c86d}\label{classrtech_1_1math_1_1_vector3_ac9e26a7a171a46171d75a0e69945c86d}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Vector3\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the scalar product of this vector with the given value.
+
+Note\+: this does not modify this vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value to scale by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a06bf11a68de433dfacedfa0f80e89f5a}\label{classrtech_1_1math_1_1_vector3_a06bf11a68de433dfacedfa0f80e89f5a}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Scales this vector by the given value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value to scale by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector, after the scale occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_ad78d5f8c4e0dc3815f1a39bfeaa78b02}\label{classrtech_1_1math_1_1_vector3_ad78d5f8c4e0dc3815f1a39bfeaa78b02}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Vector3\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the sum of this vector with the given vector.
+
+Note\+: this does not modify this vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector sum. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a27f09c6599e89d7831b21559a9b4bd68}\label{classrtech_1_1math_1_1_vector3_a27f09c6599e89d7831b21559a9b4bd68}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the given vector to this vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector, after the addition occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a9ebd1564ea00d804e2f64af718240d22}\label{classrtech_1_1math_1_1_vector3_a9ebd1564ea00d804e2f64af718240d22}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Vector3\+::operator-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the negation of this vector.
+
+Note\+: this does not modify this vector.
+
+\begin{DoxyReturn}{Returns}
+The negation of this vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_adab5dacc2cacd479e9caa6fdda351df9}\label{classrtech_1_1math_1_1_vector3_adab5dacc2cacd479e9caa6fdda351df9}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Vector3\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the difference of this vector with the given vector.
+
+Note\+: this does not modify this vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The vector difference. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_abb637765f1752f4c68c1118a68f591a2}\label{classrtech_1_1math_1_1_vector3_abb637765f1752f4c68c1118a68f591a2}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subtracts the given vector from this vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This vector, after the subtraction occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a3330e4662aab27febcf6eee770555d37}\label{classrtech_1_1math_1_1_vector3_a3330e4662aab27febcf6eee770555d37}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator/@{operator/}}
+\index{operator/@{operator/}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} rtech\+::math\+::\+Vector3\+::operator/ (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the components of this vector divided by the given constant
+
+Note\+: this does not modify this vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the constant to divide this vector with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a smaller vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a82d3f0711626ebaa422ceab6ce3591a9}\label{classrtech_1_1math_1_1_vector3_a82d3f0711626ebaa422ceab6ce3591a9}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Vector3\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determines if this vector is less than the given vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to compare against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this vector is less than the given vector, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a491ca1813184f3d2cce9fda961fed4b1}\label{classrtech_1_1math_1_1_vector3_a491ca1813184f3d2cce9fda961fed4b1}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!operator==@{operator==}}
+\index{operator==@{operator==}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool rtech\+::math\+::\+Vector3\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determines if this vector is equal to the given vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to compare against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this vector is equal to the given vector, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a4a175e86121c7e37da984a3a8ed4d2e6}\label{classrtech_1_1math_1_1_vector3_a4a175e86121c7e37da984a3a8ed4d2e6}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!scale@{scale}}
+\index{scale@{scale}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::scale (\begin{DoxyParamCaption}\item[{float}]{scalar }\end{DoxyParamCaption})}
+
+Scales all elements of this vector by the specified value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scalar} & The scalar value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a3abe7ec160f5eff4f7c179e7ab12f2da}\label{classrtech_1_1math_1_1_vector3_a3abe7ec160f5eff4f7c179e7ab12f2da}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!set@{set}}
+\index{set@{set}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::set (\begin{DoxyParamCaption}\item[{const float $\ast$}]{array }\end{DoxyParamCaption})}
+
+Sets the elements of this vector from the values in the specified array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & An array containing the elements of the vector in the order x, y, z. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a013ff1ec6c13f770f958d77a07930696}\label{classrtech_1_1math_1_1_vector3_a013ff1ec6c13f770f958d77a07930696}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!set@{set}}
+\index{set@{set}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{p1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{p2 }\end{DoxyParamCaption})}
+
+Sets this vector to the directional vector between the specified points. \mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_aa13c6e2c1eb8d2af1271c9d55f7a184d}\label{classrtech_1_1math_1_1_vector3_aa13c6e2c1eb8d2af1271c9d55f7a184d}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!set@{set}}
+\index{set@{set}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})}
+
+Sets the elements of this vector to those in the specified vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_aef04742eb232deaf5ec5a44151a6ac8c}\label{classrtech_1_1math_1_1_vector3_aef04742eb232deaf5ec5a44151a6ac8c}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!set@{set}}
+\index{set@{set}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::set (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+Sets the elements of this vector to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new x coordinate. \\
+\hline
+{\em y} & The new y coordinate. \\
+\hline
+{\em z} & The new z coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a75bfdf85b621cd44340698e1f9c829ad}\label{classrtech_1_1math_1_1_vector3_a75bfdf85b621cd44340698e1f9c829ad}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!smooth@{smooth}}
+\index{smooth@{smooth}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{smooth()}{smooth()}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::smooth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{target,  }\item[{float}]{elapsed\+Time,  }\item[{float}]{response\+Time }\end{DoxyParamCaption})}
+
+Updates this vector towards the given target using a smoothing function. The given response time determines the amount of smoothing (lag). A longer response time yields a smoother result and more lag. To force this vector to follow the target closely, provide a response time that is very small relative to the given elapsed time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & target value. \\
+\hline
+{\em elapsed\+Time} & elapsed time between calls. \\
+\hline
+{\em response\+Time} & response time (in the same units as elapsed\+Time). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a211c000ec333bcac72cbbad1327da418}\label{classrtech_1_1math_1_1_vector3_a211c000ec333bcac72cbbad1327da418}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!subtract@{subtract}}
+\index{subtract@{subtract}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rtech\+::math\+::\+Vector3\+::subtract (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})}
+
+Subtracts this vector and the specified vector as (this -\/ v) and stores the result in this vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The vector to subtract. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a214a814ce3fd1af6a7df8a0904bda296}\label{classrtech_1_1math_1_1_vector3_a214a814ce3fd1af6a7df8a0904bda296}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!subtract@{subtract}}
+\index{subtract@{subtract}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void rtech\+::math\+::\+Vector3\+::subtract (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} \&}]{v2,  }\item[{\mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}} $\ast$}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Subtracts the specified vectors and stores the result in dst. The resulting vector is computed as (v1 -\/ v2).
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & The first vector. \\
+\hline
+{\em v2} & The second vector. \\
+\hline
+{\em dst} & The destination vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a8877c77ec09717c073f7c0a0e305c7c5}\label{classrtech_1_1math_1_1_vector3_a8877c77ec09717c073f7c0a0e305c7c5}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!unitX@{unitX}}
+\index{unitX@{unitX}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{unitX()}{unitX()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::unitX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the unit x vector.
+
+\begin{DoxyReturn}{Returns}
+The 3-\/element unit vector along the x axis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a6f1b1473967503e8085de0a371aef436}\label{classrtech_1_1math_1_1_vector3_a6f1b1473967503e8085de0a371aef436}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!unitY@{unitY}}
+\index{unitY@{unitY}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{unitY()}{unitY()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::unitY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the unit y vector.
+
+\begin{DoxyReturn}{Returns}
+The 3-\/element unit vector along the y axis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a276b86c4fd487676ad39336401c3fb90}\label{classrtech_1_1math_1_1_vector3_a276b86c4fd487676ad39336401c3fb90}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!unitZ@{unitZ}}
+\index{unitZ@{unitZ}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{unitZ()}{unitZ()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::unitZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the unit z vector.
+
+\begin{DoxyReturn}{Returns}
+The 3-\/element unit vector along the z axis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a496a96e34d7390a5aabf51fd8afabe14}\label{classrtech_1_1math_1_1_vector3_a496a96e34d7390a5aabf51fd8afabe14}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!zero@{zero}}
+\index{zero@{zero}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{zero()}{zero()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classrtech_1_1math_1_1_vector3}{Vector3}}\& rtech\+::math\+::\+Vector3\+::zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the zero vector.
+
+\begin{DoxyReturn}{Returns}
+The 3-\/element vector of 0s. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a41deedbe10aed6694c42da6ec020d94b}\label{classrtech_1_1math_1_1_vector3_a41deedbe10aed6694c42da6ec020d94b}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!x@{x}}
+\index{x@{x}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Vector3\+::x}
+
+The x-\/coordinate. \mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a295d2b59a1125238f22112c5232b1d3d}\label{classrtech_1_1math_1_1_vector3_a295d2b59a1125238f22112c5232b1d3d}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!y@{y}}
+\index{y@{y}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Vector3\+::y}
+
+The y-\/coordinate. \mbox{\Hypertarget{classrtech_1_1math_1_1_vector3_a80c9f37bae19e1ceae72377d42599a9e}\label{classrtech_1_1math_1_1_vector3_a80c9f37bae19e1ceae72377d42599a9e}} 
+\index{rtech::math::Vector3@{rtech::math::Vector3}!z@{z}}
+\index{z@{z}!rtech::math::Vector3@{rtech::math::Vector3}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily float rtech\+::math\+::\+Vector3\+::z}
+
+The z-\/coordinate. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/math/vector3.\+h\end{DoxyCompactItemize}

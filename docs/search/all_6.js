@@ -1,6 +1,27 @@
 var searchData=
 [
-  ['vec2_8',['Vec2',['../struct_vec2.html',1,'']]],
-  ['vec3_9',['Vec3',['../struct_vec3.html',1,'']]],
-  ['vec4_10',['Vec4',['../struct_vec4.html',1,'']]]
+  ['getbackvector_37',['getBackVector',['../classrtech_1_1math_1_1_matrix.html#aedd9f9764b23a9f9ea110b130a91be9e',1,'rtech::math::Matrix']]],
+  ['getbottom_38',['getBottom',['../classrtech_1_1math_1_1_frustum.html#a61da4bf14551538610eb3fb1d59f97b5',1,'rtech::math::Frustum']]],
+  ['getcenter_39',['getCenter',['../classrtech_1_1math_1_1_bounding_box.html#a087cfd491d539d2a9469446b375b1d94',1,'rtech::math::BoundingBox::getCenter() const'],['../classrtech_1_1math_1_1_bounding_box.html#aa907c9f0a6a9e92fc2dc2ce6f575d9da',1,'rtech::math::BoundingBox::getCenter(Vector3 *dst) const']]],
+  ['getcorners_40',['getCorners',['../classrtech_1_1math_1_1_bounding_box.html#a7438524e4ad343db9486126b3ea52704',1,'rtech::math::BoundingBox::getCorners()'],['../classrtech_1_1math_1_1_frustum.html#a74332a995998ac00b81345aab4985aee',1,'rtech::math::Frustum::getCorners()']]],
+  ['getdirection_41',['getDirection',['../classrtech_1_1math_1_1_ray.html#a6e921e6ad6f1db4e0afa4deb6b6dfcc5',1,'rtech::math::Ray']]],
+  ['getdistance_42',['getDistance',['../classrtech_1_1math_1_1_plane.html#ac6337bf2b50272e2c066356fa8e280c3',1,'rtech::math::Plane']]],
+  ['getdownvector_43',['getDownVector',['../classrtech_1_1math_1_1_matrix.html#a31465459833796e1d8ea831b53d6459e',1,'rtech::math::Matrix']]],
+  ['getfar_44',['getFar',['../classrtech_1_1math_1_1_frustum.html#a4ac40998c4acb8df8f710aefea11e182',1,'rtech::math::Frustum']]],
+  ['getfarcorners_45',['getFarCorners',['../classrtech_1_1math_1_1_frustum.html#a6de9dd7ad683afe125003958f0f3eb3c',1,'rtech::math::Frustum']]],
+  ['getforwardvector_46',['getForwardVector',['../classrtech_1_1math_1_1_matrix.html#a3b9eabd6ef13adbfbc18c506b093e3b9',1,'rtech::math::Matrix']]],
+  ['getleft_47',['getLeft',['../classrtech_1_1math_1_1_frustum.html#a7fc9abe4ee38aadbb0e13f24973f16d4',1,'rtech::math::Frustum']]],
+  ['getleftvector_48',['getLeftVector',['../classrtech_1_1math_1_1_matrix.html#aa2151a0d0be02ed1fde0bd5470e7be75',1,'rtech::math::Matrix']]],
+  ['getmatrix_49',['getMatrix',['../classrtech_1_1math_1_1_frustum.html#ae6732c316e4fef7af2858286d5396c79',1,'rtech::math::Frustum']]],
+  ['getnear_50',['getNear',['../classrtech_1_1math_1_1_frustum.html#a59c9f34e9a5cc1a8ca2f3b951b120471',1,'rtech::math::Frustum']]],
+  ['getnearcorners_51',['getNearCorners',['../classrtech_1_1math_1_1_frustum.html#ae9e5c86e56b88cfc1169c6797a2151b0',1,'rtech::math::Frustum']]],
+  ['getnormal_52',['getNormal',['../classrtech_1_1math_1_1_plane.html#a1a4bbecf66f0588d6083fb2f64cb0185',1,'rtech::math::Plane']]],
+  ['getorigin_53',['getOrigin',['../classrtech_1_1math_1_1_ray.html#a845bb178e089dbcb01ffc45d26f78f59',1,'rtech::math::Ray']]],
+  ['getright_54',['getRight',['../classrtech_1_1math_1_1_frustum.html#a8e67738f79e1715a28b9e950ec4f0861',1,'rtech::math::Frustum']]],
+  ['getrightvector_55',['getRightVector',['../classrtech_1_1math_1_1_matrix.html#aa648093358b298d19efded669d29e6c1',1,'rtech::math::Matrix']]],
+  ['getrotation_56',['getRotation',['../classrtech_1_1math_1_1_matrix.html#a6f00a3bb6b98f31f5c49d2af6b93e757',1,'rtech::math::Matrix']]],
+  ['getscale_57',['getScale',['../classrtech_1_1math_1_1_matrix.html#a1c0fb328243adccbd3c2df37364a8161',1,'rtech::math::Matrix']]],
+  ['gettop_58',['getTop',['../classrtech_1_1math_1_1_frustum.html#a0735f62e27ac18fd67bd930d4592c5a0',1,'rtech::math::Frustum']]],
+  ['gettranslation_59',['getTranslation',['../classrtech_1_1math_1_1_matrix.html#afbd02937ac1e82e24b5316bd3abdc670',1,'rtech::math::Matrix']]],
+  ['getupvector_60',['getUpVector',['../classrtech_1_1math_1_1_matrix.html#a8f6e13b6ce01f5820449b4f0ceec376a',1,'rtech::math::Matrix']]]
 ];

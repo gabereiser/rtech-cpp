@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['vec2_17',['Vec2',['../struct_vec2.html',1,'']]],
-  ['vec3_18',['Vec3',['../struct_vec3.html',1,'']]],
-  ['vec4_19',['Vec4',['../struct_vec4.html',1,'']]]
+  ['mathhelper_171',['MathHelper',['../classrtech_1_1math_1_1_math_helper.html',1,'rtech::math']]],
+  ['matrix_172',['Matrix',['../classrtech_1_1math_1_1_matrix.html',1,'rtech::math']]]
 ];

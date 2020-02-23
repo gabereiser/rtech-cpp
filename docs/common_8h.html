@@ -75,7 +75,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">common.h File Reference</div>  </div>
 </div><!--header-->
@@ -87,8 +88,26 @@ $(function() {
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;glm/ext.hpp&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;stack&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;bitset&gt;</code><br />
+<code>#include &lt;typeinfo&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;logger.h&gt;</code><br />
 </div>
 <p><a href="common_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -97,35 +116,137 @@ Macros</h2></td></tr>
 <tr class="memitem:ad8ce4efaa307683d3d763b37b4711c53"><td class="memItemLeft" align="right" valign="top"><a id="ad8ce4efaa307683d3d763b37b4711c53"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>API</b>&#160;&#160;&#160;__attribute__((visibility(&quot;default&quot;)))</td></tr>
 <tr class="separator:ad8ce4efaa307683d3d763b37b4711c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4820af02738dad22f1bf863b8d20c36a"><td class="memItemLeft" align="right" valign="top"><a id="a4820af02738dad22f1bf863b8d20c36a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_ASSERT</b>(expression)</td></tr>
+<tr class="separator:a4820af02738dad22f1bf863b8d20c36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb00b4628e2736090a63faa54a05ff1"><td class="memItemLeft" align="right" valign="top"><a id="aceb00b4628e2736090a63faa54a05ff1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__current__func__</b>&#160;&#160;&#160;__func__</td></tr>
+<tr class="separator:aceb00b4628e2736090a63faa54a05ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f722bf86505c5431e71505f46b5fd21"><td class="memItemLeft" align="right" valign="top"><a id="a0f722bf86505c5431e71505f46b5fd21"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEBUG_BREAK</b>()</td></tr>
+<tr class="separator:a0f722bf86505c5431e71505f46b5fd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2eab65745e7f093a97fbd4421261c84"><td class="memItemLeft" align="right" valign="top"><a id="ae2eab65745e7f093a97fbd4421261c84"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_DEG_TO_RAD</b>(x)&#160;&#160;&#160;((x) * 0.0174532925f)</td></tr>
+<tr class="separator:ae2eab65745e7f093a97fbd4421261c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7144cae826260514e7a61f405c77e848"><td class="memItemLeft" align="right" valign="top"><a id="a7144cae826260514e7a61f405c77e848"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_RAD_TO_DEG</b>(x)&#160;&#160;&#160;((x)* 57.29577951f)</td></tr>
+<tr class="separator:a7144cae826260514e7a61f405c77e848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7ff2cb9862a1ae13632c68b5a3d437"><td class="memItemLeft" align="right" valign="top"><a id="afd7ff2cb9862a1ae13632c68b5a3d437"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_RANDOM_MINUS1_1</b>()&#160;&#160;&#160;((2.0f*((float)rand()/RAND_MAX))-1.0f)</td></tr>
+<tr class="separator:afd7ff2cb9862a1ae13632c68b5a3d437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab337ef3f54639b8e4a640e1dea8baa53"><td class="memItemLeft" align="right" valign="top"><a id="ab337ef3f54639b8e4a640e1dea8baa53"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_RANDOM_0_1</b>()&#160;&#160;&#160;((float)rand()/RAND_MAX)</td></tr>
+<tr class="separator:ab337ef3f54639b8e4a640e1dea8baa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2a4ca36ef6be8a5066d3cba2a783d6"><td class="memItemLeft" align="right" valign="top"><a id="a6f2a4ca36ef6be8a5066d3cba2a783d6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_FLOAT_SMALL</b>&#160;&#160;&#160;1.0e-37f</td></tr>
+<tr class="separator:a6f2a4ca36ef6be8a5066d3cba2a783d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e04e7539288cb3368801815f19628dc"><td class="memItemLeft" align="right" valign="top"><a id="a4e04e7539288cb3368801815f19628dc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_TOLERANCE</b>&#160;&#160;&#160;2e-37f</td></tr>
+<tr class="separator:a4e04e7539288cb3368801815f19628dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee56816d83d03ce2644259a848f0ecb"><td class="memItemLeft" align="right" valign="top"><a id="a9ee56816d83d03ce2644259a848f0ecb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_E</b>&#160;&#160;&#160;2.71828182845904523536f</td></tr>
+<tr class="separator:a9ee56816d83d03ce2644259a848f0ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f345f917847c0770162a49255d3934"><td class="memItemLeft" align="right" valign="top"><a id="a19f345f917847c0770162a49255d3934"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_LOG10E</b>&#160;&#160;&#160;0.4342944819032518f</td></tr>
+<tr class="separator:a19f345f917847c0770162a49255d3934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15c60d02eab5731a6f01ca253a89a97"><td class="memItemLeft" align="right" valign="top"><a id="ab15c60d02eab5731a6f01ca253a89a97"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_LOG2E</b>&#160;&#160;&#160;1.442695040888963387f</td></tr>
+<tr class="separator:ab15c60d02eab5731a6f01ca253a89a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58cbaeae310f551049f77b7c098599e"><td class="memItemLeft" align="right" valign="top"><a id="ac58cbaeae310f551049f77b7c098599e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_PI</b>&#160;&#160;&#160;3.14159265358979323846f</td></tr>
+<tr class="separator:ac58cbaeae310f551049f77b7c098599e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ad3d6a81f0afcf4c9805c600009ea6"><td class="memItemLeft" align="right" valign="top"><a id="af1ad3d6a81f0afcf4c9805c600009ea6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_PIOVER2</b>&#160;&#160;&#160;1.57079632679489661923f</td></tr>
+<tr class="separator:af1ad3d6a81f0afcf4c9805c600009ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a384641d5e8f93a9bd6cd2c5ce433fdf1"><td class="memItemLeft" align="right" valign="top"><a id="a384641d5e8f93a9bd6cd2c5ce433fdf1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_PIOVER4</b>&#160;&#160;&#160;0.785398163397448309616f</td></tr>
+<tr class="separator:a384641d5e8f93a9bd6cd2c5ce433fdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b8613879dde44d1a7f26ab2b28bf89"><td class="memItemLeft" align="right" valign="top"><a id="a23b8613879dde44d1a7f26ab2b28bf89"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_PIX2</b>&#160;&#160;&#160;6.28318530717958647693f</td></tr>
+<tr class="separator:a23b8613879dde44d1a7f26ab2b28bf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c9d91107dc710f9abfa42cf2be2e6f"><td class="memItemLeft" align="right" valign="top"><a id="af5c9d91107dc710f9abfa42cf2be2e6f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_EPSILON</b>&#160;&#160;&#160;0.000001f</td></tr>
+<tr class="separator:af5c9d91107dc710f9abfa42cf2be2e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9406c2258f4435518fe818c3fef9aa5"><td class="memItemLeft" align="right" valign="top"><a id="ab9406c2258f4435518fe818c3fef9aa5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MATH_CLAMP</b>(x,  lo,  hi)&#160;&#160;&#160;((x &lt; lo) ? lo : ((x &gt; hi) ? hi : x))</td></tr>
+<tr class="separator:ab9406c2258f4435518fe818c3fef9aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08dfac3cca9601a02fc88356cc078e1d"><td class="memItemLeft" align="right" valign="top"><a id="a08dfac3cca9601a02fc88356cc078e1d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>M_1_PI</b>&#160;&#160;&#160;0.31830988618379067154</td></tr>
+<tr class="separator:a08dfac3cca9601a02fc88356cc078e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482f41f24ea06f1c65a1325bc1c6cebf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>_ERROR</b>(...)</td></tr>
+<tr class="separator:a482f41f24ea06f1c65a1325bc1c6cebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f034024edc37114b5a3eae6ad694c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>_WARN</b>(...)</td></tr>
+<tr class="separator:ae9f034024edc37114b5a3eae6ad694c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad6621e3886b6c1bc8923bbd6f36f07a5"><td class="memItemLeft" align="right" valign="top"><a id="ad6621e3886b6c1bc8923bbd6f36f07a5"></a>
-typedef glm::vec2&#160;</td><td class="memItemRight" valign="bottom"><b>rtech::Vec2</b></td></tr>
-<tr class="separator:ad6621e3886b6c1bc8923bbd6f36f07a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cd395c136e6bd4ad8e993b45a0cc0d0"><td class="memItemLeft" align="right" valign="top"><a id="a3cd395c136e6bd4ad8e993b45a0cc0d0"></a>
-typedef glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>rtech::Vec3</b></td></tr>
-<tr class="separator:a3cd395c136e6bd4ad8e993b45a0cc0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1808d47933f6ba2dd10859d6899ef468"><td class="memItemLeft" align="right" valign="top"><a id="a1808d47933f6ba2dd10859d6899ef468"></a>
-typedef glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>rtech::Vec4</b></td></tr>
-<tr class="separator:a1808d47933f6ba2dd10859d6899ef468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1b6adf3eb753314d59a24d742b39436"><td class="memItemLeft" align="right" valign="top"><a id="af1b6adf3eb753314d59a24d742b39436"></a>
-typedef glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><b>rtech::Matrix</b></td></tr>
-<tr class="separator:af1b6adf3eb753314d59a24d742b39436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a69f4f8de5c7ae2351081b94be45b37"><td class="memItemLeft" align="right" valign="top"><a id="a0a69f4f8de5c7ae2351081b94be45b37"></a>
-typedef glm::mat3&#160;</td><td class="memItemRight" valign="bottom"><b>rtech::Matrix3</b></td></tr>
-<tr class="separator:a0a69f4f8de5c7ae2351081b94be45b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade1ff0ed09c2999496fb485521e2bd01"><td class="memItemLeft" align="right" valign="top"><a id="ade1ff0ed09c2999496fb485521e2bd01"></a>
-typedef glm::quat&#160;</td><td class="memItemRight" valign="bottom"><b>rtech::Quaternion</b></td></tr>
-<tr class="separator:ade1ff0ed09c2999496fb485521e2bd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e0dfbad2c30e46f2b2cc5c618b567f2"><td class="memTemplParams" colspan="2"><a id="a4e0dfbad2c30e46f2b2cc5c618b567f2"></a>
+<tr class="memitem:a9753788b1500514fc2d947702c937756"><td class="memTemplParams" colspan="2"><a id="a9753788b1500514fc2d947702c937756"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:a4e0dfbad2c30e46f2b2cc5c618b567f2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>rtech::Ptr</b> = std::shared_ptr&lt; T &gt;</td></tr>
-<tr class="separator:a4e0dfbad2c30e46f2b2cc5c618b567f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9753788b1500514fc2d947702c937756"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>rtech::Ref</b> = std::shared_ptr&lt; T &gt;</td></tr>
+<tr class="separator:a9753788b1500514fc2d947702c937756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6188da77921555563417ca7be8b092ad"><td class="memItemLeft" align="right" valign="top"><a id="a6188da77921555563417ca7be8b092ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rprint</b> (const char *format,...)</td></tr>
+<tr class="separator:a6188da77921555563417ca7be8b092ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>rtech </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a482f41f24ea06f1c65a1325bc1c6cebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482f41f24ea06f1c65a1325bc1c6cebf">&#9670;&nbsp;</a></span>_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _ERROR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> \</div>
+<div class="line">    { <a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">\</a></div>
+<div class="line"><a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">        rtech::Logger::log</a>(rtech::Logger::LEVEL_ERROR, <span class="stringliteral">&quot;%s -- &quot;</span>, __current__func__); <a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">\</a></div>
+<div class="line"><a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">        rtech::Logger::log</a>(rtech::Logger::LEVEL_ERROR, __VA_ARGS__); <a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">\</a></div>
+<div class="line"><a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">        rtech::Logger::log</a>(rtech::Logger::LEVEL_ERROR, <span class="stringliteral">&quot;\n&quot;</span>); \</div>
+<div class="line">        DEBUG_BREAK(); \</div>
+<div class="line">        assert(0); \</div>
+<div class="line">        std::exit(-1); \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae9f034024edc37114b5a3eae6ad694c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f034024edc37114b5a3eae6ad694c9">&#9670;&nbsp;</a></span>_WARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _WARN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> \</div>
+<div class="line">    { <a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">\</a></div>
+<div class="line"><a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">        rtech::Logger::log</a>(rtech::Logger::LEVEL_WARN, <span class="stringliteral">&quot;%s -- &quot;</span>, __current__func__); <a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">\</a></div>
+<div class="line"><a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">        rtech::Logger::log</a>(rtech::Logger::LEVEL_WARN, __VA_ARGS__); <a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">\</a></div>
+<div class="line"><a class="code" href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">        rtech::Logger::log</a>(rtech::Logger::LEVEL_WARN, <span class="stringliteral">&quot;\n&quot;</span>); \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<div class="ttc" id="aclassrtech_1_1_logger_html_a54c3af49ef109e54598c8610877274ba"><div class="ttname"><a href="classrtech_1_1_logger.html#a54c3af49ef109e54598c8610877274ba">rtech::Logger::log</a></div><div class="ttdeci">static void log(Level level, const char *message,...)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
