@@ -4,6 +4,8 @@
  *  \mainpage rTech Graphics Toolkit
  * The rTech Graphics Toolkit is a cross-platform thread-safe C++ library.
  */
+#ifndef _COMMON_H
+#define _COMMON_H
 
 #pragma once
 
@@ -60,6 +62,7 @@ using std::atoi;
 
 
 #ifdef WIN32
+
     //  Microsoft 
     #ifdef DLL
     #define API __declspec(dllexport)
@@ -73,9 +76,9 @@ using std::atoi;
 
 // Assert macros.
 #ifdef DEBUG
-#define _ASSERT(expression) assert(expression)
+#define ASSERT(expression) assert(expression)
 #else
-#define _ASSERT(expression)
+#define ASSERT(expression)
 #endif
 
 // Current function macro.
@@ -158,3 +161,5 @@ namespace rtech {
 }
 
 extern void rprint(const char* format, ...);
+
+#endif

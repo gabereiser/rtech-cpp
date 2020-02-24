@@ -939,7 +939,7 @@ private:
  * @param m The matrix to transform by.
  * @return This vector, after the transformation occurs.
  */
-inline Vector3& operator*=(Vector3& v, const Matrix& m);
+API inline Vector3& operator*=(Vector3& v, const Matrix& m);
 
 /**
  * Transforms the given vector by the given matrix.
@@ -950,7 +950,7 @@ inline Vector3& operator*=(Vector3& v, const Matrix& m);
  * @param v The vector to transform.
  * @return The resulting transformed vector.
  */
-inline const Vector3 operator*(const Matrix& m, const Vector3& v);
+API inline const Vector3 operator*(const Matrix& m, const Vector3& v);
 
 /**
  * Transforms the given vector by the given matrix.
@@ -961,7 +961,7 @@ inline const Vector3 operator*(const Matrix& m, const Vector3& v);
  * @param m The matrix to transform by.
  * @return This vector, after the transformation occurs.
  */
-inline Vector4& operator*=(Vector4& v, const Matrix& m);
+API inline Vector4& operator*=(Vector4& v, const Matrix& m);
 
 /**
  * Transforms the given vector by the given matrix.
@@ -972,7 +972,7 @@ inline Vector4& operator*=(Vector4& v, const Matrix& m);
  * @param v The vector to transform.
  * @return The resulting transformed vector.
  */
-inline const Vector4 operator*(const Matrix& m, const Vector4& v);
+API inline const Vector4 operator*(const Matrix& m, const Vector4& v);
 
 }
 }

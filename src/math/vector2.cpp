@@ -82,7 +82,7 @@ void Vector2::add(const Vector2& v)
 
 void Vector2::add(const Vector2& v1, const Vector2& v2, Vector2* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     dst->x = v1.x + v2.x;
     dst->y = v1.y + v2.y;
@@ -90,7 +90,7 @@ void Vector2::add(const Vector2& v1, const Vector2& v2, Vector2* dst)
 
 void Vector2::clamp(const Vector2& min, const Vector2& max)
 {
-    _ASSERT(!(min.x > max.x || min.y > max.y ));
+    ASSERT(!(min.x > max.x || min.y > max.y ));
 
     // Clamp the x value.
     if (x < min.x)
@@ -107,8 +107,8 @@ void Vector2::clamp(const Vector2& min, const Vector2& max)
 
 void Vector2::clamp(const Vector2& v, const Vector2& min, const Vector2& max, Vector2* dst)
 {
-    _ASSERT(dst);
-    _ASSERT(!(min.x > max.x || min.y > max.y ));
+    ASSERT(dst);
+    ASSERT(!(min.x > max.x || min.y > max.y ));
 
     // Clamp the x value.
     dst->x = v.x;
@@ -174,7 +174,7 @@ Vector2& Vector2::normalize()
 
 void Vector2::normalize(Vector2* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     if (dst != this)
     {
@@ -238,7 +238,7 @@ void Vector2::set(float x, float y)
 
 void Vector2::set(const float* array)
 {
-    _ASSERT(array);
+    ASSERT(array);
 
     x = array[0];
     y = array[1];
@@ -264,7 +264,7 @@ void Vector2::subtract(const Vector2& v)
 
 void Vector2::subtract(const Vector2& v1, const Vector2& v2, Vector2* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     dst->x = v1.x - v2.x;
     dst->y = v1.y - v2.y;

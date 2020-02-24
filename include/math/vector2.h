@@ -440,7 +440,7 @@ public:
  * @param v The vector to scale.
  * @return The scaled vector.
  */
-inline const Vector2 operator*(float x, const Vector2& v);
+API inline const Vector2 operator*(float x, const Vector2& v);
 
 }
 }

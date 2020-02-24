@@ -71,7 +71,7 @@ API void Matrix::createLookAt(float eyePositionX, float eyePositionY, float eyeP
                           float targetPositionX, float targetPositionY, float targetPositionZ,
                           float upX, float upY, float upZ, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     Vector3 eye(eyePositionX, eyePositionY, eyePositionZ);
     Vector3 target(targetPositionX, targetPositionY, targetPositionZ);
@@ -114,8 +114,8 @@ API void Matrix::createLookAt(float eyePositionX, float eyePositionY, float eyeP
 API void Matrix::createPerspective(float fieldOfView, float aspectRatio,
                                      float zNearPlane, float zFarPlane, Matrix* dst)
 {
-    _ASSERT(dst);
-    _ASSERT(zFarPlane != zNearPlane);
+    ASSERT(dst);
+    ASSERT(zFarPlane != zNearPlane);
 
     float f_n = 1.0f / (zFarPlane - zNearPlane);
     float theta = MATH_DEG_TO_RAD(fieldOfView) * 0.5f;
@@ -125,12 +125,12 @@ API void Matrix::createPerspective(float fieldOfView, float aspectRatio,
         return;
     }
     float divisor = tan(theta);
-    _ASSERT(divisor);
+    ASSERT(divisor);
     float factor = 1.0f / divisor;
 
     memset(dst, 0, MATRIX_SIZE);
 
-    _ASSERT(aspectRatio);
+    ASSERT(aspectRatio);
     dst->m[0] = (1.0f / aspectRatio) * factor;
     dst->m[5] = factor;
     dst->m[10] = (-(zFarPlane + zNearPlane)) * f_n;
@@ -148,10 +148,10 @@ API void Matrix::createOrthographic(float width, float height, float zNearPlane,
 API void Matrix::createOrthographicOffCenter(float left, float right, float bottom, float top,
                                          float zNearPlane, float zFarPlane, Matrix* dst)
 {
-    _ASSERT(dst);
-    _ASSERT(right != left);
-    _ASSERT(top != bottom);
-    _ASSERT(zFarPlane != zNearPlane);
+    ASSERT(dst);
+    ASSERT(right != left);
+    ASSERT(top != bottom);
+    ASSERT(zFarPlane != zNearPlane);
 
     memset(dst, 0, MATRIX_SIZE);
     dst->m[0] = 2 / (right - left);
@@ -230,7 +230,7 @@ API void Matrix::createReflection(const Plane& plane, Matrix* dst)
 
 API void Matrix::createScale(const Vector3& scale, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     memcpy(dst, MATRIX_IDENTITY, MATRIX_SIZE);
 
@@ -241,7 +241,7 @@ API void Matrix::createScale(const Vector3& scale, Matrix* dst)
 
 API void Matrix::createScale(float xScale, float yScale, float zScale, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     memcpy(dst, MATRIX_IDENTITY, MATRIX_SIZE);
 
@@ -253,7 +253,7 @@ API void Matrix::createScale(float xScale, float yScale, float zScale, Matrix* d
 
 API void Matrix::createRotation(const Quaternion& q, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     float x2 = q.x + q.x;
     float y2 = q.y + q.y;
@@ -292,7 +292,7 @@ API void Matrix::createRotation(const Quaternion& q, Matrix* dst)
 
 API void Matrix::createRotation(const Vector3& axis, float angle, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     float x = axis.x;
     float y = axis.y;
@@ -351,7 +351,7 @@ API void Matrix::createRotation(const Vector3& axis, float angle, Matrix* dst)
 
 API void Matrix::createRotationX(float angle, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     memcpy(dst, MATRIX_IDENTITY, MATRIX_SIZE);
 
@@ -366,7 +366,7 @@ API void Matrix::createRotationX(float angle, Matrix* dst)
 
 API void Matrix::createRotationY(float angle, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     memcpy(dst, MATRIX_IDENTITY, MATRIX_SIZE);
 
@@ -381,7 +381,7 @@ API void Matrix::createRotationY(float angle, Matrix* dst)
 
 API void Matrix::createRotationZ(float angle, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     memcpy(dst, MATRIX_IDENTITY, MATRIX_SIZE);
 
@@ -396,7 +396,7 @@ API void Matrix::createRotationZ(float angle, Matrix* dst)
 
 API void Matrix::createFromEuler(float yaw, float pitch, float roll, Matrix* dst)
 {
-	_ASSERT(dst);
+	ASSERT(dst);
 
 	memcpy(dst, MATRIX_IDENTITY, MATRIX_SIZE);
 	
@@ -407,7 +407,7 @@ API void Matrix::createFromEuler(float yaw, float pitch, float roll, Matrix* dst
 
 API void Matrix::createTranslation(const Vector3& translation, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     memcpy(dst, MATRIX_IDENTITY, MATRIX_SIZE);
 
@@ -418,7 +418,7 @@ API void Matrix::createTranslation(const Vector3& translation, Matrix* dst)
 
 API void Matrix::createTranslation(float xTranslation, float yTranslation, float zTranslation, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     memcpy(dst, MATRIX_IDENTITY, MATRIX_SIZE);
 
@@ -434,7 +434,7 @@ API void Matrix::add(float scalar)
 
 API void Matrix::add(float scalar, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::addMatrix(m, scalar, dst->m);
 }
@@ -446,7 +446,7 @@ API void Matrix::add(const Matrix& m)
 
 API void Matrix::add(const Matrix& m1, const Matrix& m2, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::addMatrix(m1.m, m2.m, dst->m);
 }
@@ -595,7 +595,7 @@ API void Matrix::getTranslation(Vector3* translation) const
 
 API void Matrix::getUpVector(Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     dst->x = m[4];
     dst->y = m[5];
@@ -604,7 +604,7 @@ API void Matrix::getUpVector(Vector3* dst) const
 
 API void Matrix::getDownVector(Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
     
     dst->x = -m[4];
     dst->y = -m[5];
@@ -613,7 +613,7 @@ API void Matrix::getDownVector(Vector3* dst) const
 
 API void Matrix::getLeftVector(Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     dst->x = -m[0];
     dst->y = -m[1];
@@ -622,7 +622,7 @@ API void Matrix::getLeftVector(Vector3* dst) const
 
 API void Matrix::getRightVector(Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     dst->x = m[0];
     dst->y = m[1];
@@ -631,7 +631,7 @@ API void Matrix::getRightVector(Vector3* dst) const
 
 API void Matrix::getForwardVector(Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     dst->x = -m[8];
     dst->y = -m[9];
@@ -640,7 +640,7 @@ API void Matrix::getForwardVector(Vector3* dst) const
 
 API void Matrix::getBackVector(Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     dst->x = m[8];
     dst->y = m[9];
@@ -718,7 +718,7 @@ API void Matrix::multiply(float scalar, Matrix* dst) const
 
 API void Matrix::multiply(const Matrix& m, float scalar, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::multiplyMatrix(m.m, scalar, dst->m);
 }
@@ -730,7 +730,7 @@ API void Matrix::multiply(const Matrix& m)
 
 API void Matrix::multiply(const Matrix& m1, const Matrix& m2, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::multiplyMatrix(m1.m, m2.m, dst->m);
 }
@@ -742,7 +742,7 @@ API void Matrix::negate()
 
 API void Matrix::negate(Matrix* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::negateMatrix(m, dst->m);
 }
@@ -862,7 +862,7 @@ API void Matrix::set(float m11, float m12, float m13, float m14, float m21, floa
 
 API void Matrix::set(const float* m)
 {
-    _ASSERT(m);
+    ASSERT(m);
     memcpy(this->m, m, MATRIX_SIZE);
 }
 
@@ -888,14 +888,14 @@ API void Matrix::subtract(const Matrix& m)
 
 API void Matrix::subtract(const Matrix& m1, const Matrix& m2, Matrix* dst)
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::subtractMatrix(m1.m, m2.m, dst->m);
 }
 
 API void Matrix::transformPoint(Vector3* point) const
 {
-    _ASSERT(point);
+    ASSERT(point);
     transformVector(point->x, point->y, point->z, 1.0f, point);
 }
 
@@ -906,7 +906,7 @@ API void Matrix::transformPoint(const Vector3& point, Vector3* dst) const
 
 API void Matrix::transformVector(Vector3* vector) const
 {
-    _ASSERT(vector);
+    ASSERT(vector);
     transformVector(vector->x, vector->y, vector->z, 0.0f, vector);
 }
 
@@ -917,20 +917,20 @@ API void Matrix::transformVector(const Vector3& vector, Vector3* dst) const
 
 API void Matrix::transformVector(float x, float y, float z, float w, Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::transformVector4(m, x, y, z, w, (float*)dst);
 }
 
 API void Matrix::transformVector(Vector4* vector) const
 {
-    _ASSERT(vector);
+    ASSERT(vector);
     transformVector(*vector, vector);
 }
 
 API void Matrix::transformVector(const Vector4& vector, Vector4* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::transformVector4(m, (const float*) &vector, (float*)dst);
 }
@@ -964,7 +964,7 @@ API void Matrix::transpose()
 
 API void Matrix::transpose(Matrix* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     MathHelper::transposeMatrix(m, dst->m);
 }

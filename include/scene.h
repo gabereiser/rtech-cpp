@@ -12,6 +12,6 @@ namespace rtech
         Scene();
         ~Scene();
         void init();
-        void clean();
+        void clear();
     };
 }

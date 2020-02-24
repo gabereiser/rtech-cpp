@@ -3,7 +3,7 @@
 namespace rtech
 {
     extern void rprint(const char* format, ...) { 
-            _ASSERT(format);
+            ASSERT(format);
             va_list argptr;
             va_start(argptr, format);
             vfprintf(stderr, format, argptr);

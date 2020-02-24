@@ -225,7 +225,7 @@ public:
  * @param box The bounding box to transform.
  * @return The resulting transformed bounding box.
  */
-inline const BoundingBox operator*(const Matrix& matrix, const BoundingBox& box);
+API inline const BoundingBox operator*(const Matrix& matrix, const BoundingBox& box);
 
 }
 }

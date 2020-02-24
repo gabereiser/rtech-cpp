@@ -16,11 +16,10 @@ namespace rtech {
     API
     void Scene::init() {
         _rootNode = std::make_shared<SceneNode>();
-        std::cout << "Scene initialized" << std::endl;
     }
 
     API
-    void Scene::clean() {
+    void Scene::clear() {
         _rootNode->clearChildren();
     }
 }

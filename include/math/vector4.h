@@ -452,7 +452,7 @@ public:
  * @param v The vector to scale.
  * @return The scaled vector.
  */
-inline const Vector4 operator*(float x, const Vector4& v);
+API inline const Vector4 operator*(float x, const Vector4& v);
 
 }
 }

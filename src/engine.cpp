@@ -119,7 +119,7 @@ namespace rtech {
 
     API
     void Engine::init() {
-        _ASSERT(window);
+        ASSERT(window);
         this->_scene->init();
     }
 
@@ -174,7 +174,7 @@ namespace rtech {
 
         
 
-        _scene->clean();
+        _scene->clear();
         sdlDestroyWindow(window);
         SDL_Quit();
     }

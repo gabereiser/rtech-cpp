@@ -199,7 +199,7 @@ private:
  * @param ray The ray to transform.
  * @return The resulting transformed ray.
  */
-inline const Ray operator*(const Matrix& matrix, const Ray& ray);
+API inline const Ray operator*(const Matrix& matrix, const Ray& ray);
 
 }
 }

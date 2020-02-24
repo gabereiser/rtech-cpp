@@ -39,7 +39,7 @@ API const BoundingBox& BoundingBox::empty()
 
 API void BoundingBox::getCorners(Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     // Near face, specified counter-clockwise looking towards the origin from the positive z-axis.
     // Left-top-front.
@@ -71,7 +71,7 @@ API Vector3 BoundingBox::getCenter() const
 
 API void BoundingBox::getCenter(Vector3* dst) const
 {
-    _ASSERT(dst);
+    ASSERT(dst);
 
     dst->set(min, max);
     dst->scale(0.5f);
@@ -260,11 +260,11 @@ API void BoundingBox::set(float minX, float minY, float minZ, float maxX, float 
     max.set(maxX, maxY, maxZ);
 }
 
-API static void updateMinMax(Vector3* point, Vector3* min, Vector3* max)
+static void updateMinMax(Vector3* point, Vector3* min, Vector3* max)
 {
-    _ASSERT(point);
-    _ASSERT(min);
-    _ASSERT(max);
+    ASSERT(point);
+    ASSERT(min);
+    ASSERT(max);
 
     // Leftmost point.
     if (point->x < min->x)
