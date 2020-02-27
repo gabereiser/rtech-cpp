@@ -15,5 +15,12 @@
 #include <math/frustum.h>
 #include <engine.h>
 #include <input.h>
+#include <app.h>
 #include <scenenode.h>
 #include <scene.h>
+#include <textures/texture.h>
+#include <package/package.h>
+#include <package_manager.h>
+#include <types/font.h>
+#include <geometry/mesh.h>
+#include <materials/material.h>

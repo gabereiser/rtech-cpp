@@ -3,6 +3,23 @@
 using namespace rtech;
 using namespace rtech::math;
 
+class _00_Hello_Triangle : public App
+{
+    public:
+    void init()
+    {
+        
+    }
+    void render()
+    {
+
+    }
+    void update()
+    {
+
+    }
+};
+
 int main(int argc, char** argv)
 {
     std::string title = "rTech - 00-hello-triangle";
@@ -14,11 +31,14 @@ int main(int argc, char** argv)
         engine.quit();
         return 0;
     }
-    engine.init();
+
+    Ref<App> app = std::make_shared<_00_Hello_Triangle>();
+    engine.init(app);
 
     engine.run();
     
     engine.quit();
 
     std::cout << "Goodbye" << std::endl;
-}
+};
+

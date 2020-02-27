@@ -1,4 +1,5 @@
 #include <engine.h>
+
 #include <SDL.h>
 #include <SDL_syswm.h>
 #include <bgfx/bgfx.h>
@@ -57,22 +58,14 @@ static void sdlDestroyWindow(SDL_Window* window)
     SDL_DestroyWindow(window);
 };
 
-static int32_t threadMain(bx::Thread* _thread, void* _userData)
-{
-    while (1) {
-        bgfx::setViewRect(0, 0, 0, uint16_t(_width), uint16_t(_height));
-        bgfx::touch(0);
-        bgfx::dbgTextClear();
-        bgfx::dbgTextPrintf(0, 1, 0x4f, "Counter:%d", _counter++);
-        bgfx::frame();
-    }
-    return 0;
-};
 
 
 namespace rtech {
     static SDL_Window* window = nullptr;
-    
+    extern SDL_Window* get_sdl_window(){ 
+        return window; 
+    };
+
     bool _exit = false;
 
     static void reshape()
@@ -83,8 +76,12 @@ namespace rtech {
         
         bgfx::reset(w, h, BGFX_RESET_VSYNC);
     }
+
     API
-    Engine::Engine() : _scene(std::make_shared<Scene>()) {
+    Engine::Engine() : 
+    _scene(std::make_shared<Scene>()),
+    _render_cb([]{}),
+    _update_cb([]{}) {
         
     }
 
@@ -118,9 +115,11 @@ namespace rtech {
     }
 
     API
-    void Engine::init() {
+    void Engine::init(const Ref<App> app) {
+        this->_app = app;
         ASSERT(window);
         this->_scene->init();
+        PackageManager::instance();
     }
 
     API
@@ -131,10 +130,11 @@ namespace rtech {
         while (!_exit) {
             bgfx::setViewRect(0, 0, 0, uint16_t(_width), uint16_t(_height));
             bgfx::touch(0);
+            this->_app->render();
             bgfx::dbgTextClear();
             bgfx::dbgTextPrintf(0, 0, 0x4f, "Counter:%d", _counter++);
             bgfx::frame();
-            
+            this->_app->update();
             while (SDL_PollEvent(&event)) {
 
                 switch (event.type) {
@@ -168,6 +168,7 @@ namespace rtech {
                     break;
                 }
             }
+            this->_update_cb();
         }
 
         bgfx::shutdown();

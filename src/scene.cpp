@@ -1,3 +1,4 @@
+#include <common.h>
 #include <scenenode.h>
 #include <scene.h>
 

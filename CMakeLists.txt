@@ -63,6 +63,10 @@ endif(CMAKE_BUILD_TYPE MATCHES Debug)
 option(BGFX_BUILD_TOOLS "" OFF)
 option(BGFX_BUILD_EXAMPLES "" OFF)
 option(BGFX_INSTALL "" OFF)
+option(BUILD_TOOLS "" OFF)
+option(BUILD_REGRESS "" OFF)
+option(BUILD_EXAMPLES "" OFF)
+option(BUILD_DOC "" OFF)
 set(SDL_STATIC_ENABLED_BY_DEFAULT ON)
 set(SDL_SHARED_ENABLED_BY_DEFAULT OFF)
 ### Add dependencies
@@ -70,7 +74,7 @@ set(SDL_SHARED_ENABLED_BY_DEFAULT OFF)
 add_subdirectory(dependencies/sdl2)
 add_subdirectory(dependencies/bgfx)
 add_subdirectory(dependencies/zlib)
-
+add_subdirectory(dependencies/libzip)
 
 file(GLOB_RECURSE SOURCES 
         src/**.cpp
@@ -86,6 +90,7 @@ set(INCLUDE ${BGFX_INCLUDE_DIR}
             ${CMAKE_SOURCE_DIR}/dependencies/zlib
             ${CMAKE_SOURCE_DIR}/dependencies/bgfx/bgfx/include
             ${CMAKE_SOURCE_DIR}/dependencies/sdl2/include
+            ${CMAKE_SOURCE_DIR}/dependencies/libzip/lib
 )
 
 add_library(rtech STATIC ${SOURCES} )
@@ -107,8 +112,8 @@ if(WIN32)
 add_definitions(-DDLL)
 endif(WIN32)
 
-add_dependencies(rtech zlib bx bimg bgfx SDL2-static)
-target_link_libraries(rtech zlib bx bimg bgfx SDL2-static)
+add_dependencies(rtech zip zlib bx bimg bgfx SDL2-static)
+target_link_libraries(rtech zip zlib bx bimg bgfx SDL2-static)
 
 include(GNUInstallDirs)
 

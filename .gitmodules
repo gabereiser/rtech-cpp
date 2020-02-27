@@ -7,3 +7,6 @@
 [submodule "dependencies/zlib"]
 	path = dependencies/zlib
 	url = https://github.com/madler/zlib.git
+[submodule "dependencies/libzip"]
+	path = dependencies/libzip
+	url = https://github.com/nih-at/libzip.git

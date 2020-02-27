@@ -150,16 +150,44 @@ namespace rtech {
         class BoundingSphere;
         class BoundingBox;
     }
+    namespace types
+    {
+        class Font;
+        class Shader;
+    }
+    namespace geometry
+    {
+        class Mesh;
+    }
+    namespace textures
+    {
+        class Texture;
+    }
+    namespace materials
+    {
+        class Material;
+    }
+    namespace package
+    {
+        class Package;
+    }
+    class App;
     class Logger;
+    class PackageManager;
     class Engine;
     class Input;
     class Scene;
     class SceneNode;
 
-    template <class T>
-    using Ref = std::shared_ptr<T>;
+    
+
+    
 }
 
 extern void rprint(const char* format, ...);
+
+template <typename T>
+using Ref = std::shared_ptr<T>;
+
 
 #endif
